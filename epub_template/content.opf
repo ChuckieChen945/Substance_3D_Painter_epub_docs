@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookID" version="2.0">
+
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>Substance 3D Painter User Guide</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="Autodesk">Adobe</dc:creator>
+    <dc:description>Substance 3D Painter User Guide</dc:description>
+    <dc:language>en-us</dc:language>
+    <dc:identifier id="BookID" opf:scheme="UUID">urn:uuid:d0e70fbe-7c4d-4c16-b121-05f5c68b2695</dc:identifier>
+  </metadata>
+
+  <manifest>
+
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <!-- manifest insert point -->
+  </manifest>
+
+  <spine toc="ncx"><!-- spine insert point --></spine>
+
+</package>

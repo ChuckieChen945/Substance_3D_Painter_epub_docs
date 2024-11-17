@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"534901ca38","applicationID":"163388214","transactionName":"cVxfEUMNWV4EF0tAEFNHWAZuElRVBBZLWwtfVg==","queueTime":0,"applicationTime":423,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"UgQCVFJTGwIGV1JaDwMGUg==",licenseKey:"534901ca38",applicationID:"163388214"};;/*! For license information please see nr-loader-full-1.273.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555:(e,t,r)=>{"use strict";r.d(t,{Vp:()=>c,fn:()=>s,x1:()=>d});var n=r(384),i=r(8122);const o={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){try{const t=c(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}function c(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function d(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.info=a[e])}},9417:(e,t,r)=>{"use strict";r.d(t,{D0:()=>h,gD:()=>p,xN:()=>g});var n=r(993);const i=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var o=r(2614),a=r(944),s=r(384),c=r(8122);const d="[data-nr-mask]",u=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},feature_flags:[],generic_events:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},harvest:{tooManyRequestsDelay:60},jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},logging:{enabled:!0,harvestTimeSeconds:10,autoStart:!0,level:n.p_.INFO},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:o.wk,inactiveMs:o.BB},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){i(t)?e.mask_selector="".concat(t,",").concat(d):""===t||null===t?e.mask_selector=d:(0,a.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){i(t)?e.block_selector+=",".concat(t):""!==t&&(0,a.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,a.R)(7,t)}},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},ssl:void 0,user_actions:{enabled:!0}}},l={},f="All configuration objects require an agent identifier!";function h(e){if(!e)throw new Error(f);if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function g(e,t){if(!e)throw new Error(f);l[e]=(0,c.a)(t,u());const r=(0,s.nY)(e);r&&(r.init=l[e])}function p(e,t){if(!e)throw new Error(f);var r=h(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}},5603:(e,t,r)=>{"use strict";r.d(t,{a:()=>c,o:()=>s});var n=r(384),i=r(8122);const o={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},a={};function s(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!a[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.loader_config=a[e])}},3371:(e,t,r)=>{"use strict";r.d(t,{V:()=>f,f:()=>l});var n=r(8122),i=r(384),o=r(6154),a=r(9324);let s=0;const c={buildEnv:a.F3,distMethod:a.Xs,version:a.xv,originTime:o.WN},d={customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,onerror:void 0,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,denyList:void 0,timeKeeper:void 0,obfuscator:void 0},u={};function l(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!u[e])throw new Error("Runtime for ".concat(e," was never set"));return u[e]}function f(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");u[e]={...(0,n.a)(t,d),...c},Object.hasOwnProperty.call(u[e],"harvestCount")||Object.defineProperty(u[e],"harvestCount",{get:()=>++s});const r=(0,i.nY)(e);r&&(r.runtime=u[e])}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>o,Yq:()=>a,xv:()=>n});const n="1.273.0",i="PROD",o="CDN",a="2.0.0-alpha.12"},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>d,RI:()=>i,WN:()=>f,bv:()=>o,gm:()=>a,lR:()=>l,m:()=>c,mw:()=>s,sb:()=>u});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,o="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===a?.document?.visibilityState),c=""+a?.location,d=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),u=d&&"undefined"==typeof SharedWorker,l=(()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Date.now()-(0,n.t)()},7295:(e,t,r)=>{"use strict";r.d(t,{Xv:()=>a,gX:()=>i,iW:()=>o});var n=[];function i(e){if(!e||o(e))return!1;if(0===n.length)return!0;for(var t=0;t<n.length;t++){var r=n[t];if("*"===r.hostname)return!1;if(s(r.hostname,e.hostname)&&c(r.pathname,e.pathname))return!1}return!0}function o(e){return void 0===e.hostname}function a(e){if(n=[],e&&e.length)for(var t=0;t<e.length;t++){let r=e[t];if(!r)continue;0===r.indexOf("http://")?r=r.substring(7):0===r.indexOf("https://")&&(r=r.substring(8));const i=r.indexOf("/");let o,a;i>0?(o=r.substring(0,i),a=r.substring(i)):(o=r,a="");let[s]=o.split(":");n.push({hostname:s,pathname:a})}}function s(e,t){return!(e.length>t.length)&&t.indexOf(e)===t.length-e.length}function c(e,t){return 0===e.indexOf("/")&&(e=e.substring(1)),0===t.indexOf("/")&&(t=t.substring(1)),""===e||e===t}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>c,Ze:()=>l,x3:()=>d});var n=r(7836),i=r(3606),o=r(860),a=r(2646);const s={};function c(e,t){const r={staged:!1,priority:o.P3[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function d(e,t){e&&s[e]&&(s[e].get(t)&&s[e].delete(t),h(e,t,!1),s[e].size&&f(e))}function u(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(e="",t="feature",r=!1){if(u(e),!e||!s[e].get(t)||r)return h(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=Array.from(s[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{s[e].delete(t),h(e,t)})))}function h(e,t,r=!0){const o=e?n.ee.get(e):n.ee,s=i.i.handlers;if(!o.aborted&&o.backlog&&s){if(r){const e=o.backlog[t],r=s[t];if(r){for(let t=0;e&&t<e.length;++t)g(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof a.y&&t[0].on(e,t[1])}))}))}}o.isolatedBacklog||delete s[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function g(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],o=e[2];n.apply(i,o)}}))}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>c,ee:()=>d});var n=r(384),i=r(8990),o=r(3371),a=r(2646),s=r(5607);const c="nr@context:".concat(s.W),d=function e(t,r){var n={},s={},u={},l=!1;try{l=16===r.length&&(0,o.f)(r).isolatedBacklog}catch(e){}var f={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(d.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=h(n),c=p(e),u=c.length,l=0;l<u;l++)c[l].apply(a,r);var g=v()[s[e]];g&&g.push([f,e,r,a]);return a},get:m,listeners:p,context:h,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{s[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function h(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,c,(()=>new a.y(c))):new a.y(c)}function g(e,t){n[e]=p(e).concat(t)}function p(e){return n[e]||[]}function m(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=d)},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>o});var n=r(9908);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.d,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.d);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function o(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>o,jT:()=>n,sp:()=>i})},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,ZF:()=>c,bz:()=>a,el:()=>d});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function d(){return s(32)}},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>d,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>o});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},d={OFF:0,FULL:1,ERROR:2}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},7485:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(6154);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n.gm?.location?.protocol&&t.host===n.gm?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},944:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.debug&&console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t)}r.d(t,{R:()=>n})},5284:(e,t,r)=>{"use strict";r.d(t,{t:()=>c,B:()=>s});var n=r(7836),i=r(6154);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(e={}){try{i.gm.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},3304:(e,t,r)=>{"use strict";r.d(t,{A:()=>o});var n=r(7836);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())??""}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}return""}}},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,sB:()=>a});var n=r(3878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.sp)("load",e,t)}function a(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>u,Zm:()=>a,bQ:()=>c,dV:()=>s,nY:()=>d,pV:()=>l});var n=r(6154),i=r(1863);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function s(){let e=a();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function d(e){let t=a();return t.initializedAgents?.[e]}function u(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},2843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},8139:(e,t,r)=>{"use strict";r.d(t,{u:()=>f});var n=r(7836),i=r(3434),o=r(8990),a=r(6154);const s={},c=a.gm.XMLHttpRequest,d="addEventListener",u="removeEventListener",l="nr@wrapped:".concat(n.P);function f(e){var t=function(e){return(e||n.ee).get("events")}(e);if(s[t.debugId]++)return t;s[t.debugId]=1;var r=(0,i.YM)(t,!0);function f(e){r.inPlace(e,[d,u],"-",g)}function g(e,t){return e[1]}return"getPrototypeOf"in Object&&(a.RI&&h(document,f),h(a.gm,f),h(c.prototype,f)),t.on(d+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,o.I)(n,l,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(u+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function h(e,t,...r){let n=e;for(;"object"==typeof n&&!Object.prototype.hasOwnProperty.call(n,d);)n=Object.getPrototypeOf(n);n&&t(n,...r)}},3434:(e,t,r)=>{"use strict";r.d(t,{YM:()=>c});var n=r(7836),i=r(5607);const o="nr@original:".concat(i.W);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],d=e[c];u(d)||(e[c]=r(d,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return u(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){d([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,u,l;try{a=this,o=[...arguments],u="function"==typeof n?n(o,a):n||{}}catch(t){d([t,"",[o,a,s],u],e)}i(r+"start",[o,a,s],u,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],u,c),e}finally{i(r+"end",[o,a,l],u,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){d([t,r,n,i],e)}s=a}}}function d(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function u(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}},9300:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.ajax},3333:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,Zp:()=>i,mq:()=>s,nf:()=>a,qN:()=>o});const n=r(860).K7.genericEvents,i=["auxclick","click","copy","keydown","paste","scrollend"],o=["focus","blur"],a=4,s=1e3},6774:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.jserrors},993:(e,t,r)=>{"use strict";r.d(t,{ET:()=>o,TZ:()=>a,p_:()=>i});var n=r(860);const i={ERROR:"ERROR",WARN:"WARN",INFO:"INFO",DEBUG:"DEBUG",TRACE:"TRACE"},o="log",a=n.K7.logging},3785:(e,t,r)=>{"use strict";r.d(t,{R:()=>c,b:()=>d});var n=r(9908),i=r(1863),o=r(860),a=r(3969),s=r(993);function c(e,t,r={},c=s.p_.INFO){(0,n.p)(a.xV,["API/logging/".concat(c.toLowerCase(),"/called")],void 0,o.K7.metrics,e),(0,n.p)(s.ET,[(0,i.t)(),t,r,c],void 0,o.K7.logging,e)}function d(e){return"string"==typeof e&&Object.values(s.p_).some((t=>t===e.toUpperCase().trim()))}},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>s,rs:()=>i,xV:()=>a,z_:()=>o});const n=r(860).K7.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},6344:(e,t,r)=>{"use strict";r.d(t,{BB:()=>u,G4:()=>o,Qb:()=>l,TZ:()=>i,Ug:()=>a,_s:()=>s,bc:()=>d,yP:()=>c});var n=r(2614);const i=r(860).K7.sessionReplay,o={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"},a=.12,s={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},c={[n.g.ERROR]:15e3,[n.g.FULL]:3e5,[n.g.OFF]:0},d={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},u=5e3,l={API:"api"}},5270:(e,t,r)=>{"use strict";r.d(t,{Aw:()=>c,CT:()=>d,SR:()=>s});var n=r(384),i=r(9417),o=r(7767),a=r(6154);function s(e){return!!(0,n.dV)().o.MO&&(0,o.V)(e)&&!0===(0,i.gD)(e,"session_trace.enabled")}function c(e){return!0===(0,i.gD)(e,"session_replay.preload")&&s(e)}function d(e,t){const r=t.correctAbsoluteTimestamp(e);return{originalTimestamp:e,correctedTimestamp:r,timestampDiff:e-r,originTime:a.WN,correctedOriginTime:t.correctedOriginTime,originTimeDiff:Math.floor(a.WN-t.correctedOriginTime)}}},3738:(e,t,r)=>{"use strict";r.d(t,{He:()=>i,Kp:()=>s,Lc:()=>d,Rz:()=>u,TZ:()=>n,bD:()=>o,d3:()=>a,jx:()=>l,uP:()=>c});const n=r(860).K7.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,d="fn"+s,u="pushState",l=1e3},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>o});var n=r(7836),i=r(1687);class o{constructor(e,t){this.agentIdentifier=e,this.ee=n.ee.get(e),this.featureName=t,this.blocked=!1}deregisterDrain(){(0,i.x3)(this.agentIdentifier,this.featureName)}}},7767:(e,t,r)=>{"use strict";r.d(t,{V:()=>o});var n=r(9417),i=r(6154);const o=e=>i.RI&&!0===(0,n.gD)(e,"privacy.cookies_enabled")},425:(e,t,r)=>{"use strict";r.d(t,{j:()=>P});var n=r(860),i=r(2555),o=r(3371),a=r(9908),s=r(7836),c=r(1687),d=r(5289),u=r(6154),l=r(944),f=r(3969),h=r(384),g=r(6344);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start",g.G4.RECORD,g.G4.PAUSE,"log","wrapLogger"],m=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(1863),b=r(2614),y=r(993),R=r(3785),x=r(2646),w=r(3434);function T(e,t,r,n){if("object"!=typeof t||!t||"string"!=typeof r||!r||"function"!=typeof t[r])return(0,l.R)(29);const i=function(e){return(e||s.ee).get("logger")}(e),o=(0,w.YM)(i),a=new x.y(s.P);return a.level=n.level,a.customAttributes=n.customAttributes,o.inPlace(t,[r],"wrap-logger-",a),i}function A(){const e=(0,h.pV)();p.forEach((t=>{e[t]=(...r)=>function(t,...r){let n=[];return Object.values(e.initializedAgents).forEach((e=>{e&&e.api?e.exposed&&e.api[t]&&n.push(e.api[t](...r)):(0,l.R)(38,t)})),n.length>1?n:n[0]}(t,...r)}))}const E={};var S=r(9417),_=r(5603),O=r(5284);const N=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let I=!1;function P(e,t={},p,x){let{init:w,info:P,loader_config:j,runtime:C={},exposed:k=!0}=t;C.loaderType=p;const H=(0,h.pV)();P||(w=H.init,P=H.info,j=H.loader_config),(0,S.xN)(e.agentIdentifier,w||{}),(0,_.a)(e.agentIdentifier,j||{}),P.jsAttributes??={},u.bv&&(P.jsAttributes.isWorker=!0),(0,i.x1)(e.agentIdentifier,P);const D=(0,S.D0)(e.agentIdentifier),L=[P.beacon,P.errorBeacon];I||(D.proxy.assets&&(N(D.proxy.assets),L.push(D.proxy.assets)),D.proxy.beacon&&L.push(D.proxy.beacon),A(),(0,h.US)("activatedFeatures",O.B),e.runSoftNavOverSpa&&=!0===D.soft_navigations.enabled&&D.feature_flags.includes("soft_nav")),C.denyList=[...D.ajax.deny_list||[],...D.ajax.block_internal?L:[]],C.ptid=e.agentIdentifier,(0,o.V)(e.agentIdentifier,C),e.ee=s.ee.get(e.agentIdentifier),void 0===e.api&&(e.api=function(e,t,h=!1){t||(0,c.Ak)(e,"api");const p={};var x=s.ee.get(e),w=x.get("tracer");E[e]=b.g.OFF,x.on(g.G4.REPLAY_RUNNING,(t=>{E[e]=t}));var A="api-",S=A+"ixn-";function _(t,r,n,o){const a=(0,i.Vp)(e);return null===r?delete a.jsAttributes[t]:(0,i.x1)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),I(A,n,!0,o||null===r?"session":void 0)(t,r)}function O(){}p.log=function(e,{customAttributes:t={},level:r=y.p_.INFO}={}){(0,a.p)(f.xV,["API/log/called"],void 0,n.K7.metrics,x),(0,R.R)(x,e,t,r)},p.wrapLogger=(e,t,{customAttributes:r={},level:i=y.p_.INFO}={})=>{(0,a.p)(f.xV,["API/wrapLogger/called"],void 0,n.K7.metrics,x),T(x,e,t,{customAttributes:r,level:i})},m.forEach((e=>{p[e]=I(A,e,!0,"api")})),p.addPageAction=I(A,"addPageAction",!0,n.K7.genericEvents),p.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,o.f)(e).customTransaction=(r||"http://custom.transaction")+t,I(A,"setPageViewName",!0)()},p.setCustomAttribute=function(e,t,r=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return _(e,t,"setCustomAttribute",r);(0,l.R)(40,typeof t)}else(0,l.R)(39,typeof e)},p.setUserId=function(e){if("string"==typeof e||null===e)return _("enduser.id",e,"setUserId",!0);(0,l.R)(41,typeof e)},p.setApplicationVersion=function(e){if("string"==typeof e||null===e)return _("application.version",e,"setApplicationVersion",!1);(0,l.R)(42,typeof e)},p.start=()=>{try{(0,a.p)(f.xV,["API/start/called"],void 0,n.K7.metrics,x),x.emit("manual-start-all")}catch(e){(0,l.R)(23,e)}},p[g.G4.RECORD]=function(){(0,a.p)(f.xV,["API/recordReplay/called"],void 0,n.K7.metrics,x),(0,a.p)(g.G4.RECORD,[],void 0,n.K7.sessionReplay,x)},p[g.G4.PAUSE]=function(){(0,a.p)(f.xV,["API/pauseReplay/called"],void 0,n.K7.metrics,x),(0,a.p)(g.G4.PAUSE,[],void 0,n.K7.sessionReplay,x)},p.interaction=function(e){return(new O).get("object"==typeof e?e:{})};const N=O.prototype={createTracer:function(e,t){var r={},i=this,o="function"==typeof t;return(0,a.p)(f.xV,["API/createTracer/called"],void 0,n.K7.metrics,x),h||(0,a.p)(S+"tracer",[(0,v.t)(),e,r],i,n.K7.spa,x),function(){if(w.emit((o?"":"no-")+"fn-start",[(0,v.t)(),i,o],r),o)try{return t.apply(this,arguments)}catch(e){const t="string"==typeof e?new Error(e):e;throw w.emit("fn-err",[arguments,this,t],r),t}finally{w.emit("fn-end",[(0,v.t)()],r)}}}};function I(e,t,r,i){return function(){return(0,a.p)(f.xV,["API/"+t+"/called"],void 0,n.K7.metrics,x),i&&(0,a.p)(e+t,[(0,v.t)(),...arguments],r?null:this,i,x),r?void 0:this}}function P(){r.e(891).then(r.bind(r,8778)).then((({setAPI:t})=>{t(e),(0,c.Ze)(e,"api")})).catch((e=>{(0,l.R)(27,e),x.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{N[e]=I(S,e,void 0,h?n.K7.softNav:n.K7.spa)})),p.setCurrentRouteName=h?I(S,"routeName",void 0,n.K7.softNav):I(A,"routeName",!0,n.K7.spa),p.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,a.p)(f.xV,["API/noticeError/called"],void 0,n.K7.metrics,x),(0,a.p)("err",[t,(0,v.t)(),!1,r,!!E[e]],void 0,n.K7.jserrors,x)},u.RI?(0,d.GG)((()=>P()),!0):P(),p}(e.agentIdentifier,x,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=k),I=!0}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>o,K7:()=>n,P3:()=>i});const n={ajax:"ajax",genericEvents:"generic_events",jserrors:"jserrors",logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.spa]:5,[n.ajax]:6,[n.sessionTrace]:7,[n.softNav]:8,[n.sessionReplay]:9,[n.logging]:10,[n.genericEvents]:11},o={[n.pageViewTiming]:"events",[n.ajax]:"events",[n.spa]:"events",[n.softNav]:"events",[n.metrics]:"jserrors",[n.jserrors]:"jserrors",[n.sessionTrace]:"browser/blobs",[n.sessionReplay]:"browser/blobs",[n.logging]:"browser/logs",[n.genericEvents]:"ins"}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({95:"nr-full-compressor",222:"nr-full-recorder",891:"nr-full"}[e]+"-1.273.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.273.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={891:"sha512-XUWwdreJqsqxh5S/aAOxUu1114NfRQYSryaHhqO5M6IL3XVq+3ffjf9PY2V6qmRrxNWNAh4sImRAD4pAfdKfpA==",222:"sha512-i7TQ77wmnVgAdCJZiR8bB+0BTLw/wvSUmfVoJFBCkBScfR1kOKYGx8gulU1X4V6dfHSK3mKM4hmvC+ns1Le77w==",95:"sha512-biCvF3roDZ4TGZuO5NRODqVvlgck8Vt8vffliYcIDI01NHa4LICLicmbuqsA9JLeFokT3Ze2/eARtEZndZ8irw=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},g=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={959:0,85:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,d=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);d<a.length;d++)o=a[d],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.273.0.PROD"]=self["webpackChunk:NRBA-1.273.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(944),t=i(6344),r=i(9566);class n{agentIdentifier;constructor(e=(0,r.LA)(16)){this.agentIdentifier=e}#e(t,...r){if("function"==typeof this.api?.[t])return this.api[t](...r);(0,e.R)(35,t)}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.G4.RECORD)}pauseReplay(){return this.#e(t.G4.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}log(e,t){return this.#e("log",e,t)}wrapLogger(e,t,r){return this.#e("wrapLogger",e,t,r)}}var o=i(860),a=i(9417);const s=Object.values(o.K7);function c(e){const t={};return s.forEach((r=>{t[r]=function(e,t){return!0===(0,a.gD)(t,"".concat(e,".enabled"))}(r,e)})),t}var d=i(425);var u=i(1687),l=i(4234),f=i(5289),h=i(6154),g=i(5270),p=i(7767),m=i(6389);class v extends l.W{constructor(e,t,r=!0){super(e.agentIdentifier,t),this.auto=r,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===e.init[this.featureName].autoStart&&(this.auto=!1),this.auto?(0,u.Ak)(e.agentIdentifier,t):this.ee.on("manual-start-all",(0,m.J)((()=>{(0,u.Ak)(e.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator(e)})))}importAggregator(t,r={}){if(this.featAggregate||!this.auto)return;let n;this.onAggregateImported=new Promise((e=>{n=e}));const a=async()=>{let a;try{if((0,p.V)(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(891).then(i.bind(i,6526));a=e(this.agentIdentifier)}}catch(t){(0,e.R)(20,t),this.ee.emit("internal-error",[t]),this.featureName===o.K7.sessionReplay&&this.abortHandler?.()}try{if(t.sharedAggregator)await t.sharedAggregator;else{t.sharedAggregator=i.e(891).then(i.bind(i,9337));const{EventAggregator:e}=await t.sharedAggregator;t.sharedAggregator=new e}if(!this.#t(this.featureName,a))return(0,u.Ze)(this.agentIdentifier,this.featureName),void n(!1);const{lazyFeatureLoader:e}=await i.e(891).then(i.bind(i,6103)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(t,r),n(!0)}catch(t){(0,e.R)(34,t),this.abortHandler?.(),(0,u.Ze)(this.agentIdentifier,this.featureName,!0),n(!1),this.ee&&this.ee.abort()}};h.RI?(0,f.GG)((()=>a()),!0):a()}#t(e,t){switch(e){case o.K7.sessionReplay:return(0,g.SR)(this.agentIdentifier)&&!!t;case o.K7.sessionTrace:return!!t;default:return!0}}}var b=i(6630);class y extends v{static featureName=b.T;constructor(e,t=!0){super(e,b.T,t),this.importAggregator(e)}}var R=i(384);var x=i(9908),w=i(2843),T=i(3878),A=i(782),E=i(1863);class S extends v{static featureName=A.T;constructor(e,t=!0){super(e,A.T,t),h.RI&&((0,w.u)((()=>(0,x.p)("docHidden",[(0,E.t)()],void 0,A.T,this.ee)),!0),(0,T.sp)("pagehide",(()=>(0,x.p)("winPagehide",[(0,E.t)()],void 0,A.T,this.ee))),this.importAggregator(e))}}var _=i(3969);class O extends v{static featureName=_.TZ;constructor(e,t=!0){super(e,_.TZ,t),this.importAggregator(e)}}var N=i(6774),I=i(3304);class P{constructor(e,t,r,n,i){this.name="UncaughtError",this.message="string"==typeof e?e:(0,I.A)(e),this.sourceURL=t,this.line=r,this.column=n,this.__newrelic=i}}function j(e){return H(e)?e:new P(void 0!==e?.message?e.message:e,e?.filename||e?.sourceURL,e?.lineno||e?.line,e?.colno||e?.col,e?.__newrelic)}function C(e){const t="Unhandled Promise Rejection";if(!e?.reason)return;if(H(e.reason))try{return e.reason.message=t+": "+e.reason.message,j(e.reason)}catch(t){return j(e.reason)}const r=j(e.reason);return r.message=t+": "+r?.message,r}function k(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new P(e.message,e.filename,e.lineno,e.colno,e.error.__newrelic);return t.name=SyntaxError.name,t}return H(e.error)?e.error:j(e)}function H(e){return e instanceof Error&&!!e.stack}class D extends v{static featureName=N.T;#r=!1;constructor(e,r=!0){super(e,N.T,r);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("internal-error",(e=>{this.abortHandler&&(0,x.p)("ierr",[j(e),(0,E.t)(),!0,{},this.#r],void 0,this.featureName,this.ee)})),this.ee.on(t.G4.REPLAY_RUNNING,(e=>{this.#r=e})),h.gm.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,x.p)("err",[C(e),(0,E.t)(),!1,{unhandledPromiseRejection:1},this.#r],void 0,this.featureName,this.ee)}),(0,T.jT)(!1,this.removeOnAbort?.signal)),h.gm.addEventListener("error",(e=>{this.abortHandler&&(0,x.p)("err",[k(e),(0,E.t)(),!1,{},this.#r],void 0,this.featureName,this.ee)}),(0,T.jT)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#n,this.importAggregator(e)}#n(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}var L=i(8990);let K=1;const M="nr@id";function U(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===h.gm?0:(0,L.I)(e,M,(function(){return K++}))}function V(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,I.A)(e).length}catch(e){return}}}var G=i(8139),F=i(7836),B=i(3434);const W={},z=["open","send"];function q(t){var r=t||F.ee;const n=function(e){return(e||F.ee).get("xhr")}(r);if(W[n.debugId]++)return n;W[n.debugId]=1,(0,G.u)(r);var i=(0,B.YM)(n),o=h.gm.XMLHttpRequest,a=h.gm.MutationObserver,s=h.gm.Promise,c=h.gm.setInterval,d="readystatechange",u=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],l=[],f=h.gm.XMLHttpRequest=function(t){const r=new o(t),a=n.context(r);try{n.emit("new-xhr",[r],a),r.addEventListener(d,(s=a,function(){var e=this;e.readyState>3&&!s.resolved&&(s.resolved=!0,n.emit("xhr-resolved",[],e)),i.inPlace(e,u,"fn-",y)}),(0,T.jT)(!1))}catch(t){(0,e.R)(15,t);try{n.emit("internal-error",[t])}catch(e){}}var s;return r};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",y)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,f),f.prototype=o.prototype,i.inPlace(f.prototype,z,"-xhr-",y),n.on("send-xhr-start",(function(e,t){g(e,t),function(e){l.push(e),a&&(p?p.then(b):c?c(b):(m=-m,v.data=m))}(t)})),n.on("open-xhr-start",g),a){var p=s&&s.resolve();if(!c&&!s){var m=1,v=document.createTextNode(m);new a(b).observe(v,{characterData:!0})}}else r.on("fn-end",(function(e){e[0]&&e[0].type===d||b()}));function b(){for(var e=0;e<l.length;e++)g(0,l[e]);l.length&&(l=[])}function y(e,t){return t}return n}var Z="fetch-",Y=Z+"body-",X=["arrayBuffer","blob","json","text","formData"],Q=h.gm.Request,J=h.gm.Response,ee="prototype";const te={};function re(e){const t=function(e){return(e||F.ee).get("fetch")}(e);if(!(Q&&J&&h.gm.fetch))return t;if(te[t.debugId]++)return t;function r(e,r,n){var i=e[r];"function"==typeof i&&(e[r]=function(){var e,r=[...arguments],o={};t.emit(n+"before-start",[r],o),o[F.P]&&o[F.P].dt&&(e=o[F.P].dt);var a=i.apply(this,r);return t.emit(n+"start",[r,e],a),a.then((function(e){return t.emit(n+"end",[null,e],a),e}),(function(e){throw t.emit(n+"end",[e],a),e}))})}return te[t.debugId]=1,X.forEach((e=>{r(Q[ee],e,Y),r(J[ee],e,Y)})),r(h.gm,"fetch",Z),t.on(Z+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(Z+"done",[null,r],n)}else t.emit(Z+"done",[e],n)})),t}var ne=i(7485),ie=i(5603);class oe{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,ie.o)(this.agentIdentifier);if(!t)return null;var n=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!n||!i)return null;var a=(0,r.ZF)(),s=(0,r.el)(),c=Date.now(),d={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(d.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),d.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,n,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(d.newrelicHeader=this.generateTraceHeader(a,s,c,n,i,o)),d}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof h.gm?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,I.A)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,a.gD)(this.agentIdentifier,"distributed_tracing")&&(r=(0,a.D0)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var n=0;n<r.allowed_origins.length;n++){var i=(0,ne.D)(r.allowed_origins[n]);if(e.hostname===i.hostname&&e.protocol===i.protocol&&e.port===i.port){t=!0;break}}return t}isDtEnabled(){var e=(0,a.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,a.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,a.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,a.gD)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var ae=i(9300),se=i(7295),ce=["load","error","abort","timeout"],de=ce.length,ue=(0,R.dV)().o.REQ,le=(0,R.dV)().o.XHR;class fe extends v{static featureName=ae.T;constructor(e,t=!0){super(e,ae.T,t),this.dt=new oe(e.agentIdentifier),this.handler=(e,t,r,n)=>(0,x.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};h.gm?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const r={status:t.responseStatus},n={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};he(r,t.name),this.handler("xhr",[r,n,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,o.K7.ajax)}}))}catch(e){}re(this.ee),q(this.ee),function(e,t,r,n){function i(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=w,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){A(t,e)}),(0,T.jT)(!1)),h.lR||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,T.jT)(!1))}function a(e){this.params={method:e[0]},he(this,e[1]),this.metrics={}}function s(t,r){e.loader_config.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",e.loader_config.xpid);var i=n.generateTracePayload(this.parsedOrigin);if(i){var o=!1;i.newrelicHeader&&(r.setRequestHeader("newrelic",i.newrelicHeader),o=!0),i.traceContextParentHeader&&(r.setRequestHeader("traceparent",i.traceContextParentHeader),i.traceContextStateHeader&&r.setRequestHeader("tracestate",i.traceContextStateHeader),o=!0),o&&(this.dt=i)}}function c(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=V(i);a&&(n.txSize=a)}this.startTime=(0,E.t)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<de;s++)r.addEventListener(ce[s],this.listener,(0,T.jT)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function u(e,t){var r=""+U(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function l(e,t){var r=""+U(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function f(){this.endTime=(0,E.t)()}function g(e,r){r instanceof le&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function p(e,r){r instanceof le&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function m(e,t,r){t instanceof le&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,E.t)()))}function v(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,E.t)()-this.xhrCbStart,this.onload,r],r)}function b(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&h.RI&&(t=""+h.gm.location.href):e[0]&&e[0].url?t=e[0].url:h.gm?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,ne.D)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=n.generateTracePayload(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,i)&&(this.dt=i);else{var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),s(o.headers,i)&&(this.dt=i),e.length>1?e[1]=o:e.push(o)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function y(e,t){this.params={},this.metrics={},this.startTime=(0,E.t)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof ue?r=i.url:h.gm?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),he(this,r);var o=(""+(i&&i instanceof ue&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=V(n.body)||0}function R(e,t){if(this.endTime=(0,E.t)(),this.params||(this.params={}),(0,se.iW)(this.params))return;let n;this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);const i={txSize:this.txSize,rxSize:n,duration:(0,E.t)()-this.startTime};r("xhr",[this.params,i,this.startTime,this.endTime,"fetch"],this,o.K7.ajax)}function w(e){const t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(let t=0;t<de;t++)e.removeEventListener(ce[t],this.listener,!1);t.aborted||(0,se.iW)(t)||(n.duration=(0,E.t)()-this.startTime,this.loadCazptureCalled||4!==e.readyState?null==t.status&&(t.status=0):A(this,e),n.cbTime=this.cbTime,r("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,o.K7.ajax))}}function A(e,r){e.params.status=r.status;var n=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?V(e.response):"text"===r||""===r||void 0===r?V(e.responseText):void 0}(r,e.lastSize);if(n&&(e.metrics.rxSize=n),e.sameOrigin){var i=r.getResponseHeader("X-NewRelic-App-Data");i&&((0,x.p)(_.rs,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,o.K7.metrics,t),e.params.cat=i.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",i),t.on("open-xhr-start",a),t.on("open-xhr-end",s),t.on("send-xhr-start",c),t.on("xhr-cb-time",d),t.on("xhr-load-added",u),t.on("xhr-load-removed",l),t.on("xhr-resolved",f),t.on("addEventListener-end",g),t.on("removeEventListener-end",p),t.on("fn-end",v),t.on("fetch-before-start",b),t.on("fetch-start",y),t.on("fn-start",m),t.on("fetch-done",R)}(e,this.ee,this.handler,this.dt),this.importAggregator(e)}}function he(e,t){var r=(0,ne.D)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}const ge={},pe=["pushState","replaceState"];function me(e){const t=function(e){return(e||F.ee).get("history")}(e);return!h.RI||ge[t.debugId]++||(ge[t.debugId]=1,(0,B.YM)(t).inPlace(window.history,pe,"-")),t}var ve=i(3738);const{He:be,bD:ye,d3:Re,Kp:xe,TZ:we,Lc:Te,uP:Ae,Rz:Ee}=ve;class Se extends v{static featureName=we;constructor(e,t=!0){super(e,we,t);if(!(0,p.V)(this.agentIdentifier))return void this.deregisterDrain();const r=this.ee;let n;me(r),this.eventsEE=(0,G.u)(r),this.eventsEE.on(Ae,(function(e,t){this.bstStart=(0,E.t)()})),this.eventsEE.on(Te,(function(e,t){(0,x.p)("bst",[e[0],t,this.bstStart,(0,E.t)()],void 0,o.K7.sessionTrace,r)})),r.on(Ee+Re,(function(e){this.time=(0,E.t)(),this.startPath=location.pathname+location.hash})),r.on(Ee+xe,(function(e){(0,x.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,o.K7.sessionTrace,r)}));try{n=new PerformanceObserver((e=>{const t=e.getEntries();(0,x.p)(be,[t],void 0,o.K7.sessionTrace,r)})),n.observe({type:ye,buffered:!0})}catch(e){}this.importAggregator(e,{resourceObserver:n})}}var _e=i(2614);class Oe extends v{static featureName=t.TZ;#i;#o;constructor(e,r=!0){let n;super(e,t.TZ,r),this.replayRunning=!1,this.#o=e;try{n=JSON.parse(localStorage.getItem("".concat(_e.H3,"_").concat(_e.uh)))}catch(e){}(0,g.SR)(e.agentIdentifier)&&this.ee.on(t.G4.RECORD,(()=>this.#a())),this.#s(n)?(this.#i=n?.sessionReplayMode,this.#c()):this.importAggregator(e),this.ee.on("err",(e=>{this.replayRunning&&(this.errorNoticed=!0,(0,x.p)(t.G4.ERROR_DURING_REPLAY,[e],void 0,this.featureName,this.ee))})),this.ee.on(t.G4.REPLAY_RUNNING,(e=>{this.replayRunning=e}))}#s(e){return e&&(e.sessionReplayMode===_e.g.FULL||e.sessionReplayMode===_e.g.ERROR)||(0,g.Aw)(this.agentIdentifier)}#d=!1;async#c(e){if(!this.#d){this.#d=!0;try{const{Recorder:t}=await Promise.all([i.e(891),i.e(222)]).then(i.bind(i,2496));this.recorder??=new t({mode:this.#i,agentIdentifier:this.agentIdentifier,trigger:e,ee:this.ee}),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording}catch(e){}this.importAggregator(this.#o,{recorder:this.recorder,errorNoticed:this.errorNoticed})}}#a(){this.featAggregate?this.featAggregate.mode!==_e.g.FULL&&this.featAggregate.initializeRecording(_e.g.FULL,!0):(this.#i=_e.g.FULL,this.#c(t.Qb.API),this.recorder&&this.recorder.parent.mode!==_e.g.FULL&&(this.recorder.parent.mode=_e.g.FULL,this.recorder.stopRecording(),this.recorder.startRecording(),this.abortHandler=this.recorder.stopRecording))}}var Ne=i(3333);class Ie extends v{static featureName=Ne.TZ;constructor(e,t=!0){super(e,Ne.TZ,t);const r=[e.init.page_action.enabled,e.init.performance.capture_marks,e.init.performance.capture_measures,e.init.user_actions.enabled];h.RI&&e.init.user_actions.enabled&&(Ne.Zp.forEach((e=>(0,T.sp)(e,(e=>(0,x.p)("ua",[e],void 0,this.featureName,this.ee)),!0))),Ne.qN.forEach((e=>(0,T.sp)(e,(e=>(0,x.p)("ua",[e],void 0,this.featureName,this.ee)))))),r.some((e=>e))?this.importAggregator(e):this.deregisterDrain()}}var Pe=i(993),je=i(3785);class Ce extends v{static featureName=Pe.TZ;constructor(e,t=!0){super(e,Pe.TZ,t);const r=this.ee;this.ee.on("wrap-logger-end",(function([e]){const{level:t,customAttributes:n}=this;(0,je.R)(r,e,n,t)})),this.importAggregator(e)}}new class extends n{constructor(t,r){super(r),h.gm?(this.features={},(0,R.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(y),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===o.K7.softNav)),(0,d.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=c(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>o.P3[e.featureName]-o.P3[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==o.K7.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===o.K7.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===o.K7.softNav)return;const n=function(e){switch(e){case o.K7.ajax:return[o.K7.jserrors];case o.K7.sessionTrace:return[o.K7.ajax,o.K7.pageViewEvent];case o.K7.sessionReplay:return[o.K7.sessionTrace];case o.K7.pageViewTiming:return[o.K7.pageViewEvent];default:return[]}}(r.featureName).filter((e=>!(e in this.features)));n.length>0&&(0,e.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)}))}catch(t){(0,e.R)(22,t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,R.Zm)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[y,S,Se,Oe,fe,O,D,Ie,Ce],loaderType:"pro"})})()})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="VfGWzOLDyrmGv8t-bb5sGqNb8fyIhHvgC7cfRSBeKSw" />
+
+    <title>
+      Adobe Fonts | Explore unlimited fonts
+    </title>
+
+    
+
+    <link rel="preload" href="https://prod.adobeccstatic.com/unav/1.1/UniversalNav.js" as="script" />
+    <link rel="preload" href="https://prod.adobeccstatic.com/unav/1.1/UniversalNav.css" as="style" />
+
+    <script>document.documentElement.classList.add('wf-loading');</script>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="cWor+6rbG6WS/RZHPxhxWvHR1jW+ZyTOq6pAw8mKQR9pJ93ybzeBV3TIz9RG5AbSxzbgUorOshhaXXFy1KyaWQ==" />
+
+    <link rel="stylesheet" media="all" href="https://afwebcdn.fonts.adobe.com/assets/spectrum-1eb29296060b731c01ac2e4fe37967ee0adc5cb2a4c7101876b4d65d3a694d3e.css" />
+
+    <script>
+  window.__cdn_packs_path__ = "https://afwebcdn.fonts.adobe.com/packs/";
+</script>
+
+    <script id="flipper-flags" type="application/json">
+      {"enableNewAddToWebProjectDialog":true,"enableUseModelV2":true,"enableFontDiscoverySearch":true}
+    </script>
+
+    <script src="https://use.typekit.net/uhb4nat.js" defer></script>
+<script id="dynamic-kit-config" type="application/json">
+  {"user":"tk","token":"UWiewzNGqfaXgl50sfTX597VqiNVO+VsJvzyIM5SabTjZinSwqaidRKypEX3LMfHdBUibNmD+PCRx/5yCXr4NA=="}
+</script>
+
+    <script src="https://afwebcdn.fonts.adobe.com/packs/js/runtime-407a55c519ba270b23aa.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/3469-72d429cb08f691bad4ae.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/7344-83c0eb55d735bfef02cb.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/5774-28a4518b4ec3efb42462.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/6839-0568d30c3df3dedf6717.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/2659-1a2363edd4655c03943f.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/9139-65b9111df68417fe52e4.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/1917-5f07ca12df8461106d30.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/3956-58b03d26af3bc113f01f.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/434-90e0ccf50717adb010cb.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/7581-b9240e55d1d2494bd23e.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/1930-91fa121063bb3cfcf503.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/7043-199cf9ab9f62af18ec25.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/1133-308c721cb9e4231acbea.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/6309-d12b6fea6b82f8d92bb8.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/6570-0a51806c57355ca06703.js" defer="defer"></script>
+<script src="https://afwebcdn.fonts.adobe.com/packs/js/home-d0426f2e59a305825fed.js" defer="defer"></script>
+    <script id="ims-config" type="application/json">
+  {"imsLibUrl":"https://auth.services.adobe.com/imslib/imslib.min.js?locale=en_US","imsOptions":{"clientId":"TypeKit2","globalNavSections":"[\"logo\", \"profile\"]","locale":"en_US","adobe_language_tag":"en","scope":"creative_cloud,openid,AdobeID,gnav,additional_info.roles,read_organizations,pps.read","ssoLoginUrl":"https://fonts.adobe.com/handle_sso_login","ssoLogoutUrl":"https://fonts.adobe.com/handle_sso_logout","tkRequestInfo":{"cookieName":"tk_iat_vpcproduction","currentTimeOnServer":1731819768,"isAfterLoginAttempt":false,"requestMethod":"GET","requestURI":"/","userHadExpiredAccessToken":false,"loggedInOnServer":false,"adobeProfileID":null,"isLegacyUser":null},"imsEnv":"prod"},"cucumberConfig":null}
+</script>
+<script type="text/javascript" src="https://auth.services.adobe.com/imslib/imslib.min.js?locale=en_US" defer>
+</script>
+
+
+      <meta name="description" content="Adobe Fonts partners with the world’s leading type foundries to bring thousands of beautiful fonts to designers every day.
+                    No need to worry about licensing, and you can use fonts from Adobe Fonts on the web or in desktop applications." />
+
+        <meta name="keywords" content="font, fonts, free fonts, typekit, type kit, font kit, web fonts, webfonts, font type, online fonts, free online font, internet fonts, free internet fonts, script font, text font, bold font, best fonts, cool font, free cool fonts, beautiful font, free beautiful fonts, sans fonts, serif fonts, free text font, real fonts, font library, fonts for free, font-face, variable fonts, responsive fonts, adobe, adobe fonts, sync fonts, download fonts, creative cloud, creative cloud fonts, search, image search, visual search, find fonts, discover fonts" />
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Adobe Fonts">
+<meta property="og:description" content="Adobe Fonts partners with the world’s leading type foundries to bring thousands of beautiful fonts to designers every day. No need to worry about licensing, and you can use fonts from Adobe Fonts on the web or in desktop applications.">
+<meta property="og:image" content="https://fonts.adobe.com/adobe-fonts-social.jpg">
+<meta property="og:image:type" content="image/jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://fonts.adobe.com/">
+<meta property="og:site_name" content="Adobe Fonts">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Adobe Fonts">
+<meta name="twitter:description" content="Adobe Fonts partners with the world’s leading type foundries to bring thousands of beautiful fonts to designers every day. No need to worry about licensing, and you can use fonts from Adobe Fonts on the web or in desktop applications.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@AdobeFonts">
+<meta name="twitter:creator" content="@AdobeFonts">
+<meta name="twitter:image" content="https://fonts.adobe.com/adobe-fonts-social.jpg">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Adobe Fonts",
+  "url": "https://fonts.adobe.com",
+  "logo": "https://fonts.adobe.com/adobe-fonts-google-search-icon.png",
+  "sameAs": [
+    "https://twitter.com/AdobeFonts"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://fonts.adobe.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://fonts.adobe.com/search?query={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+
+
+
+    <link rel="search"
+      href="/opensearch.xml"
+      type="application/opensearchdescription+xml"
+      title="Adobe Fonts" />
+
+    <link rel="canonical" href="https://fonts.adobe.com/" />
+
+      <script>
+    // Alloy will try to hide the body of the page if we don't have this setting explicitly set.
+    window.targetGlobalSettings = {
+      bodyHidingEnabled: false
+    };
+    /**
+     * If any property is needed for entire page load and user interaction hits then those properties needs to be updated in digitalData
+     * https://wiki.corp.adobe.com/pages/viewpage.action?pageId=2667172745
+     */
+    window.alloy_all = {
+      data: {
+        _adobe_corpnew: {
+          digitalData: {
+            page: {
+              pageInfo: {
+                language: 'en-US'
+              }
+            }
+          }
+        }
+      }
+    };
+
+    window.marketingtech = {
+      adobe: {
+        launch: {
+          url: 'https://assets.adobedtm.com/d4d114c60e50/a0e989131fd5/launch-5dd5dd2177e6.min.js',
+          controlPageLoad :true
+        },
+        alloy: {
+          edgeConfigId: '913eac4d-900b-45e8-9ee7-306216765cd2', 
+        },
+        target: true, 
+        audienceManager: true
+      }
+    };
+  </script>
+
+  <script defer src="https://www.adobe.com/marketingtech/main.standard.min.js"></script>
+
+  <script type="module" defer>
+    if (typeof window.marketingtech !== 'undefined' && window._satellite) {
+      window._satellite.track('pageload');
+    }
+  </script>
+
+  </head>
+
+  <body class="global-nav controller-static-pages action-home spectrum spectrum-Type spectrum-layout-body" ng-app="NeueApp">
+    <sp-theme color="lightest" scale="medium">
+      <af-new-relic-link-click-tracking>
+        <script id="user-pref-data" type="text/ng-data">
+          {}
+        </script>
+
+        <script id="suspended-account-data" type="text/ng-data">
+          {"hasSuspendedAccount":false}
+        </script>
+
+        <script id="filtered-family-list-sort-modes" type="text/ng-data">
+          [{"label":"Date favorited (newest to oldest)","value":"date_favorited_desc","filter":"your_fonts=favorite"},{"label":"Date favorited (oldest to newest)","value":"date_favorited_asc","filter":"your_fonts=favorite"},{"label":"Date added (newest to oldest)","value":"date_added_desc","filter":"your_fonts=added"},{"label":"Date added (oldest to newest)","value":"date_added_asc","filter":"your_fonts=added"},{"label":"Featured","value":"featured_rank"},{"label":"Name","value":"alpha"},{"label":"Newest","value":"newest"}]
+        </script>
+
+        <script id="user-info" type="application/json">
+          {"isLoggedIn":false,"hasPaidCreativeCloud":false}
+        </script>
+
+        <script id="font-discovery-config" type="application/json">
+          {"autocompleteUrl":"https://font-services.adobe.io/discover/search/autocomplete","apiKey":"TypeKit1"}
+        </script>
+
+        <script id="cached-library-urns" type="application/json">
+          []
+        </script>
+
+        <div class="spectrum spectrum--light">
+  <div class="section-notifications section-notifications--top"
+       ng-controller="NotificationController as notification"
+       ng-show="notification.hasMessages()"
+       ng-cloak>
+
+    
+
+
+    <div ng-repeat="message in notification.getMessages() track by message.id" ng-cloak>
+      <div class="section-notifications--top">
+        <div ng-class="['spectrum-Toast', notification.getToastClass(message)]" ng-style="{'background-color': message.bannerColor, 'border-color': message.bannerColor}"
+             ng-if="message.type === 'site_maintenance_banner'">
+          <svg class="spectrum-Icon spectrum-UIIcon-SuccessMedium spectrum-Toast-typeIcon" focusable="false" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Icon" transform="translate(-16 -15)">
+    <path id="Path_962708" data-name="Path 962708" d="M8.563,1.29.2,16.255A.5.5,0,0,0,.636,17H17.364a.5.5,0,0,0,.436-.744L9.436,1.29a.5.5,0,0,0-.872,0ZM10,14.75a.25.25,0,0,1-.25.25H8.25A.25.25,0,0,1,8,14.75v-1.5A.25.25,0,0,1,8.25,13h1.5a.25.25,0,0,1,.25.25Zm0-3a.25.25,0,0,1-.25.25H8.25A.25.25,0,0,1,8,11.75v-6a.25.25,0,0,1,.25-.25h1.5a.25.25,0,0,1,.25.25Z" transform="translate(16 15)" fill="#fff"></path>
+    <rect id="Frame" width="18" height="18" transform="translate(16 15)" fill="none"></rect>
+  </g>
+</svg>
+
+          </svg>
+          <div class="spectrum-Toast-content" style="position: inherit"><span ng-bind-html="message.text"></span></div>
+          <div class="spectrum-Toast-buttons">
+            <button ng-if="message.actionLink" ng-click="notification.handleActionClick(message)" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--quiet">
+              <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+            </button>
+          </div>
+        </div>
+
+        <div ng-class="['spectrum-Toast', notification.getToastClass(message)]"
+             ng-if="message.type === 'retired_family_banner' || message.type === 'retired_foundry_banner'"
+             data-id="retirement-notification">
+          <svg class="spectrum-Icon spectrum-UIIcon-InfoMedium spectrum-Toast-typeIcon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-InfoMedium"/>
+          </svg>
+          <div class="spectrum-Toast-content">
+            <div ng-if="message.retirementMessages">
+              <div ng-repeat="retired in message.retirementMessages">
+                <span>{{retired.name}} fonts are being removed from Adobe Fonts on {{retired.retirement_date}};</span>
+                <a href="{{retired.href}}">{{message.actionLabel}}</a>
+              </div>
+            </div>
+          </div>
+          <button ng-click="notification.handleNeutralTopNotificationClose(message)" class="spectrum-ClearButton spectrum-ClearButton--medium spectrum-ClearButton--overBackground">
+            <svg class="spectrum-Icon spectrum-UIIcon-CrossMedium" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-CrossMedium" />
+            </svg>
+          </button>
+        </div>
+
+        <div ng-class="['spectrum-Toast', notification.getToastClass(message)]"
+             ng-if="message.type === 'neutral' || message.type === 'font_game_banner'"
+             data-id="too-many-fonts-notification">
+          <svg class="spectrum-Icon spectrum-UIIcon-InfoMedium spectrum-Toast-typeIcon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-InfoMedium"/>
+          </svg>
+          <div class="spectrum-Toast-content"><span ng-bind-html="message.text"></span></div>
+          <div class="spectrum-Toast-buttons">
+            <button ng-if="message.actionLink" ng-click="notification.handleActionClick(message)" class="spectrum-Button spectrum-Button--overBackground">
+              <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+            </button>
+            <button ng-click="notification.handleNeutralTopNotificationClose(message)" class="spectrum-ClearButton spectrum-ClearButton--medium spectrum-ClearButton--overBackground">
+              <svg class="spectrum-Icon spectrum-UIIcon-CrossMedium" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-CrossMedium" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <header
+  id="sitewide-header"
+  class="af-focus-trappable"
+  ng-controller="MarketplaceHeaderController as marketplaceHeaderCtrl">
+
+  <script id="/user_info" type="text/ng-data">
+    {"activity_state":"new","adobe_profile_id":null,"days_since_sync_activity":-1,"plan":null,"logged_in_on_server":false,"logged_in_as_admin":false}
+  </script>
+
+  <a id="adobe-fonts-header__skip-link" href="#adobe-fonts-main-content">
+    Skip to main content
+  </a>
+
+  <af-navbar-header id="header-nav">
+      <af-universal-nav
+        id="universal-nav-container"
+        ansAppId="TypeKit1"
+        css="https://prod.adobeccstatic.com/unav/1.1/UniversalNav.css"
+        env="prod"
+        ims-client-id="TypeKit2"
+        js="https://prod.adobeccstatic.com/unav/1.1/UniversalNav.js"
+        locale="en_US"
+      >
+        <div id="universal-nav-target"></div>
+      </af-universal-nav>
+  </af-navbar-header>
+
+  <af-navbar-subnav
+    id="header-subnav"
+    ng-attr-showCoachmark="{{marketplaceHeaderCtrl.showCoachmark}}"
+    
+    sticky
+    centered-search
+  >
+
+      <af-search-dialog-trigger id="header-subnav__search-trigger" slot="nav-link">
+        <a id="header-subnav__search-link" href="/search" trigger>
+          <sp-icon-search></sp-icon-search>
+          <span>
+            Search
+          </span>
+        </a>
+      </af-search-dialog-trigger>
+
+    <span slot=nav-link>Home</span>
+
+      <a slot="nav-link" data-click-tracking-id="typekit.header.subnav.link-click" href="/fonts">Browse all</a>
+
+    <a slot="nav-link" data-click-tracking-id="typekit.header.subnav.link-click" href="/recommendations">Recommendations</a>
+    <a slot="nav-link" data-click-tracking-id="typekit.header.subnav.link-click" href="/collections">Font packs</a>
+    <a slot="nav-link" data-click-tracking-id="typekit.header.subnav.link-click" href="/foundries">Foundries</a>
+
+      <a slot="nav-link" data-click-tracking-id="typekit.header.subnav.link-click" href="/about">About</a>
+
+      <af-search-bar
+        id="header-search"
+        slot="center-search"
+
+          placeholder="Search by font names, designers, foundries, and keywords"
+
+
+          suggestions="[{&quot;name&quot;:&quot;looks like handwriting&quot;,&quot;type&quot;:&quot;suggestions&quot;},{&quot;name&quot;:&quot;fonts by Veronika Burian&quot;,&quot;type&quot;:&quot;suggestions&quot;},{&quot;name&quot;:&quot;Universal Thirst foundry&quot;,&quot;type&quot;:&quot;suggestions&quot;},{&quot;name&quot;:&quot;comic book text&quot;,&quot;type&quot;:&quot;suggestions&quot;}]"
+
+        rounded
+        highlightAutocomplete>
+      </af-search-bar>
+  </af-navbar-subnav>
+</header>
+
+
+        <main id="adobe-fonts-main-content" class="spectrum spectrum--light af-focus-trappable">
+
+          <form id="visual-search-upload-form" class="visual-search-form visual-search-main" enctype="multipart/form-data" action="/fonts/vs" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="UpBIXjPiRxHVS0rbxWSLhT2TM5zj59Ujl0tQ/X8Pe4xK3b5X9g7d4zN+k0i8mPwNC3QF+9dOQ/VmvGFMYimgyg==" autocomplete="off" />
+  <label>
+
+    <input type="file"
+           accept="image/*"
+           name="image"
+           class="visual-search-file-input"
+           tabindex="0"
+           aria-label="Upload a photo to scan for similar type">
+
+  </label>
+</form>
+<form id="visual-search-drag-and-drop-form" class="visual-search-drag-and-drop-form" enctype="multipart/form-data" action="/fonts/vs" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="nUdP1BGu5kYqwC/M0ifxItRleyPXBxISt8PMGE4pn9+FCrnd1EJ8tMz19l+r24aq4oJNROOuhMRGNP2pUw9EmQ==" autocomplete="off" />
+  <div class="visual-search-drop-zone visual-search-fullscreen">
+    <div class="visual-search-fullscreen__frame">
+      <a href="" title="Cancel search" class="visual-search-drop-zone__close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" height="12" width="12" class="close-icon"><path d="M12,9.7a.34.34,0,0,1-.08.21l-2,2a.31.31,0,0,1-.41,0L6,8.42l-3.5,3.5a.31.31,0,0,1-.41,0l-2-2a.31.31,0,0,1,0-.41L3.58,6,.08,2.5a.31.31,0,0,1,0-.41l2-2a.31.31,0,0,1,.41,0L6,3.58,9.5.08a.31.31,0,0,1,.41,0l2,2a.31.31,0,0,1,0,.41L8.42,6l3.5,3.5A.33.33,0,0,1,12,9.7Z"></path></svg>
+
+      </a>
+      <div class="text">
+        <div class="visual-search-illustration"><img alt="Scanning your file for similar type" src="https://afwebcdn.fonts.adobe.com/assets/svg/image-type-ecdcd82429f96249c09faadcba8cb2ef866fead025cd62f019d8d0385a04b79d.svg" /></div>
+        <span class="spectrum-Body filename"></span>
+        <span class="spectrum-Body--large visual-search-error__text"></span>
+        <span class="spectrum-Body visual-search-error__details"></span>
+        <span class="spectrum-Body--large loading-text">Scanning file — please wait</span>
+      </div>
+    </div>
+  </div>
+
+  <input type="file" accept="image/*" name="image" class="visual-search-file-input" id="visual-search-file-input-drag-and-drop">
+</form>
+<script id="/visual_search/i18n" type="application/json">
+  {"image_downsampler":{"file_format_not_supported":{"text":"File format is not supported","details":"Supported formats are gif, jpg, and png"},"file_could_not_be_processed":{"text":"File could not be processed","details":"Upload a new file of format gif, jpg, or png"},"file_is_too_large":{"text":"File is too large","details":"Maximum size is 5 megabytes"}},"visual_search":{"something_went_wrong":{"text":"Something went wrong","details":"Try uploading another file"},"uploading_multiple_files":{"text":"Uploading multiple files is not supported","details":"Try again with one file at a time"}}}
+</script>
+
+
+          
+
+
+  <script id="/preloaded_homepage_data" type="text/ng-data">
+    {"browse_by_classifications":[{"title":"Sans Serif","src":"https://afwebcdn.fonts.adobe.com/assets/home/browse_filter_cards/classification_ss-f9e9779e37a2ba0753a5ee9cd9ef3ad095439f82360d89b2728eff01d158c8b0.png","href":"/fonts?browse_mode=default\u0026filters=cl%3Ass"},{"title":"Serif","src":"https://afwebcdn.fonts.adobe.com/assets/home/browse_filter_cards/classification_se-c2249c8077c79b3638d7a3af705228ff9a4289dc4e3afbf2d9394d0ae456883b.png","href":"/fonts?browse_mode=default\u0026filters=cl%3Ase"},{"title":"Slab Serif","src":"https://afwebcdn.fonts.adobe.com/assets/home/browse_filter_cards/classification_sl-2a238612f22986df8ffac3bc20a90507bd8418f381b75ef920d2c22383b4e66d.png","href":"/fonts?browse_mode=default\u0026filters=cl%3Asl"},{"title":"Script","src":"https://afwebcdn.fonts.adobe.com/assets/home/browse_filter_cards/classification_sc-b11e46846a6a530335b0cefd811a4a1bf0b372e57dcda493958ff04601b04049.jpg","href":"/fonts?browse_mode=default\u0026filters=cl%3Asc"}],"browse_by_languages":[{"title":"Japanese","src":"https://afwebcdn.fonts.adobe.com/assets/home/browse_filter_cards/language_ja-faac1d4ed0d6a3ed0a028eca7513888e3965aec8708ebda583823047d1d15b44.jpg","href":"/fonts?languages=ja"},{"title":"Korean","src":"https://afwebcdn.fonts.adobe.com/assets/home/browse_filter_cards/language_ko-768b74831205dcd977a991d587844062a12ab9c3e45e3740c9086ab02b5b7b30.jpg","href":"/fonts?languages=ko"},{"title":"Arabic","src":"https://afwebcdn.fonts.adobe.com/assets/home/browse_filter_cards/language_ar-cbf74b3bf898e79fd3106d6795d37d95f31696e8f2ddbee0b61ea4bb347e5829.jpg","href":"/fonts?languages=ar"},{"title":"English","src":"https://afwebcdn.fonts.adobe.com/assets/home/browse_filter_cards/language_en-149e6c2889e8a4f9bcdfa3e09888f357d27b6bb2bbb1f584e716871f35798ecd.jpg","href":"/fonts?languages=en"}],"browse_by_tags":[{"title":"Comic","description":"Impactful fonts with a handwritten look or cartoon feel","src":"https://afwebcdn.fonts.adobe.com/assets/home/browse_filter_cards/tag_comic-81f74dea323459b351aeab5bae2dbec5b4468789cc573bd5abfcfd114f1d8de6.jpg","href":"/fonts?browse_mode=default\u0026tag=comic"},{"title":"Rough","description":"Type with rough edges and eroded looks","src":"https://afwebcdn.fonts.adobe.com/assets/home/browse_filter_cards/tag_rough-f9a06ece859a8fbcb3421c3d6c6270b933dd07015ed02c305f12082e2e8306d2.jpg","href":"/fonts?browse_mode=default\u0026tag=rough"},{"title":"Friendly","description":"Fonts with a welcoming and approachable feel","src":"https://afwebcdn.fonts.adobe.com/assets/home/browse_filter_cards/tag_friendly-c44880d359d92e3673ffe57b29fd578ccab79f4bcf7fc56fa135a874686b60fe.jpg","href":"/fonts?browse_mode=default\u0026tag=friendly"},{"title":"Futuristic","description":"Fonts reminiscent of digital technology and Sci-Fi movie lettering","src":"https://afwebcdn.fonts.adobe.com/assets/home/browse_filter_cards/tag_futuristic-14e5146c3216e2b38850593bf480228891ac8e31c8865c75dc0e022cff7f653b.jpg","href":"/fonts?browse_mode=default\u0026tag=futuristic"}]}
+  </script>
+
+  <script id="project_crossbar_data" type="application/json">
+    {"enableProjectCrossbar":true}
+  </script>
+
+    <script id="/recommendations/preloaded" type="text/ng-data">
+      {"familiesPerPage":4,"isPersonalized":false,"recommendationTypes":[{"key":"all","label":"All"}]}
+    </script>
+
+  <script id="/recommendations/i18n" type="text/ng-data">{"neue.fontpacks.sync_error_message":"An error occurred while trying to get font pack. Some fonts may not be activated. Please try again.","neue.fontpacks.unsync_error_message":"An error occurred while trying to deactivate font pack. Some fonts may not be deactivated. Please try again.","recommendations.activation_error":"An error occurred while trying to activate fonts. Some fonts may not be activated. Please try again.","recommendations.activation_success":"You’ve activated %{family}","recommendations.deactivation_error":"An error occurred while trying to deactivate fonts. Some fonts may not be deactivated. Please try again.","recommendations.deactivation_success":"You’ve deactivated %{family}","recommendations.family_card_foundry_subheading":"From %{foundry}"}</script>
+
+  <div id="home-crossbar" ng-controller="MarketplaceHomeController as homeCtrl">
+    <div class="spectrum-grid--fluid">
+
+      <div class="subscribe-section">
+    
+<h3 class="spectrum-Heading--subtitle1 homepage--browse-filters-title margin-top--xlarge" id="">
+  Enjoy unlimited access to more than 30,000 fonts today
+</h3>
+<div class="spectrum-grid-row margin-top--xsmall" id="">
+  <div class="spectrum-grid-col-xs-12">
+    <p class="spectrum-Body homepage--browse-filters-description">Not a subscriber yet? Find the right Creative Cloud plan for you</p>
+    <a href="https://www.adobe.com/creativecloud/starters.html"
+       class="spectrum-Button spectrum-Button--primary homepage--browse-all-button subscribe-section__sign-up-link add-outline-button"
+       data-analytics-id=""
+       aria-label="Learn more about getting unlimited access to more than 30,000 fonts today">
+      <span class="spectrum-Button-label">
+        Learn more
+      </span>
+    </a>
+  </div>
+</div>
+
+
+  <div class="spectrum-grid-row">
+      <div class="express-subscribe-section--banner">
+    <div class="express-subscribe-section--plans-image-wrapper">
+      <img class="express-subscribe-section--plans-image"
+            src="https://afwebcdn.fonts.adobe.com/assets/shared/express_desktopGA_fonts_promo_608x302-7725fa1ff105ec5fbd4807eac96fbc55150747e627b175e4312100acb7562d0e.png"
+            srcset="https://afwebcdn.fonts.adobe.com/assets/shared/express_desktopGA_fonts_promo_1216x604-85ea2eb17c651f6502c760f44f8293d4027ae5c5177d4e863ff55498ffcf5bba.png 1000w"
+            alt="A content creator using Adobe Express generative AI text effects to create a pop-up shop advertising video">
+    </div>
+    <div class="express-subscribe-section--info">
+      <h2 class="spectrum-Heading--subtitle1 subscribe-section--plans-title">
+        Stand out from the crowd.
+      </h2>
+      <p class="spectrum-Body subscribe-section--plans-description">
+        Turn your font dreams into reality. With generative AI text effects and over 30,000 fonts in Adobe Express, easily make stunning social posts, videos, flyers, and more.
+      </p>
+      <div class="subscribe-section--link-wrapper">
+        <!-- plans_link_class is for analytics purposes -->
+        <a class="spectrum-Button add-outline-button subscribe-section--express_GA_link"
+          href="https://www.adobe.com/express/?promoid=KZ6STTHL&amp;mv=other"
+          target="_blank"
+          aria-label="Try Adobe Express now">
+          Try now
+        </a>
+      </div>
+    </div>
+  </div>
+
+  </div>
+    <div class="subscribe-section--signup-section">
+      <div class="spectrum-grid-row subscribe-section--signup-box">
+        <div>
+          <p class="spectrum-Body--large subscribe-section--signup-text">
+            Sign up for a <strong>free</strong> Adobe ID and try out our basic library of over 1,000 fonts
+          </p>
+        </div>
+        <a class="subscribe-section--signup-link spectrum-Button spectrum-Button--cta subscribe-section--signup-button add-outline-button"
+            href="https://ims-na1.adobelogin.com/ims/authorize/v1?client_id=TypeKit2&amp;el=true&amp;idp_flow=create_account&amp;locale=en_US&amp;redirect_uri=https%3A%2F%2Ffonts.adobe.com%2Flogin%2Fsso%3Fback_to%3Dhttps%253A%252F%252Ffonts.adobe.com%252F&amp;response_type=code&amp;scope=creative_cloud%2Copenid%2CAdobeID%2Cgnav%2Cadditional_info.roles%2Cread_organizations%2Cpps.read"
+            aria-label="Sign up for a free Adobe ID and try out our basic library of over 1,000 fonts">
+          Sign up
+        </a>
+      </div>
+    </div>
+</div>
+
+
+      <!--We are enabling a A/B test to show CCX Templates at top for 25% of the logged in user, hence this block is duped-->
+      
+      
+<h3 class="spectrum-Heading--subtitle1 homepage--browse-filters-title margin-top--xlarge" id="">
+  Trending now
+</h3>
+<div class="spectrum-grid-row margin-top--xsmall" id="">
+  <div class="spectrum-grid-col-xs-12">
+    <p class="spectrum-Body homepage--browse-filters-description">Fonts of the moment</p>
+    <a href="/recommendations/trending"
+       class="spectrum-Button spectrum-Button--primary homepage--browse-all-button browse-by-trending__browse-all-link homepage-view-more-button add-outline-button"
+       data-analytics-id="trending_section"
+       aria-label="View more fonts that are trending now">
+      <span class="spectrum-Button-label">
+        View more
+      </span>
+    </a>
+  </div>
+</div>
+
+      <div class="spectrum-grid-row">
+        <div class="spectrum-grid-col-xs-12" ng-cloak>
+          <af-specimen-carousel id="home-trending-fonts" showShadow>
+          </af-specimen-carousel>
+        </div>
+      </div>
+
+      
+        
+<h3 class="spectrum-Heading--subtitle1 homepage--browse-filters-title margin-top--xlarge" id="">
+  New releases
+</h3>
+<div class="spectrum-grid-row margin-top--xsmall" id="">
+  <div class="spectrum-grid-col-xs-12">
+    <p class="spectrum-Body homepage--browse-filters-description">The latest fonts included with your subscription</p>
+    <a href="/recommendations/newest"
+       class="spectrum-Button spectrum-Button--primary homepage--browse-all-button browse-by-newest__browse-all-link homepage-view-more-button add-outline-button"
+       data-analytics-id="newest_section"
+       aria-label="View more of the latest fonts included with your subscription">
+      <span class="spectrum-Button-label">
+        View more
+      </span>
+    </a>
+  </div>
+</div>
+
+        <div class="spectrum-grid-row">
+          <div class="spectrum-grid-col-xs-12" ng-cloak>
+            <af-specimen-carousel id="home-newest-fonts" showShadow>
+            </af-specimen-carousel>
+          </div>
+        </div>
+
+      
+      
+<h3 class="spectrum-Heading--subtitle1 homepage--browse-filters-title margin-top--xlarge" id="">
+  Hidden gems
+</h3>
+<div class="spectrum-grid-row margin-top--xsmall" id="">
+  <div class="spectrum-grid-col-xs-12">
+    <p class="spectrum-Body homepage--browse-filters-description">Quality fonts you may have missed</p>
+    <a href="/recommendations/hidden_gems"
+       class="spectrum-Button spectrum-Button--primary homepage--browse-all-button browse-by-hidden-gems__browse-all-link homepage-view-more-button add-outline-button"
+       data-analytics-id="hidden_gems_section"
+       aria-label="View more hidden gems, quality fonts you may have missed">
+      <span class="spectrum-Button-label">
+        View more
+      </span>
+    </a>
+  </div>
+</div>
+
+      <div class="spectrum-grid-row">
+        <div class="spectrum-grid-col-xs-12" ng-cloak>
+          <af-specimen-carousel id="home-hidden-gems-fonts" showShadow>
+          </af-specimen-carousel>
+        </div>
+      </div>
+
+      
+      <h3 class="spectrum-Heading--subtitle1 margin-top--xlarge homepage__section-title">
+        Simplified licensing
+      </h3>
+
+      <div class="spectrum-grid-row margin-top--xsmall">
+        <div class="spectrum-grid-col-xs-12">
+          <p class="spectrum-Body homepage__section-description">
+            The full Adobe Fonts library can be used for both personal and commercial projects
+          </p>
+        </div>
+      </div>
+      <div class="spectrum-grid-row">
+        <div class="spectrum-grid-col-xs-12 spectrum-grid-col-sm-12 margin-left--small licensing-info">
+          <div class="spectrum-grid-row licensing-info-item-blocks licensing-info-item-blocks-no-border">
+            <div class="spectrum-grid-col-md-2 licensing-info-item-block">
+  <div class="spectrum-grid-row licensing-info-item-blocks-image">
+    <span class="licensing-info-item-blocks-design_projects"></span>
+  </div>
+  <h2 class="spectrum-grid-row licensing-info-item-blocks-heading">Design Projects</h2>
+  <h2 class="spectrum-grid-row licensing-info-item-blocks-subtext_design">Create images or vector artwork, including logos</h2>
+</div>
+<div class="spectrum-grid-col-md-2 licensing-info-item-block_website licensing-info-item-block">
+    <span class="spectrum-grid-row licensing-info-item-blocks-image">
+      <span class="licensing-info-item-blocks-website_publishing"></span>
+    </span>
+  <h2 class="spectrum-grid-row licensing-info-item-blocks-heading">Website Publishing</h2>
+  <h2 class="spectrum-grid-row licensing-info-item-blocks-subtext_website">Create a Web Project to add any font from our service to your website</h2>
+</div>
+<div class="spectrum-grid-col-md-2 licensing-info-item-block">
+    <span class="spectrum-grid-row licensing-info-item-blocks-image">
+      <span class="licensing-info-item-blocks-pdfs"></span>
+    </span>
+  <h2 class="spectrum-grid-row licensing-info-item-blocks-heading">PDFs</h2>
+  <h2 class="spectrum-grid-row licensing-info-item-blocks-subtext">Embed fonts in PDFs for viewing and printing</h2>
+</div>
+<div class="spectrum-grid-col-md-2 licensing-info-item-block_video licensing-info-item-block">
+    <span class="spectrum-grid-row licensing-info-item-blocks-image">
+      <span class="licensing-info-item-blocks-video"></span>
+    </span>
+  <h2 class="spectrum-grid-row licensing-info-item-blocks-heading">Video and Broadcast</h2>
+  <h2 class="spectrum-grid-row licensing-info-item-blocks-subtext">Use fonts to create in-house or commercial video content</h2>
+</div>
+<div class="spectrum-grid-col-md-2 licensing-info-item-block">
+    <span class="spectrum-grid-row licensing-info-item-blocks-image">
+      <span class="licensing-info-item-blocks-add-more"></span>
+    </span>
+  <h2 class="spectrum-grid-row licensing-info-item-blocks-heading">And more…</h2>
+  <h2 class="spectrum-grid-row licensing-info-item-blocks-subtext">
+    Visit the Adobe Fonts Licensing &nbsp;<a class="spectrum-Link licensing-faq-link add-outline" target="_blank" href="https://helpx.adobe.com/fonts/user-guide.html/fonts/using/font-licensing.ug.html" aria-label="Frequently Asked Questions">FAQ</a> for full details
+  </h2>
+</div>
+
+          </div>
+        </div>
+      </div>
+
+      
+        <h3 class="spectrum-Heading--subtitle1 homepage--browse-filters-title">
+  Meet the type community
+</h3>
+<div class="spectrum-grid-row">
+  <div class="spectrum-grid-col-sm-3 homepage--browse-filter-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-cloak>
+    <af-browse-filter-card
+      title="Latest on the blog"
+      description="Everything new for fonts in Creative Cloud"
+      href="https://blog.adobe.com/en/topics/typography"
+      src="https://afwebcdn.fonts.adobe.com/assets/home/a_closer_look/blog-c5f5cc855762b147f97b3d56183fd78257718a644f46881fe66e4e7761ddb380.jpg">
+    </af-browse-filter-card>
+  </div>
+  <div class="spectrum-grid-col-sm-3 homepage--browse-filter-card-wrapper homepage--closer-look-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-cloak>
+    <af-browse-filter-card
+      title="Featured Foundries"
+      description="A showcase of the foundries that contribute to Adobe Fonts"
+      href="/foundries"
+      src="https://afwebcdn.fonts.adobe.com/assets/home/a_closer_look/featured_foundry-109a9a6a738ae350a4ca2f493598377a6cc0e37d641edca595b2ddc39cce694b.jpg">
+    </af-browse-filter-card>
+  </div>
+  <div class="spectrum-grid-col-sm-3 homepage--browse-filter-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-cloak>
+    <af-browse-filter-card
+      title="Explore by designer"
+      description="Meet the individuals behind the type"
+      href="/designers"
+      src="https://afwebcdn.fonts.adobe.com/assets/home/a_closer_look/designer-37cab363fd4a9ca44efe217d15545b1ad642eadc8d65f11faffa147dc2f6bb33.jpg">
+    </af-browse-filter-card>
+  </div>
+  <div class="spectrum-grid-col-sm-3 homepage--browse-filter-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-cloak>
+    <af-browse-filter-card
+      title="Adobe Fonts on Behance"
+      description="Catch up on our livestream featuring typography experts"
+      href="https://www.behance.net/adobefonts/livestreams"
+      src="https://afwebcdn.fonts.adobe.com/assets/home/a_closer_look/behance-5b9f254e56ad3051f8d1982dd6ce5d7c578cc9a68872f87564ce59707e5f4c1e.jpg">
+    </af-browse-filter-card>
+  </div>
+
+</div>
+
+
+      
+      <div class="spectrum-grid-row">
+        <div class="spectrum-grid-col-xs-12">
+          <div class="homepage--licensing-section">
+            <div class="homepage--banner-section-text">
+              <h3 class="spectrum-Heading--subtitle1 homepage--banner-section-heading">Over 30,000 fonts</h3>
+              <p class="spectrum-Body homepage--banner-section-description">Still haven&#39;t found what you are looking for? Quickly find the fonts you need with our classification and language support filters</p>
+              <a href="/fonts"
+                 class="spectrum-Button spectrum-Button--primary homepage--banner-Button add-outline-button"
+                 aria-label="Browse over 30,000 fonts">
+                <span class="spectrum-Button-label homepage--banner-Button-label">Browse</span>
+              </a>
+            </div>
+            <div>
+              <img alt="Font styles displayed in different languages, classifications and styles. Like horror, fun, rough, serif, Chinese, and Japanese" class="homepage--licensing-section-image" loading="lazy" src="https://afwebcdn.fonts.adobe.com/assets/home/banner_footer-3dbac458ef0192d781454624d5db4fc76bba1afae172a2d86e598c0ae46db84c.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+          <div class="section-notifications section-notifications--bottom"
+     ng-controller="NotificationController as notification"
+     ng-show="notification.hasMessages()"
+     ng-cloak>
+
+
+
+
+
+  <div ng-repeat="message in notification.getMessages() track by message.id" ng-cloak>
+    <div class="section-notifications--bottom-right">
+      <div class="spectrum-Toast spectrum-Toast--info" ng-if="message.type === 'info'">
+        <svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Toast-typeIcon" focusable="false" aria-hidden="true" ng-if="message.type ==='success'">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Icon" transform="translate(-16 -15)">
+    <path id="Path_1020669" data-name="Path 1020669" d="M9,1a8,8,0,1,0,8,8A8,8,0,0,0,9,1Zm5.333,4.54L8.009,13.67a.6.6,0,0,1-.438.231H7.535a.6.6,0,0,1-.424-.175l-3.893-3.9a.6.6,0,0,1,0-.849h0l.663-.662a.6.6,0,0,1,.849,0v0L7.4,10.99l5.257-6.755a.6.6,0,0,1,.842-.1h0l.728.569a.6.6,0,0,1,.105.84Z" transform="translate(16 15)" fill="#fff"></path>
+    <rect id="Frame" width="18" height="18" transform="translate(16 15)" fill="none"></rect>
+  </g>
+</svg>
+
+</svg>
+<svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Toast-typeIcon" focusable="false" aria-hidden="true" ng-if="message.type ==='info'">
+  <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 18 18" width="18">
+  <defs>
+    <style>
+      .fill {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <title>S InfoOutline 18 N</title>
+  <rect id="Canvas" fill="#ff13dc" opacity="0" width="18" height="18"></rect><path class="a" d="M10.075,6A1.075,1.075,0,1,1,9,4.925H9A1.075,1.075,0,0,1,10.075,6Zm.09173,6H10V8.2A.20005.20005,0,0,0,9.8,8H7.83324S7.25,8.01612,7.25,8.5c0,.48365.58325.5.58325.5H8v3H7.83325s-.58325.01612-.58325.5c0,.48365.58325.5.58325.5h2.3335s.58325-.01635.58325-.5C10.75,12.01612,10.16673,12,10.16673,12ZM9,.5A8.5,8.5,0,1,0,17.5,9,8.5,8.5,0,0,0,9,.5ZM9,15.6748A6.67481,6.67481,0,1,1,15.67484,9,6.67481,6.67481,0,0,1,9,15.6748Z"></path>
+</svg>
+
+</svg>
+<svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Toast-typeIcon" focusable="false" aria-hidden="true" ng-if="message.type ==='error'">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Icon" transform="translate(-16 -15)">
+    <path id="Path_962708" data-name="Path 962708" d="M8.563,1.29.2,16.255A.5.5,0,0,0,.636,17H17.364a.5.5,0,0,0,.436-.744L9.436,1.29a.5.5,0,0,0-.872,0ZM10,14.75a.25.25,0,0,1-.25.25H8.25A.25.25,0,0,1,8,14.75v-1.5A.25.25,0,0,1,8.25,13h1.5a.25.25,0,0,1,.25.25Zm0-3a.25.25,0,0,1-.25.25H8.25A.25.25,0,0,1,8,11.75v-6a.25.25,0,0,1,.25-.25h1.5a.25.25,0,0,1,.25.25Z" transform="translate(16 15)" fill="#fff"></path>
+    <rect id="Frame" width="18" height="18" transform="translate(16 15)" fill="none"></rect>
+  </g>
+</svg>
+
+</svg>
+<div class="spectrum-Toast-content"><span ng-bind-html="message.text"></span></div>
+<div class="spectrum-Toast-buttons">
+  <button ng-if="message.actionLink" ng-click="notification.handleActionClick(message)" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--outline">
+    <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+  </button>
+  <button ng-if="message.callbackAction" ng-click="message.callbackAction()" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--outline">
+    <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+  </button>
+  <button ng-click="notification.handleCloseClick(message)" class="spectrum-ClearButton spectrum-ClearButton--medium spectrum-ClearButton--overBackground">
+    <svg class="spectrum-Icon spectrum-UIIcon-CrossMedium" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CrossMedium" />
+    </svg>
+  </button>
+</div>
+
+      </div>
+      <div class="spectrum-Toast spectrum-Toast--success" ng-if="message.type ==='success'">
+        <svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Toast-typeIcon" focusable="false" aria-hidden="true" ng-if="message.type ==='success'">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Icon" transform="translate(-16 -15)">
+    <path id="Path_1020669" data-name="Path 1020669" d="M9,1a8,8,0,1,0,8,8A8,8,0,0,0,9,1Zm5.333,4.54L8.009,13.67a.6.6,0,0,1-.438.231H7.535a.6.6,0,0,1-.424-.175l-3.893-3.9a.6.6,0,0,1,0-.849h0l.663-.662a.6.6,0,0,1,.849,0v0L7.4,10.99l5.257-6.755a.6.6,0,0,1,.842-.1h0l.728.569a.6.6,0,0,1,.105.84Z" transform="translate(16 15)" fill="#fff"></path>
+    <rect id="Frame" width="18" height="18" transform="translate(16 15)" fill="none"></rect>
+  </g>
+</svg>
+
+</svg>
+<svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Toast-typeIcon" focusable="false" aria-hidden="true" ng-if="message.type ==='info'">
+  <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 18 18" width="18">
+  <defs>
+    <style>
+      .fill {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <title>S InfoOutline 18 N</title>
+  <rect id="Canvas" fill="#ff13dc" opacity="0" width="18" height="18"></rect><path class="a" d="M10.075,6A1.075,1.075,0,1,1,9,4.925H9A1.075,1.075,0,0,1,10.075,6Zm.09173,6H10V8.2A.20005.20005,0,0,0,9.8,8H7.83324S7.25,8.01612,7.25,8.5c0,.48365.58325.5.58325.5H8v3H7.83325s-.58325.01612-.58325.5c0,.48365.58325.5.58325.5h2.3335s.58325-.01635.58325-.5C10.75,12.01612,10.16673,12,10.16673,12ZM9,.5A8.5,8.5,0,1,0,17.5,9,8.5,8.5,0,0,0,9,.5ZM9,15.6748A6.67481,6.67481,0,1,1,15.67484,9,6.67481,6.67481,0,0,1,9,15.6748Z"></path>
+</svg>
+
+</svg>
+<svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Toast-typeIcon" focusable="false" aria-hidden="true" ng-if="message.type ==='error'">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Icon" transform="translate(-16 -15)">
+    <path id="Path_962708" data-name="Path 962708" d="M8.563,1.29.2,16.255A.5.5,0,0,0,.636,17H17.364a.5.5,0,0,0,.436-.744L9.436,1.29a.5.5,0,0,0-.872,0ZM10,14.75a.25.25,0,0,1-.25.25H8.25A.25.25,0,0,1,8,14.75v-1.5A.25.25,0,0,1,8.25,13h1.5a.25.25,0,0,1,.25.25Zm0-3a.25.25,0,0,1-.25.25H8.25A.25.25,0,0,1,8,11.75v-6a.25.25,0,0,1,.25-.25h1.5a.25.25,0,0,1,.25.25Z" transform="translate(16 15)" fill="#fff"></path>
+    <rect id="Frame" width="18" height="18" transform="translate(16 15)" fill="none"></rect>
+  </g>
+</svg>
+
+</svg>
+<div class="spectrum-Toast-content"><span ng-bind-html="message.text"></span></div>
+<div class="spectrum-Toast-buttons">
+  <button ng-if="message.actionLink" ng-click="notification.handleActionClick(message)" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--outline">
+    <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+  </button>
+  <button ng-if="message.callbackAction" ng-click="message.callbackAction()" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--outline">
+    <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+  </button>
+  <button ng-click="notification.handleCloseClick(message)" class="spectrum-ClearButton spectrum-ClearButton--medium spectrum-ClearButton--overBackground">
+    <svg class="spectrum-Icon spectrum-UIIcon-CrossMedium" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CrossMedium" />
+    </svg>
+  </button>
+</div>
+
+      </div>
+      <div class="spectrum-Toast spectrum-Toast--error adobe-fonts-error-message" ng-if="message.type ==='error'">
+        <svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Toast-typeIcon" focusable="false" aria-hidden="true" ng-if="message.type ==='success'">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Icon" transform="translate(-16 -15)">
+    <path id="Path_1020669" data-name="Path 1020669" d="M9,1a8,8,0,1,0,8,8A8,8,0,0,0,9,1Zm5.333,4.54L8.009,13.67a.6.6,0,0,1-.438.231H7.535a.6.6,0,0,1-.424-.175l-3.893-3.9a.6.6,0,0,1,0-.849h0l.663-.662a.6.6,0,0,1,.849,0v0L7.4,10.99l5.257-6.755a.6.6,0,0,1,.842-.1h0l.728.569a.6.6,0,0,1,.105.84Z" transform="translate(16 15)" fill="#fff"></path>
+    <rect id="Frame" width="18" height="18" transform="translate(16 15)" fill="none"></rect>
+  </g>
+</svg>
+
+</svg>
+<svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Toast-typeIcon" focusable="false" aria-hidden="true" ng-if="message.type ==='info'">
+  <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 18 18" width="18">
+  <defs>
+    <style>
+      .fill {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <title>S InfoOutline 18 N</title>
+  <rect id="Canvas" fill="#ff13dc" opacity="0" width="18" height="18"></rect><path class="a" d="M10.075,6A1.075,1.075,0,1,1,9,4.925H9A1.075,1.075,0,0,1,10.075,6Zm.09173,6H10V8.2A.20005.20005,0,0,0,9.8,8H7.83324S7.25,8.01612,7.25,8.5c0,.48365.58325.5.58325.5H8v3H7.83325s-.58325.01612-.58325.5c0,.48365.58325.5.58325.5h2.3335s.58325-.01635.58325-.5C10.75,12.01612,10.16673,12,10.16673,12ZM9,.5A8.5,8.5,0,1,0,17.5,9,8.5,8.5,0,0,0,9,.5ZM9,15.6748A6.67481,6.67481,0,1,1,15.67484,9,6.67481,6.67481,0,0,1,9,15.6748Z"></path>
+</svg>
+
+</svg>
+<svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Toast-typeIcon" focusable="false" aria-hidden="true" ng-if="message.type ==='error'">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Icon" transform="translate(-16 -15)">
+    <path id="Path_962708" data-name="Path 962708" d="M8.563,1.29.2,16.255A.5.5,0,0,0,.636,17H17.364a.5.5,0,0,0,.436-.744L9.436,1.29a.5.5,0,0,0-.872,0ZM10,14.75a.25.25,0,0,1-.25.25H8.25A.25.25,0,0,1,8,14.75v-1.5A.25.25,0,0,1,8.25,13h1.5a.25.25,0,0,1,.25.25Zm0-3a.25.25,0,0,1-.25.25H8.25A.25.25,0,0,1,8,11.75v-6a.25.25,0,0,1,.25-.25h1.5a.25.25,0,0,1,.25.25Z" transform="translate(16 15)" fill="#fff"></path>
+    <rect id="Frame" width="18" height="18" transform="translate(16 15)" fill="none"></rect>
+  </g>
+</svg>
+
+</svg>
+<div class="spectrum-Toast-content"><span ng-bind-html="message.text"></span></div>
+<div class="spectrum-Toast-buttons">
+  <button ng-if="message.actionLink" ng-click="notification.handleActionClick(message)" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--outline">
+    <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+  </button>
+  <button ng-if="message.callbackAction" ng-click="message.callbackAction()" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--outline">
+    <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+  </button>
+  <button ng-click="notification.handleCloseClick(message)" class="spectrum-ClearButton spectrum-ClearButton--medium spectrum-ClearButton--overBackground">
+    <svg class="spectrum-Icon spectrum-UIIcon-CrossMedium" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CrossMedium" />
+    </svg>
+  </button>
+</div>
+
+      </div>
+      <div class="spectrum-Toast adobe-fonts-warning-message" ng-if="message.type === 'warn'">
+        <svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Toast-typeIcon" focusable="false" aria-hidden="true" ng-if="message.type ==='success'">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Icon" transform="translate(-16 -15)">
+    <path id="Path_1020669" data-name="Path 1020669" d="M9,1a8,8,0,1,0,8,8A8,8,0,0,0,9,1Zm5.333,4.54L8.009,13.67a.6.6,0,0,1-.438.231H7.535a.6.6,0,0,1-.424-.175l-3.893-3.9a.6.6,0,0,1,0-.849h0l.663-.662a.6.6,0,0,1,.849,0v0L7.4,10.99l5.257-6.755a.6.6,0,0,1,.842-.1h0l.728.569a.6.6,0,0,1,.105.84Z" transform="translate(16 15)" fill="#fff"></path>
+    <rect id="Frame" width="18" height="18" transform="translate(16 15)" fill="none"></rect>
+  </g>
+</svg>
+
+</svg>
+<svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Toast-typeIcon" focusable="false" aria-hidden="true" ng-if="message.type ==='info'">
+  <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 18 18" width="18">
+  <defs>
+    <style>
+      .fill {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <title>S InfoOutline 18 N</title>
+  <rect id="Canvas" fill="#ff13dc" opacity="0" width="18" height="18"></rect><path class="a" d="M10.075,6A1.075,1.075,0,1,1,9,4.925H9A1.075,1.075,0,0,1,10.075,6Zm.09173,6H10V8.2A.20005.20005,0,0,0,9.8,8H7.83324S7.25,8.01612,7.25,8.5c0,.48365.58325.5.58325.5H8v3H7.83325s-.58325.01612-.58325.5c0,.48365.58325.5.58325.5h2.3335s.58325-.01635.58325-.5C10.75,12.01612,10.16673,12,10.16673,12ZM9,.5A8.5,8.5,0,1,0,17.5,9,8.5,8.5,0,0,0,9,.5ZM9,15.6748A6.67481,6.67481,0,1,1,15.67484,9,6.67481,6.67481,0,0,1,9,15.6748Z"></path>
+</svg>
+
+</svg>
+<svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Toast-typeIcon" focusable="false" aria-hidden="true" ng-if="message.type ==='error'">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Icon" transform="translate(-16 -15)">
+    <path id="Path_962708" data-name="Path 962708" d="M8.563,1.29.2,16.255A.5.5,0,0,0,.636,17H17.364a.5.5,0,0,0,.436-.744L9.436,1.29a.5.5,0,0,0-.872,0ZM10,14.75a.25.25,0,0,1-.25.25H8.25A.25.25,0,0,1,8,14.75v-1.5A.25.25,0,0,1,8.25,13h1.5a.25.25,0,0,1,.25.25Zm0-3a.25.25,0,0,1-.25.25H8.25A.25.25,0,0,1,8,11.75v-6a.25.25,0,0,1,.25-.25h1.5a.25.25,0,0,1,.25.25Z" transform="translate(16 15)" fill="#fff"></path>
+    <rect id="Frame" width="18" height="18" transform="translate(16 15)" fill="none"></rect>
+  </g>
+</svg>
+
+</svg>
+<div class="spectrum-Toast-content"><span ng-bind-html="message.text"></span></div>
+<div class="spectrum-Toast-buttons">
+  <button ng-if="message.actionLink" ng-click="notification.handleActionClick(message)" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--outline">
+    <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+  </button>
+  <button ng-if="message.callbackAction" ng-click="message.callbackAction()" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--outline">
+    <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+  </button>
+  <button ng-click="notification.handleCloseClick(message)" class="spectrum-ClearButton spectrum-ClearButton--medium spectrum-ClearButton--overBackground">
+    <svg class="spectrum-Icon spectrum-UIIcon-CrossMedium" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CrossMedium" />
+    </svg>
+  </button>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        </main>
+
+
+        
+
+        <footer class="spectrum-grid--fluid adobe-fonts-footer af-focus-trappable">
+  <script id="/locale_info" type="text/ng-data">
+    {"allLocales":[{"label":"Dansk","value":"da_DK"},{"label":"Deutsch","value":"de_DE"},{"label":"English","value":"en_US"},{"label":"Español","value":"es_ES"},{"label":"Français","value":"fr_FR"},{"label":"Italiano","value":"it_IT"},{"label":"Nederlands","value":"nl_NL"},{"label":"Norsk","value":"nb_NO"},{"label":"Português","value":"pt_BR"},{"label":"Suomi","value":"fi_FI"},{"label":"Svenska","value":"sv_SE"},{"label":"Русский","value":"ru_RU"},{"label":"日本語","value":"ja_JP"},{"label":"简体中文","value":"zh_CN"},{"label":"繁體中文","value":"zh_TW"},{"label":"한국어","value":"ko_KR"}],"selectedLocale":"en_US","countryCode":"US"}
+  </script>
+
+  <div class="spectrum-grid-row adobe-fonts-footer__top">
+    <div class="spectrum-grid-col-xs-12 spectrum-grid-col-sm-4">
+      <a href="/" aria-label="Typekit home">
+        <section class="adobe-fonts-footer__logo"></section>
+      </a>
+    </div>
+  </div>
+
+  <div class="spectrum-grid-row adobe-fonts-footer__middle">
+    <div class="spectrum-grid-col-xs-6 spectrum-grid-col-sm-2">
+      <h2 class="spectrum-Heading--subtitle3">
+        Browse
+      </h2>
+
+      <ul class="list--no-decoration adobe-fonts-footer__link_list">
+        <li>
+          <a href="/fonts" data-click-tracking-id="typekit.footer.link-click">
+            Fonts
+          </a>
+        </li>
+        <li>
+          <a href="/collections" data-click-tracking-id="typekit.footer.link-click">
+            Font Packs
+          </a>
+        </li>
+        <li>
+          <a href="/foundries" data-click-tracking-id="typekit.footer.link-click">
+            Foundries
+          </a>
+        </li>
+        <li>
+          <a href="/designers" data-click-tracking-id="typekit.footer.link-click">
+            Designers
+          </a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="/discovery"
+             data-click-tracking-id="typekit.footer.link-click">
+            Collections
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="spectrum-grid-col-xs-6 spectrum-grid-col-sm-2">
+      <h2 class="spectrum-Heading--subtitle3">
+        Support
+      </h2>
+      <ul class="list--no-decoration adobe-fonts-footer__link_list">
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="/help"
+             data-click-tracking-id="typekit.footer.link-click">
+            Help
+          </a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="http://status.typekit.com"
+             data-click-tracking-id="typekit.footer.link-click">
+            Status Blog
+          </a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="https://adobefonts.uservoice.com"
+             data-click-tracking-id="typekit.footer.link-click">
+            Send us feedback
+          </a>
+        </li>
+        
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="http://twitter.com/creativecloud"
+             data-click-tracking-id="typekit.footer.link-click">
+            Twitter
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="spectrum-grid-col-xs-6 spectrum-grid-col-sm-2">
+      <h2 class="spectrum-Heading--subtitle3">
+        About
+      </h2>
+      <ul class="list--no-decoration adobe-fonts-footer__link_list">
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="/about"
+             aria-label="About Adobe Fonts"
+             data-click-tracking-id="typekit.footer.link-click">
+            Adobe Fonts
+          </a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle" target="_blank" data-click-tracking-id="typekit.footer.link-click" href="https://blog.adobe.com/en/topics/typography">Blog</a>
+        </li>
+              </ul>
+    </div>
+    <div class="spectrum-grid-col-xs-6 spectrum-grid-col-sm-2">
+      <h2 class="spectrum-Heading--subtitle3">
+        ADOBE
+      </h2>
+      <ul class="list--no-decoration adobe-fonts-footer__link_list">
+        <li>
+          <a class="spectrum-Link--subtle" target="_blank" data-click-tracking-id="typekit.footer.link-click" href="https://www.adobe.com/creativecloud/photography.html">Photography</a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle" target="_blank" data-click-tracking-id="typekit.footer.link-click" href="https://www.adobe.com/creativecloud/design.html">Design</a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle" target="_blank" data-click-tracking-id="typekit.footer.link-click" href="https://www.adobe.com/creativecloud/illustration.html">Illustration</a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle" target="_blank" data-click-tracking-id="typekit.footer.link-click" href="https://www.adobe.com/creativecloud/video.html">Video</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="spectrum-grid-row">
+    <div class="spectrum-grid-col-xs">
+      <hr class="spectrum-Rule spectrum-Rule--small"/>
+    </div>
+  </div>
+
+  <div class="spectrum-grid-row adobe-fonts-footer__bottom">
+    <div class="adobe-fonts-footer__bottom-links">
+      <a class="spectrum-Body--small" href=http://www.adobe.com/misc/terms.html>
+        Terms of Use
+      </a>
+      <a class="spectrum-Body--small" href=http://www.adobe.com/privacy/typekit.html>
+        Privacy Policy
+      </a>
+      <a class="spectrum-Body--small" href=https://www.adobe.com/privacy/cookies.html>
+        Cookies
+      </a>
+      <div class="adobe-fonts-footer__evidon-notice-link">
+        <button aria-label="Cookie preferences" class="evidon-notice-link add-outline remove-border spectrum-Body--small">
+</button>
+
+<script>
+  window.fedsConfig = window.fedsConfig || {};
+  window.fedsConfig.privacy = window.fedsConfig.privacy || {};
+  window.fedsConfig.privacy.footerLinkSelector = '.evidon-notice-link';
+  window.fedsConfig.privacy.otDomainId = '7a5eb705-95ed-4cc4-a11d-0cc5760e93db-test';
+</script>
+
+  <script>
+    window.fedsConfig.privacy.otDomainId = '7a5eb705-95ed-4cc4-a11d-0cc5760e93db';
+  </script>
+
+<script src="https://www.adobe.com/etc.clientlibs/globalnav/clientlibs/base/privacy-standalone.js" defer="defer"></script>
+
+      </div>
+      <af-locale-switcher class="adobe-fonts-footer__locale_switcher">
+  <p>Language:</p>
+  <sp-action-menu
+    data-id="adobe-fonts-locale-switcher"
+    label="Language:"
+    placement="top"
+    quiet
+    value="en_US"
+  >
+    <span slot="label-only">English</span>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="da_DK"
+      >
+        Dansk
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="de_DE"
+      >
+        Deutsch
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="en_US"
+      >
+        English
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="es_ES"
+      >
+        Español
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="fr_FR"
+      >
+        Français
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="it_IT"
+      >
+        Italiano
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="nl_NL"
+      >
+        Nederlands
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="nb_NO"
+      >
+        Norsk
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="pt_BR"
+      >
+        Português
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="fi_FI"
+      >
+        Suomi
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="sv_SE"
+      >
+        Svenska
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="ru_RU"
+      >
+        Русский
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="ja_JP"
+      >
+        日本語
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="zh_CN"
+      >
+        简体中文
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="zh_TW"
+      >
+        繁體中文
+      </sp-menu-item>
+      <sp-icon-checkmark slot="icon"></sp-icon-checkmark>
+      <sp-menu-item
+        data-class="adobe-fonts-locale-switcher__locale-item-button"
+        value="ko_KR"
+      >
+        한국어
+      </sp-menu-item>
+  </sp-action-menu>
+</af-locale-switcher>
+
+      <a class="spectrum-Body--small" href=https://www.adobe.com/privacy/us-rights.html target="_blank">
+        Do not sell or share my personal information
+      </a>
+      <div class="adobe-fonts-footer__copyright">
+        <p class="spectrum-Body--small">
+          &copy; 2024 Adobe. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+        <script type="text/javascript">
+  var _gaq = _gaq || [];
+
+    _gaq.push(['_setAccount', 'UA-8850781-2']);
+    _gaq.push(['_trackPageview']);
+
+
+    // C0002 is "cookies used to analyze site usage to measure and improve performance"
+    if (window.adobePrivacy && window.adobePrivacy.activeCookieGroups().includes('C0002')) {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    }
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQ8HER6FVQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag('js', new Date());
+
+    gtag('config', 'G-BQ8HER6FVQ', {
+      'signed-in-user': false
+    });
+</script>
+
+
+        <script id="/font_filters_sidebar/i18n" type="text/ng-data">{"shared.adobe_fonts_filters_sidebar.number_of_styles_all":"All"}</script>
+
+        <script id="/fontpack_items/i18n" type="text/ng-data">{"neue.fontpacks.subscribe_to_activate_message":"Subscribe to Creative Cloud to activate these fonts.","neue.fontpacks.sync_error_message":"An error occurred while trying to get font pack. Some fonts may not be activated. Please try again.","neue.fontpacks.unsync_error_message":"An error occurred while trying to deactivate font pack. Some fonts may not be deactivated. Please try again.","neue.fontpacks.view_plans_action":"View Plans"}</script>
+
+        <script id="/neue/i18n" type="text/ng-data">{"frontend.browse_sample_text.characters_not_allowed":"Seeing lots of \u003cspan style=\"font-family: adobe-notdef;\"\u003exx\u003c/span\u003e? We show only a subset of characters on this browse page,\u003cbr/\u003ewhich is best explored using the text strings in our drop-down menu.\u003cbr/\u003eCheck the individual family pages to see the full character set and to set custom text.","kit_editor.kits.publish.update.project_eta_message":"Updated \"%{web_project_name}\". It may take a few minutes for the changes to be available across the entire font network.","neue.browse.family_card":{"fonts":"fonts","font":"font","entitled_font_count":{"one":"1 font","other":"%{count} fonts"},"fonts_with_cc":{"one":"1 font with CC","other":"%{count} fonts with CC"},"to_buy":{"one":"1 font to buy","other":"%{count} fonts to buy"},"fonts_active_count":{"one":"Deactivate 1 font","other":"Deactivate %{count} fonts"},"fonts_activated_action":{"one":"You have activated 1 font","other":"You have activated %{count} fonts"},"fonts_deactivated_action":{"one":"You have deactivated 1 font","other":"You have deactivated %{count} fonts"},"fonts_named_activated_action":{"one":"You’ve activated %{font}","other":"You’ve activated %{count} fonts"},"fonts_named_deactivated_action":{"one":"You’ve deactivated %{font}","other":"You’ve deactivated %{count} fonts"},"subscribe_to_cc":"Subscribe to Creative Cloud to activate these fonts.","view_plans_action":"View Plans","error_occurred_activating_some_fonts":"An error occurred while trying to activate all fonts. Some fonts may not be activated. Please try again.","error_occurred_deactivating_some_fonts":"An error occurred while trying to deactivate all fonts. Some fonts may still be activated. Please try again.","error_occurred_activating_fonts":"An error occurred while trying to activate fonts. Please try again.","error_occurred_deactivating_fonts":"An error occurred while trying to deactivate all fonts. Please try again.","error_occurred_adding_fonts":"An error occurred while trying to add fonts.","error_occurred_removing_fonts":"An error occurred while trying to remove fonts.","error_occurred_adding_some_fonts":"An error occurred while trying to add all fonts. Some fonts may not be added.","error_occurred_removing_some_fonts":"An error occurred while trying to remove all fonts. Some fonts may still be added.","error_occurred_adding_font":"An error occurred while trying to add a font.","error_occurred_removing_font":"An error occurred while trying to remove a font.","remove_family_confirmation_header":"Remove font family?","remove_font_confirmation_header":"Remove font?","remove_fonts_confirmation_header":"Remove fonts?","fonts_removed_success_message":"Fonts removed","single_font_removed_success_message":"Font removed","remove_family_confirmation_description":"Are you sure you want to remove this font family from all font menus? You can always add it back from the website or the Creative Cloud App.","remove_font_confirmation_description":"Are you sure you want to remove this font from all font menus? You can always add it back from the website or the Creative Cloud App.","remove_fonts_confirmation_description":"Are you sure you want to remove these fonts from all font menus? You can always add them back from the website or the Creative Cloud App.","activate_fonts":"Activate fonts","available_to_buy":"Available to buy","available_in_cc":"Available with CC","fonts_added_success_message":"Fonts available in your Adobe Apps. Manage them in the Creative Cloud App.","open_app":"Open app","try_again":"Try Again"},"neue.browse.favorites":{"add_favorite_success":"Added to Favorites","add_favorite_failure":"Error adding to favorites","remove_favorite_success":"Removed from Favorites","remove_favorite_failure":"Error removing from favorites","remove_favorite_undo":"Undo"},"neue.shared":{"more_actions":"More actions","browse_fonts":"Browse fonts","fonts":"%{number} fonts","font":"%{number} font","sort_alpha":"Font Name A-Z","sort_alpha_desc":"Font Name Z-A","sort_newest":"Newest (new to old)","sort_oldest":"Oldest (old to new)","show_more":"Show more","coachmarks":{"save_and_organize":{"title":"You can now save \u0026 organize fonts","description":"Click the heart to quickly save your favorite fonts, or save directly to a  library."},"more_than_fonts":{"title":"More than fonts","description":"Your library can hold assets you've added from across Creative Cloud. Manage your full library from Adobe Home / Libraries."},"organize_your_fonts":{"title":"Use libraries to organize your fonts","description":"Click the library icon to save your fonts directly to a library folder."},"single_action":"Got it"}}}</script>
+
+        <script id="/angular_templates/directives/adobe_fonts_auto_complete.html" type="text/ng-template"><div class="adobe-fonts-auto-complete"
+     ng-class="{
+       'adobe-fonts-auto-complete--has-results': adobeFontsAutoCompleteCtrl.results.length > 0
+     }"
+     ng-keydown="adobeFontsAutoCompleteCtrl.handleElementKeyDown($event)">
+  <input autocomplete="off"
+         type="text"
+         name="query"
+         class="spectrum-Textfield spectrum-Search-input adobe-fonts-auto-complete__search-field"
+         placeholder="{{adobeFontsAutoCompleteCtrl.inputPlaceholder}}"
+         ng-model="adobeFontsAutoCompleteCtrl.searchTerm"
+         ng-keyup="adobeFontsAutoCompleteCtrl.handleInputKeyup($event)">
+  <div class="adobe-fonts-auto-complete__results"
+       ng-show="adobeFontsAutoCompleteCtrl.isResultListVisible">
+    <span class="adobe-fonts-auto-complete__title"
+          ng-show="adobeFontsAutoCompleteCtrl.resultTitle">{{adobeFontsAutoCompleteCtrl.resultTitle}}</span>
+    <input type="submit"
+           value="{{adobeFontsAutoCompleteCtrl.resultSeeAllLabel}}"
+           class="adobe-fonts-auto-complete__submit spectrum-Link"
+           ng-show="adobeFontsAutoCompleteCtrl.resultSeeAllLabel">
+    <ul class="{{adobeFontsAutoCompleteCtrl.resultDivClasses}}">
+      <li class="adobe-fonts-auto-complete__item"
+          ng-repeat="result in adobeFontsAutoCompleteCtrl.results track by $index">
+        <a href="{{adobeFontsAutoCompleteCtrl.getSearchResultItemLink(result)}}"
+           ng-focus="adobeFontsAutoCompleteCtrl.handleResultFocus($index)">
+          {{result.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</script><script id="/angular_templates/directives/adobe_fonts_carousel.html" type="text/ng-template"><div class="adobe-fonts-carousel js_slider">
+  <button aria-label="Previous"
+          class="adobe-fonts-carousel__previous-button js_prev"
+          ng-hide="carouselCtrl.hidePreviousAndNextButtons"
+          tabindex="{{carouselCtrl.setPreviousTabIndex()}}"></button>
+  <button aria-label="Next"
+          class="adobe-fonts-carousel__next-button js_next"
+          ng-hide="carouselCtrl.hidePreviousAndNextButtons"
+          tabindex="{{carouselCtrl.setNextTabIndex()}}"></button>
+
+  <div class="adobe-fonts-carousel__frame js_frame">
+    <ng-transclude></ng-transclude>
+  </div>
+</div>
+
+<div class="adobe-fonts-carousel__controls" ng-show="carouselCtrl.shouldShowDotControl()">
+  <div class="adobe-fonts-carousel__dot"
+       ng-repeat="i in carouselCtrl.dotNumbers()"
+       ng-class="{'adobe-fonts-carousel__dot-active': carouselCtrl.isDotActive(i)}"
+       ng-click="carouselCtrl.selectDot(i)"
+       ng-show="carouselCtrl.shouldShowDot(i)">
+  </div>
+</div>
+<a class="spectrum-Link adobe-fonts-carousel__link" ng-href="{{carouselCtrl.getLinkHref()}}" ng-if="carouselCtrl.links">
+  {{carouselCtrl.getLinkName()}}
+</a>
+</script><script id="/angular_templates/directives/adobe_fonts_family_image_card.html" type="text/ng-template"><div class="adobe-fonts-family-image-card">
+  <div ng-class="fontImageCardCtrl.familyImageContainerClass()" class="adobe-fonts-family-image-card--container">
+    <img ng-src="{{fontImageCardCtrl.imageItem}}" ng-class="fontImageCardCtrl.familyImageClass()"
+         alt="Card displaying {{fontImageCardCtrl.familyName}} typeface in various styles" tabindex="-1"
+         >
+  </div>
+</div>
+</script><script id="/angular_templates/directives/adobe_fonts_family_image_card_list.html" type="text/ng-template"><div>
+  <div class="adobe-fonts-family-image-card-list spectrum-grid-row" ng-class="fontImageCardListController.cardListMargin()">
+    <ul class="slides js_slides spectrum-grid-col-xs-12" ng-class="fontImageCardListController.familyImageContainerClass()">
+      <li ng-repeat="image in fontImageCardListController.imageItemsData track by $index"
+          ng-class="fontImageCardListController.layoutClass()">
+        <adobe-fonts-family-image-card 
+                                      image-item="image[&#39;url_largest&#39;]"
+                                      family-name="fontImageCardListController.familyName"
+                                      item-size={{fontImageCardListController.imageItemsData.length}}
+                                      ng-class="fontImageCardListController.getImageClass(image)"
+                                      display-view={{fontImageCardListController.displayView}}>
+        </adobe-fonts-family-image-card>
+      </li>
+    </ul>
+  </div>
+</div>
+</script><script id="/angular_templates/directives/spectrum/adobe_fonts_filters_sidebar.html" type="text/ng-template"><div class="adobe-fonts-filters-sidebar adobe-fonts-filters-sidebar--expanded spectrum-Accordion" data-id="sidebar-filter-toggles">
+  <div class="adobe-fonts-filters-sidebar__section adobe-fonts-filters-sidebar__clear-filters_section">
+    <button class="spectrum-Button spectrum-Button--primary"
+            ng-disabled="!filtersSidebarCtrl.isClearFiltersEnabled()"
+            ng-click="filtersSidebarCtrl.clearFilters()">
+      <span class="spectrum-Button-label">
+        Clear Filters
+      </span>
+    </button>
+  </div>
+
+  <!-- Languages and writing systems menu -->
+  <div class="adobe-fonts-filters-sidebar__section spectrum-Accordion-item"
+      ng-class="{ 'is-open': filtersSidebarCtrl.isSectionOpen('languages') }">
+    <h2 class="spectrum-Accordion-itemHeader spectrum-Heading--subtitle1 adobe-fonts-filters-sidebar__section-header adobe-fonts-filters-sidebar__languages-and-writing-systems-menu-header"
+        ng-click="filtersSidebarCtrl.handleSectionToggleClick('languages')" data-id="language-filter">
+      <span>Languages and </span><span>Writing Systems</span>
+      <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator adobe-fonts-filters-sidebar__section-arrow"
+          focusable="false"
+          aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+      </svg>
+    </h2>
+
+    <div class="spectrum-Accordion-itemContent adobe-fonts-filters-sidebar__section-content">
+      <spectrum-dropdown
+        class="adobe-fonts-filters-sidebar__languages-and-writing-systems-menu"
+        prioritize="filtersSidebarCtrl.prioritizedLanguage"
+        menu-items="filtersSidebarCtrl.getLanguages()"
+        selected-value="filtersSidebarCtrl.selectedLanguage"
+        on-selected-item-change="filtersSidebarCtrl.handleSelectedLanguageModeChange()"
+        trigger-button-data-id="languages-and-writing-systems-button">
+        Select an option...
+      </spectrum-dropdown>
+    </div>
+  </div>
+
+  <!-- Library filters -->
+  <div class="adobe-fonts-filters-sidebar__section spectrum-Accordion-item"
+       ng-class="{ 'is-open': filtersSidebarCtrl.isSectionOpen('library') }"
+       ng-show="filtersSidebarCtrl.isLibrarySectionVisible()">
+    <h2 class="spectrum-Accordion-itemHeader spectrum-Heading--subtitle1 adobe-fonts-filters-sidebar__section-header"
+        ng-click="filtersSidebarCtrl.handleSectionToggleClick('library')" data-id="library-filter">
+      Library
+
+      <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator adobe-fonts-filters-sidebar__section-arrow"
+           focusable="false"
+           aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+      </svg>
+    </h2>
+
+    <!-- Paid fonts filter -->
+    <div class="spectrum-Accordion-itemContent adobe-fonts-filters-sidebar__section-content">
+      <label class="spectrum-Checkbox">
+        <input type="checkbox"
+               class="spectrum-Checkbox-input"
+               ng-checked="filtersSidebarCtrl.isShowPaidFontsSelected()"
+               ng-click="filtersSidebarCtrl.handleShowPaidFontsChange()">
+
+        <span class="spectrum-Checkbox-box">
+          <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark"
+               focusable="false"
+               aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+          </svg>
+        </span>
+
+        <span class="adobe-fonts-filters-sidebar__section-checkbox-label">
+          Show fonts available with Creative Cloud.
+        </span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Tags filters -->
+  <div class="adobe-fonts-filters-sidebar__section spectrum-Accordion-item"
+       ng-class="{ 'is-open': filtersSidebarCtrl.isSectionOpen('tags') }"
+       ng-show="filtersSidebarCtrl.isTagsSectionVisible()">
+    <h2 class="spectrum-Accordion-itemHeader spectrum-Heading--subtitle1 adobe-fonts-filters-sidebar__section-header"
+        ng-click="filtersSidebarCtrl.handleSectionToggleClick('tags')">
+      TAGS
+      <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator adobe-fonts-filters-sidebar__section-arrow"
+           focusable="false"
+           aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+      </svg>
+    </h2>
+
+    <div class="spectrum-Accordion-itemContent adobe-fonts-filters-sidebar__section-content
+                adobe-fonts-filters-sidebar__tags-filters-container">
+      <ul class="list--inline adobe-fonts-filters-sidebar__tags-filters-section spectrum-Tags">
+        <li ng-repeat="tag in filtersSidebarCtrl.getTags() | limitTo:filtersSidebarCtrl.getDisplayTagsCount()"
+            ng-class="{ selected: filtersSidebarCtrl.isTagSelected(tag.key) }">
+          <button class="adobe-fonts-filters-sidebar__tags-filter-button spectrum-Tags-item adobe-fonts-filters-sidebar__tags-filter-button-display-variation"
+                  data-id="tag-{{tag.key}}"
+                  ng-if="!filtersSidebarCtrl.shouldShowDisplayFont(tag)"
+                  ng-click="filtersSidebarCtrl.handleTagClick(tag.key)">
+            <span class="spectrum-Tags-item-label">
+              {{ tag.label }}
+            </span>
+          </button>
+          <button class="adobe-fonts-filters-sidebar__tags-filter-button spectrum-Tags-item adobe-fonts-filters-sidebar__tags-filter-button-display-variation"
+                  data-id="tag-{{tag.key}}"
+                  display-in-font="filtersSidebarCtrl.getFontDisplayData(tag)"
+                  ng-if="filtersSidebarCtrl.shouldShowDisplayFont(tag)"
+                  ng-click="filtersSidebarCtrl.handleTagClick(tag.key)">
+            <span class="spectrum-Tags-item-label">
+              {{ tag.label }}
+            </span>
+          </button>
+        </li>
+      </ul>
+      <span class="adobe-fonts-filters-sidebar__tags-filter-expand-button"
+            ng-if="filtersSidebarCtrl.shouldDisplayShowMore()"
+            ng-click="filtersSidebarCtrl.toggleShowMore()">
+        View {{filtersSidebarCtrl.getDisplayMoreCount()}} more
+      </span>
+      <span class="adobe-fonts-filters-sidebar__tags-filter-expand-button"
+            ng-if="filtersSidebarCtrl.shouldDisplayShowLess()"
+            ng-click="filtersSidebarCtrl.toggleShowMore()">
+            Show less
+      </span>
+    </div>
+  </div>
+
+  <!-- Filters based on data from the backend -->
+  <div class="adobe-fonts-filters-sidebar__section spectrum-Accordion-item"
+       ng-repeat="filterSection in filtersSidebarCtrl.getCurrentFilters()"
+       ng-class="{ 'is-open': filtersSidebarCtrl.isSectionOpen(filterSection.name) }">
+    <h2 class="spectrum-Accordion-itemHeader spectrum-Heading--subtitle1 adobe-fonts-filters-sidebar__section-header"
+        ng-click="filtersSidebarCtrl.handleSectionToggleClick(filterSection.name)">
+      {{ filterSection.label }}
+
+      <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator adobe-fonts-filters-sidebar__section-arrow"
+           focusable="false"
+           aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+      </svg>
+    </h2>
+
+    <div class="spectrum-Accordion-itemContent adobe-fonts-filters-sidebar__section-content">
+      <div class="adobe-fonts-filters-sidebar__styles-slider-section" data-id="number-of-styles-slider"
+           ng-if="filtersSidebarCtrl.shouldDisplayStylesSlider(filterSection)">
+        <spectrum-slider
+          allow-overlap="true"
+          end-value="filtersSidebarCtrl.getMaxStyles()"
+          label="Number of fonts in family"
+          max="26"
+          min="1"
+          on-change="filtersSidebarCtrl.handleStylesSliderChange($data)"
+          start-value="filtersSidebarCtrl.getMinStyles()"
+          step="1"
+          value-label="filtersSidebarCtrl.getStylesSliderLabel($data)"
+          variant="range"></spectrum-slider>
+      </div>
+
+      <ul class="list--inline adobe-fonts-filters-sidebar__language-mode-filters"
+          ng-if="!filtersSidebarCtrl.isGrouped(filterSection)">
+        <li class="adobe-fonts-filters-sidebar__language-mode-filter-item"
+            ng-repeat="filter in filterSection.values"
+            ng-class="{ selected: filtersSidebarCtrl.isFilterSelected(filter.key) }">
+          <button ng-attr-id="{{ filter.slug }}"
+                  class="adobe-fonts-filters-sidebar__filter-button"
+                  ng-click="filtersSidebarCtrl.handleFilterClick(filter.key)">
+            <svg class="adobe-fonts-filters-sidebar__icon--medium">
+              <use ng-attr-xlink:href="{{ filtersSidebarCtrl.getIconUrlForFilter(filter) }}"
+                   xlink:href=""
+                   class="adobe-fonts-filters-sidebar__icon"></use>
+            </svg>
+          </button>
+          <label for="{{ filter.slug }}">{{ filter.label }}</label>
+        </li>
+      </ul>
+
+      <ul class="list--no-decoration adobe-fonts-filters-sidebar__filter-groups"
+          ng-if="filtersSidebarCtrl.isGrouped(filterSection)">
+        <li class="adobe-fonts-filters-sidebar__filter-group adobe-fonts-filters-sidebar__filter-group--{{filter.key}}"
+            ng-repeat="filter in filterSection.filters">
+          <ul class="list--no-decoration">
+            <li class="adobe-fonts-filters-sidebar__filter-option"
+                ng-class="{ selected: filtersSidebarCtrl.isFilterSelected(value.key) }"
+                ng-repeat="value in filter.values">
+              <button ng-attr-id="{{ value.slug }}"
+                      ng-click="filtersSidebarCtrl.handleFilterClick(value.key)">
+                <svg class="adobe-fonts-filters-sidebar__icon--medium">
+                  <use ng-attr-xlink:href="{{ filtersSidebarCtrl.getIconUrlForFilter(value) }}" xlink:href=""></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+
+          <label class="spectrum-Radio-label">
+            {{ filter.label }}
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</script><script id="/angular_templates/directives/family_card.html" type="text/ng-template"><li class="adobe-fonts-family-card"
+    data-id="family-card"
+    data-family-slug="{{familyCard.family.slug}}"
+    data-library-elements="{{familyCard.getLibraryElements()}}">
+  <div ng-class="familyCard.getCardContainerClass()">
+  <a aria-label="View family {{familyCard.family.name}}"
+     ng-href="/fonts/{{familyCard.family.slug}}"
+     class="adobe-fonts-family-card--link"
+     ng-click="familyCard.handleFamilyCardClick()"
+     tabindex="0">
+  </a>
+  <div class="spectrum-grid-row">
+    <div class="spectrum-grid-col-xs-12 spectrum-grid-start-xs">
+      <div ng-if="familyCard.isCarouselVisible()" class="adobe-fonts-family-image-carousel">
+        <adobe-fonts-carousel class="adobe-fonts-carousel-container adobe-fonts-family-card__carousel-padding"
+                              layout="{{familyCard.viewType()}}"
+                              item-size={{familyCard.getSlideLengthForGrid()}}
+                              is-family-image-carousel="true">
+          <div class="adobe-fonts-family-image-card-list">
+            <ul class="slides js_slides spectrum-grid--fluid">
+              <li
+                ng-repeat="template in familyCard.getTemplates() track by $index"
+                class="adobe-fonts-family-image-card-view ccx-specimen-card-container">
+              </li>
+              <li ng-repeat="slide in familyCard.getSlidesForGrid() track by $index" class="adobe-fonts-family-image-card-view">
+                <a href="/fonts/{{familyCard.family.slug}}"
+                   ng-click="familyCard.handleFamilyCardClick()"
+                   tabindex="-1"
+                   aria-hidden="true">
+                  <div ng-if="!familyCard.isTextSlide(slide)">
+                    <adobe-fonts-family-image-card image-item="slide['url_largest']" item-size={{familyCard.getSlideLengthForGrid()}}
+                      ng-class="familyCard.getImageClass(slide)"
+                      family-name="familyCard.family.name"
+                      display-view="grid"></adobe-fonts-family-image-card>
+                  </div>
+                  <div ng-if="familyCard.isTextSlide(slide)">
+                    <div ng-class="familyCard.getTextDirectionClass()" class="adobe-fonts-family-card__sampletext-with-carousel-grid adobe-fonts-family-card__sampletext-with-carousel">
+  <p class="spectrum-Heading--display"
+      ng-style="familyCard.getExampleTextStyle()"
+      display-in-font="familyCard.getDisplayFont()">
+    {{familyCard.getExampleText()}}
+  </p>
+</div>
+
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </adobe-fonts-carousel>
+      </div>
+      <div ng-if="!familyCard.isCarouselVisible()">
+        <div ng-class="familyCard.getTextDirectionClass()" class="adobe-fonts-family-card__sampletext-with-carousel">
+  <p class="spectrum-Heading--display"
+      ng-style="familyCard.getExampleTextStyle()"
+      display-in-font="familyCard.getDisplayFont()">
+    {{familyCard.getExampleText()}}
+  </p>
+</div>
+
+      </div>
+    </div>
+  </div>
+  <div class="spectrum-grid-row">
+    <div class="spectrum-grid-col-xs-12 spectrum-grid-start-xs" ng-class="familyCard.getCardInfoClass()">
+      <div class="adobe-fonts-family-card__info">
+        <div class="adobe-fonts-family-card__family-name-and-icons">
+  <span class="adobe-fonts-family-card__family_name">{{familyCard.family.name}}</span>
+
+    <div class="adobe-fonts-family-card__icons">
+        <div class="adobe-fonts-family-card__variable-font-icon" ng-if="familyCard.hasVariableFonts()">
+            <div class="variable-font-icon">
+    <!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#6E6E6E;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#6E6E6E;}
+</style>
+<g>
+	<g id="I_C_O_N_S">
+		<path class="st0" d="M3.9,6.9L2.7,9.5c0,0,0,0-0.1,0H1.9c0,0-0.1,0,0-0.1l3.4-7.4c0.1-0.2,0.1-0.3,0.1-0.5c0,0,0-0.1,0-0.1h1    c0,0,0,0,0.1,0.1l0.9,7.9c0,0.1,0,0.1,0,0.1H6.7c-0.1,0-0.1,0-0.1-0.1L6.3,6.9H3.9z M6.2,6.1C6,4.4,5.9,2.8,5.9,2.3h0    c-0.1,0.5-1,2.5-1.6,3.8H6.2z"></path>
+		<path class="st0" d="M10.8,7.9l-0.5,1.5c0,0.1-0.1,0.1-0.2,0.1c0,0,0,0,0,0H8.4c-0.1,0-0.1-0.1-0.1-0.2l2.3-6.9    c0.1-0.3,0.1-0.6,0.1-0.9c0,0,0-0.1,0.1-0.1c0,0,0,0,0,0h2.4c0.1,0,0.1,0,0.1,0.1l2.7,7.8c0,0.1,0,0.1-0.1,0.1h-2    c-0.1,0-0.1,0-0.1-0.1l-0.5-1.5H10.8z M12.9,6.1c-0.2-0.8-0.6-1.9-0.8-2.8h0c-0.2,0.9-0.5,2-0.8,2.8H12.9z"></path>
+	</g>
+	<path class="st1" d="M16.9,13.7c0-0.1-0.1-0.2-0.2-0.2H8c-0.3-1.3-1.6-2.2-2.9-1.9c-1,0.2-1.7,1-1.9,1.9H1.3   c-0.1,0-0.2,0.1-0.2,0.2v0.5c0,0.1,0.1,0.2,0.2,0.2h1.8c0.3,1.3,1.6,2.2,2.9,1.9c1-0.2,1.7-1,1.9-1.9h8.7c0.1,0,0.2-0.1,0.2-0.2   V13.7z M5.5,15.5C4.7,15.5,4,14.8,4,14s0.7-1.5,1.5-1.5S7,13.2,7,14S6.4,15.5,5.5,15.5L5.5,15.5z"></path>
+</g>
+</svg>
+
+  </div>
+
+        </div>
+
+        <div class="adobe-fonts-family-card__navigate-fdp-icon">
+          <a class="spectrum-Link add-outline" aria-label="View family {{familyCard.family.name}}"
+            ng-href="/fonts/{{familyCard.family.slug}}">
+              <div class="navigate-fdp-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" id="Decorative_icon" data-name="Decorative icon" width="18" height="18" viewBox="0 0 18 18">
+  <rect id="Placement_Area" data-name="Placement Area" width="18" height="18" fill="red" opacity="0"></rect>
+  <g id="Icon">
+    <rect id="Canvas" width="18" height="18" fill="#464646" opacity="0"></rect>
+    <path id="Path_954697" data-name="Path 954697" d="M12,9a.994.994,0,0,1-.293.7l-3.991,3.99a1,1,0,1,1-1.436-1.386l.024-.024L9.59,9,6.3,5.715A1,1,0,0,1,7.691,4.28l.024.025,3.991,3.99A.994.994,0,0,1,12,9Z" fill="#464646"></path>
+  </g>
+</svg>
+
+</div>
+
+          </a>
+        </div>
+    </div>
+</div>
+
+<div ng-if="familyCard.hasUnsyncedFontpacks()" class="adobe-fonts-family-card__fontpack_info">
+  <div class="adobe-fonts-family-card__fontpack_container"
+       ng-repeat="fontpack in familyCard.family.unsynced_fontpacks">
+    <a class="adobe-fonts-family-card__fontpack_name"
+       ng-href="/collections/{{fontpack.slug}}">
+      {{fontpack.name}}
+    </a>
+    <span class="adobe-fonts-family-card__bullet">•</span>
+  </div>
+  <a class="adobe-fonts-family-card__view_family"
+     ng-href="/fonts/{{familyCard.family.slug}}">
+    View Family
+  </a>
+</div>
+
+<div ng-if="!familyCard.hasUnsyncedFontpacks()" class="adobe-fonts-family-card__foundry_info">
+  <span class="adobe-fonts-family-card__foundry_name">
+    {{familyCard.family.foundry.name}}
+  </span>
+  <span class="adobe-fonts-family-card__count_messages" ng-if="familyCard.getCountMessages().length > 0">
+    <span>{{familyCard.getCountMessages()}}</span>
+  </span>
+</div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="spectrum-grid-row adobe-fonts-family-card__info-bottom">
+    <div class="adobe-fonts-family-card__icons--container">
+      <div class="adobe-fonts-family-card__icons">
+        <af-favorite-button
+  class="favorite-toggle-icon"
+  aria-label="Save to Favorites"
+  aria-pressed="{{familyCard.family.favorite}}"
+  ng-click="familyCard.favoriteToggle($event)"
+  ng-attr-selected="{{familyCard.family.favorite ? true : undefined}}"
+></af-favorite-button>
+
+          <af-save-library-icon
+    class="library-icon"
+  ></af-save-library-icon>
+
+        
+      </div>
+    </div>
+
+      <div class="sync-family-button-container" ng-show="familyCard.isUseModelQuickMultiSyncAvailable()" ng-cloak>
+  <button aria-label="Add family {{familyCard.family.name}}"
+          class="spectrum-Button spectrum-Button--primary add-family-button add-outline-button"
+          ng-if="familyCard.isAddFamilyButtonAvailable()"
+          ng-click="familyCard.useModelSyncFamily()">
+  <span class="spectrum-Icon creative-cloud-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" id="icons" width="18" height="18" viewBox="0 -2 18 18">
+  <path id="_256" data-name=" 256" class="currentColor" d="M16.147,4.111A6.654,6.654,0,0,0,11.246,2,6.839,6.839,0,0,0,6.405,4.022c-.219-.02-.438-.04-.647-.04A5.756,5.756,0,0,0,0,9.711a5.9,5.9,0,0,0,1.614,4A5.687,5.687,0,0,0,5.758,15.5h5.488a6.745,6.745,0,0,0,4.9-11.389ZM5.658,14.539A4.753,4.753,0,1,1,8.806,6.232l.02.02,1.982,2.022a.844.844,0,0,1-.02,1.2.854.854,0,0,1-1.2-.02l-1.963-2a3.054,3.054,0,0,0-4.293.317A2.992,2.992,0,0,0,2.59,9.741,3.133,3.133,0,0,0,5.7,12.814h.388v.01a9.327,9.327,0,0,0,2.122,1.715Zm9.772-1.715a5.706,5.706,0,0,1-4.084,1.744,5.952,5.952,0,0,1-4.1-1.784l-2.61-2.607a.852.852,0,0,1,.01-1.2A.856.856,0,0,1,5.847,9l2.6,2.587a4.2,4.2,0,0,0,2.9,1.288,3.936,3.936,0,0,0,2.869-1.239,4.179,4.179,0,0,0,1.2-2.924,4.085,4.085,0,0,0-4.084-4.063A3.707,3.707,0,0,0,9.065,5.3c-.01-.01-.2-.129-.409-.258-.129-.079-.269-.159-.388-.218S7.79,4.587,7.581,4.5c-.05-.02-.12-.05-.15-.06h.01a5.556,5.556,0,0,1,3.885-1.486A5.777,5.777,0,0,1,17.113,8.71,5.845,5.845,0,0,1,15.43,12.824Z"></path>
+</svg>
+
+  </span>
+    <span class="spectrum-Button-label add-family-label">
+    Add Family
+  </span>
+  </button>
+
+  <button aria-label="Remove family {{familyCard.family.name}}"
+          class="spectrum-Button spectrum-Button--primary remove-family-button add-outline-button"
+          ng-if="familyCard.isRemoveButtonAvailable()"
+          ng-click="familyCard.useModelUnsyncFamily()">
+  <span class="spectrum-Icon creative-cloud-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" id="icons" width="18" height="18" viewBox="0 -2 18 18">
+  <path id="_256" data-name=" 256" class="currentColor" d="M16.147,4.111A6.654,6.654,0,0,0,11.246,2,6.839,6.839,0,0,0,6.405,4.022c-.219-.02-.438-.04-.647-.04A5.756,5.756,0,0,0,0,9.711a5.9,5.9,0,0,0,1.614,4A5.687,5.687,0,0,0,5.758,15.5h5.488a6.745,6.745,0,0,0,4.9-11.389ZM5.658,14.539A4.753,4.753,0,1,1,8.806,6.232l.02.02,1.982,2.022a.844.844,0,0,1-.02,1.2.854.854,0,0,1-1.2-.02l-1.963-2a3.054,3.054,0,0,0-4.293.317A2.992,2.992,0,0,0,2.59,9.741,3.133,3.133,0,0,0,5.7,12.814h.388v.01a9.327,9.327,0,0,0,2.122,1.715Zm9.772-1.715a5.706,5.706,0,0,1-4.084,1.744,5.952,5.952,0,0,1-4.1-1.784l-2.61-2.607a.852.852,0,0,1,.01-1.2A.856.856,0,0,1,5.847,9l2.6,2.587a4.2,4.2,0,0,0,2.9,1.288,3.936,3.936,0,0,0,2.869-1.239,4.179,4.179,0,0,0,1.2-2.924,4.085,4.085,0,0,0-4.084-4.063A3.707,3.707,0,0,0,9.065,5.3c-.01-.01-.2-.129-.409-.258-.129-.079-.269-.159-.388-.218S7.79,4.587,7.581,4.5c-.05-.02-.12-.05-.15-.06h.01a5.556,5.556,0,0,1,3.885-1.486A5.777,5.777,0,0,1,17.113,8.71,5.845,5.845,0,0,1,15.43,12.824Z"></path>
+</svg>
+
+  </span>
+    <span class="spectrum-Button-label">
+    Remove
+  </span>
+  </button>
+</div>
+<span class="upgrade-label"
+      ng-show="!familyCard.isUseModelQuickMultiSyncAvailable()">
+    Available with CC
+</span>
+
+  </div>
+</div>
+<div class="spectrum-grid-row" ng-if="familyCard.hasSimilarTo()">
+  <p class="spectrum-grid-col-xs-12">
+      Similar to
+      <span ng-repeat="font in familyCard.similarTo() track by $index">
+        <a ng-if="familyCard.similarToHasFile()" href="javascript:void(0)" ng-click="$event.preventDefault(); familyCard.download(font)">{{font.name}}</a>
+        <strong ng-if="!familyCard.similarToHasFile()">{{font}}</strong>
+        {{$last ? '' : ($index==familyCard.similarTo().length - 2) ? ' and ' : ', '}}
+      </span>
+  </p>
+</div>
+
+  <div class="adobe-fonts-family-card--wide-view spectrum-grid--fluid">
+  <div class="spectrum-grid-row">
+    <div class="adobe-fonts-family-card__info">
+      <a aria-label="View family {{familyCard.family.name}}"
+         href="/fonts/{{familyCard.family.slug}}"
+         ng-click="familyCard.handleFamilyCardClick()">
+        <div class="adobe-fonts-family-card__family-name-and-icons">
+  <span class="adobe-fonts-family-card__family_name">{{familyCard.family.name}}</span>
+
+</div>
+
+<div ng-if="familyCard.hasUnsyncedFontpacks()" class="adobe-fonts-family-card__fontpack_info">
+  <div class="adobe-fonts-family-card__fontpack_container"
+       ng-repeat="fontpack in familyCard.family.unsynced_fontpacks">
+    <a class="adobe-fonts-family-card__fontpack_name"
+       ng-href="/collections/{{fontpack.slug}}">
+      {{fontpack.name}}
+    </a>
+    <span class="adobe-fonts-family-card__bullet">•</span>
+  </div>
+  <a class="adobe-fonts-family-card__view_family"
+     ng-href="/fonts/{{familyCard.family.slug}}">
+    View Family
+  </a>
+</div>
+
+<div ng-if="!familyCard.hasUnsyncedFontpacks()" class="adobe-fonts-family-card__foundry_info">
+  <span class="adobe-fonts-family-card__foundry_name">
+    {{familyCard.family.foundry.name}}
+  </span>
+  <span class="adobe-fonts-family-card__count_messages" ng-if="familyCard.getCountMessages().length > 0">
+    <span>{{familyCard.getCountMessages()}}</span>
+  </span>
+</div>
+
+  <div class="adobe-fonts-family-card__icons">
+    <span><af-favorite-button
+  class="favorite-toggle-icon"
+  aria-label="Save to Favorites"
+  aria-pressed="{{familyCard.family.favorite}}"
+  ng-click="familyCard.favoriteToggle($event)"
+  ng-attr-selected="{{familyCard.family.favorite ? true : undefined}}"
+></af-favorite-button>
+</span>
+    <span>  <af-save-library-icon
+    class="library-icon"
+  ></af-save-library-icon>
+</span>
+    <span></span>
+  </div>
+
+  <div class="adobe-fonts-family-card__navigate-fdp-icon">
+    <a class="spectrum-Link add-outline" aria-label="View family {{familyCard.family.name}}"
+      ng-href="/fonts/{{familyCard.family.slug}}">
+        View Family
+    </a>
+  </div>
+
+      </a>
+    </div>
+
+    <div class="adobe-fonts-family-card__toggle-switch-section">
+        <div class="adobe-fonts-family-card__variable-font-icon" ng-if="familyCard.hasVariableFonts()">
+            <div class="variable-font-icon">
+    <!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#6E6E6E;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#6E6E6E;}
+</style>
+<g>
+	<g id="I_C_O_N_S">
+		<path class="st0" d="M3.9,6.9L2.7,9.5c0,0,0,0-0.1,0H1.9c0,0-0.1,0,0-0.1l3.4-7.4c0.1-0.2,0.1-0.3,0.1-0.5c0,0,0-0.1,0-0.1h1    c0,0,0,0,0.1,0.1l0.9,7.9c0,0.1,0,0.1,0,0.1H6.7c-0.1,0-0.1,0-0.1-0.1L6.3,6.9H3.9z M6.2,6.1C6,4.4,5.9,2.8,5.9,2.3h0    c-0.1,0.5-1,2.5-1.6,3.8H6.2z"></path>
+		<path class="st0" d="M10.8,7.9l-0.5,1.5c0,0.1-0.1,0.1-0.2,0.1c0,0,0,0,0,0H8.4c-0.1,0-0.1-0.1-0.1-0.2l2.3-6.9    c0.1-0.3,0.1-0.6,0.1-0.9c0,0,0-0.1,0.1-0.1c0,0,0,0,0,0h2.4c0.1,0,0.1,0,0.1,0.1l2.7,7.8c0,0.1,0,0.1-0.1,0.1h-2    c-0.1,0-0.1,0-0.1-0.1l-0.5-1.5H10.8z M12.9,6.1c-0.2-0.8-0.6-1.9-0.8-2.8h0c-0.2,0.9-0.5,2-0.8,2.8H12.9z"></path>
+	</g>
+	<path class="st1" d="M16.9,13.7c0-0.1-0.1-0.2-0.2-0.2H8c-0.3-1.3-1.6-2.2-2.9-1.9c-1,0.2-1.7,1-1.9,1.9H1.3   c-0.1,0-0.2,0.1-0.2,0.2v0.5c0,0.1,0.1,0.2,0.2,0.2h1.8c0.3,1.3,1.6,2.2,2.9,1.9c1-0.2,1.7-1,1.9-1.9h8.7c0.1,0,0.2-0.1,0.2-0.2   V13.7z M5.5,15.5C4.7,15.5,4,14.8,4,14s0.7-1.5,1.5-1.5S7,13.2,7,14S6.4,15.5,5.5,15.5L5.5,15.5z"></path>
+</g>
+</svg>
+
+  </div>
+
+        </div>
+        <div class="sync-family-button-container" ng-show="familyCard.isUseModelQuickMultiSyncAvailable()" ng-cloak>
+  <button aria-label="Add family {{familyCard.family.name}}"
+          class="spectrum-Button spectrum-Button--primary add-family-button add-outline-button"
+          ng-if="familyCard.isAddFamilyButtonAvailable()"
+          ng-click="familyCard.useModelSyncFamily()">
+  <span class="spectrum-Icon creative-cloud-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" id="icons" width="18" height="18" viewBox="0 -2 18 18">
+  <path id="_256" data-name=" 256" class="currentColor" d="M16.147,4.111A6.654,6.654,0,0,0,11.246,2,6.839,6.839,0,0,0,6.405,4.022c-.219-.02-.438-.04-.647-.04A5.756,5.756,0,0,0,0,9.711a5.9,5.9,0,0,0,1.614,4A5.687,5.687,0,0,0,5.758,15.5h5.488a6.745,6.745,0,0,0,4.9-11.389ZM5.658,14.539A4.753,4.753,0,1,1,8.806,6.232l.02.02,1.982,2.022a.844.844,0,0,1-.02,1.2.854.854,0,0,1-1.2-.02l-1.963-2a3.054,3.054,0,0,0-4.293.317A2.992,2.992,0,0,0,2.59,9.741,3.133,3.133,0,0,0,5.7,12.814h.388v.01a9.327,9.327,0,0,0,2.122,1.715Zm9.772-1.715a5.706,5.706,0,0,1-4.084,1.744,5.952,5.952,0,0,1-4.1-1.784l-2.61-2.607a.852.852,0,0,1,.01-1.2A.856.856,0,0,1,5.847,9l2.6,2.587a4.2,4.2,0,0,0,2.9,1.288,3.936,3.936,0,0,0,2.869-1.239,4.179,4.179,0,0,0,1.2-2.924,4.085,4.085,0,0,0-4.084-4.063A3.707,3.707,0,0,0,9.065,5.3c-.01-.01-.2-.129-.409-.258-.129-.079-.269-.159-.388-.218S7.79,4.587,7.581,4.5c-.05-.02-.12-.05-.15-.06h.01a5.556,5.556,0,0,1,3.885-1.486A5.777,5.777,0,0,1,17.113,8.71,5.845,5.845,0,0,1,15.43,12.824Z"></path>
+</svg>
+
+  </span>
+    <span class="spectrum-Button-label add-family-label">
+    Add Family
+  </span>
+  </button>
+
+  <button aria-label="Remove family {{familyCard.family.name}}"
+          class="spectrum-Button spectrum-Button--primary remove-family-button add-outline-button"
+          ng-if="familyCard.isRemoveButtonAvailable()"
+          ng-click="familyCard.useModelUnsyncFamily()">
+  <span class="spectrum-Icon creative-cloud-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" id="icons" width="18" height="18" viewBox="0 -2 18 18">
+  <path id="_256" data-name=" 256" class="currentColor" d="M16.147,4.111A6.654,6.654,0,0,0,11.246,2,6.839,6.839,0,0,0,6.405,4.022c-.219-.02-.438-.04-.647-.04A5.756,5.756,0,0,0,0,9.711a5.9,5.9,0,0,0,1.614,4A5.687,5.687,0,0,0,5.758,15.5h5.488a6.745,6.745,0,0,0,4.9-11.389ZM5.658,14.539A4.753,4.753,0,1,1,8.806,6.232l.02.02,1.982,2.022a.844.844,0,0,1-.02,1.2.854.854,0,0,1-1.2-.02l-1.963-2a3.054,3.054,0,0,0-4.293.317A2.992,2.992,0,0,0,2.59,9.741,3.133,3.133,0,0,0,5.7,12.814h.388v.01a9.327,9.327,0,0,0,2.122,1.715Zm9.772-1.715a5.706,5.706,0,0,1-4.084,1.744,5.952,5.952,0,0,1-4.1-1.784l-2.61-2.607a.852.852,0,0,1,.01-1.2A.856.856,0,0,1,5.847,9l2.6,2.587a4.2,4.2,0,0,0,2.9,1.288,3.936,3.936,0,0,0,2.869-1.239,4.179,4.179,0,0,0,1.2-2.924,4.085,4.085,0,0,0-4.084-4.063A3.707,3.707,0,0,0,9.065,5.3c-.01-.01-.2-.129-.409-.258-.129-.079-.269-.159-.388-.218S7.79,4.587,7.581,4.5c-.05-.02-.12-.05-.15-.06h.01a5.556,5.556,0,0,1,3.885-1.486A5.777,5.777,0,0,1,17.113,8.71,5.845,5.845,0,0,1,15.43,12.824Z"></path>
+</svg>
+
+  </span>
+    <span class="spectrum-Button-label">
+    Remove
+  </span>
+  </button>
+</div>
+<span class="upgrade-label"
+      ng-show="!familyCard.isUseModelQuickMultiSyncAvailable()">
+    Available with CC
+</span>
+
+    </div>
+  </div>
+
+  <div class="spectrum-grid-row adobe-fonts-family-card__sampletext-row">
+    <div class="adobe-fonts-family-card__sampletext"
+         ng-class="familyCard.getSampleTextClass()">
+      <a href="/fonts/{{familyCard.family.slug}}"
+         ng-click="familyCard.handleFamilyCardClick()"
+         tabindex="-1"
+         aria-hidden="true">
+        <span
+          class="spectrum-Heading--display"
+          ng-style="familyCard.getExampleTextStyle()"
+          display-in-font="familyCard.getDisplayFont()">
+          {{familyCard.getExampleText()}}
+        </span>
+      </a>
+    </div>
+  </div>
+  <div class="spectrum-grid-row">
+    <div class="spectrum-grid-col-md-12">
+      <div class="adobe-fonts-family-card__specimen-images adobe-fonts-family-image-carousel" ng-if="familyCard.isCarouselVisible()">
+        <adobe-fonts-carousel class="adobe-fonts-carousel-container adobe-fonts-family-card__carousel-padding"
+                              layout="{{familyCard.viewType()}}"
+                              item-size={{familyCard.family.specimen_images.length}}
+                              is-family-image-carousel="true">
+          <a href="/fonts/{{familyCard.family.slug}}"
+             ng-click="familyCard.handleFamilyCardClick()"
+             tabindex="-1"
+             aria-hidden="true">
+            <adobe-fonts-family-image-card-list image-items-data="familyCard.family.specimen_images_data"
+                                                family-name="familyCard.family.name"
+                                                display-view="list" ng-class="familyCard.getCarouselListClass()">
+            </adobe-fonts-family-image-card-list>
+          </a>
+        </adobe-fonts-carousel>
+      </div>
+    </div>
+  </div>
+</div>
+
+</li>
+</script><script id="/angular_templates/directives/feedback_icons.html" type="text/ng-template"><span ng-class="['feedback-icons-root', feedbackIcons.isSimilarityAndPairingVariant() ? 'similarity-and-pairing' : '']">
+
+  <span ng-class="feedbackIcons.getClass('positive', 'thumb-up-icon')"
+        ng-click="feedbackIcons.handleClick($event, 'positive')"
+        ng-if="feedbackIcons.areThumbsUpDownVisible()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 18 18" width="18" style="fill: #6E6E6E">
+  <rect id="Canvas" fill="#ff13dc" opacity="0" width="18" height="18"></rect><path class="a" d="M14.922,6.004l-3.275.005a10.73706,10.73706,0,0,0,.4-3.04A1.90165,1.90165,0,0,0,10.4605,1,1.6635,1.6635,0,0,0,8.82,2.582C8.5845,4.8595,6.1935,6.7135,4.936,7.2685A.495.495,0,0,0,4.5,7h-3a.5.5,0,0,0-.5.5v8a.5.5,0,0,0,.5.5h3a.5.5,0,0,0,.5-.5V15h7.222a2.318,2.318,0,0,0,2.063-1.2115L16.277,8.15a1.5,1.5,0,0,0-1.355-2.146Zm.4525,1.712L13.366,13.394a.921.921,0,0,1-.871.616L5,14V8.3c1.4335-.5765,4.575-2.7625,4.82-5.7a.687.687,0,0,1,.6405-.6c.305,0,.5605.371.5865.969A7.52457,7.52457,0,0,1,10.174,7h4.75a.5.5,0,0,1,.4505.716Z"></path>
+</svg>
+
+  </span>
+  <span ng-class="feedbackIcons.getClass('negative', 'thumb-down-icon')"
+        ng-click="feedbackIcons.handleClick($event, 'negative')"
+        ng-if="feedbackIcons.areThumbsUpDownVisible()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 18 18" width="18" style="fill: #6E6E6E">
+  <rect id="Canvas" fill="#ff13dc" opacity="0" width="18" height="18"></rect><path class="a" d="M16.277,9.85,14.285,4.212A2.318,2.318,0,0,0,12.222,3H5a.5.5,0,0,0-.5-.5h-3A.5.5,0,0,0,1,3v8a.5.5,0,0,0,.5.5h3A.5.5,0,0,0,5,11v-.238c1.2725.587,3.5885,2.415,3.82,4.656A1.6635,1.6635,0,0,0,10.4605,17a1.9023,1.9023,0,0,0,1.5865-1.9685,10.73831,10.73831,0,0,0-.4-3.0405l3.275.005A1.5,1.5,0,0,0,16.277,9.85ZM14.9235,11h-4.75a7.52559,7.52559,0,0,1,.873,4.0315c-.026.6-.2815.966-.5865.9685a.687.687,0,0,1-.6405-.6c-.245-2.9365-3.3865-5.1225-4.82-5.7V4l7.4955-.01a.921.921,0,0,1,.871.616l2.0085,5.678a.5.5,0,0,1-.451.716Z"></path>
+</svg>
+
+  </span>
+
+  <span ng-class="feedbackIcons.getClass(feedbackIcons.initSelectedFeedback(), 'flag-result-icon')"
+        ng-click="feedbackIcons.handleClick($event, feedbackIcons.toggleSelectedFeedback())"
+        ng-if="feedbackIcons.isCancelButtonVisible()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 18 18" width="18" style="fill: #6E6E6E">
+  <rect id="Canvas" fill="#ff13dc" opacity="0" width="18" height="18"></rect><path class="a" d="M9,1a8,8,0,1,0,8,8A8,8,0,0,0,9,1Zm6,8a5.97146,5.97146,0,0,1-1.1095,3.4765l-8.367-8.367A6,6,0,0,1,15,9ZM3,9A5.97248,5.97248,0,0,1,4.1095,5.5235l8.367,8.3675A6,6,0,0,1,3,9Z"></path>
+</svg>
+
+  </span>
+
+  <span ng-class="['spectrum-Tooltip feedback-icons-tooltip', feedbackIcons.getTooltipClass()]"
+        ng-if="feedbackIcons.familySlug() || feedbackIcons.isCancelButtonVisible()">
+    <span class="spectrum-Tooltip-label">
+      {{feedbackIcons.tooltipText()}}
+    </span>
+    <span class="spectrum-Tooltip-tip"></span>
+  </span>
+</span>
+</script><script id="/angular_templates/directives/spectrum/dropdown.html" type="text/ng-template"><div class="spectrum-Dropdown"
+     ng-model="spectrumDropdown.selectedValue"
+     ng-change="spectrumDropdown.handleChange()"
+     dropdown-base>
+  <button dropdown-base-button
+          aria-label="Dropdown"
+          aria-haspopup="true"
+          class="spectrum-FieldButton spectrum-Dropdown-trigger add-outline"
+          data-id="{{ spectrumDropdown.triggerButtonDataId }}">
+    <span class="spectrum-Dropdown-label">
+      {{ spectrumDropdown.getLabel() }}
+    </span>
+
+    <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-Dropdown-icon" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-ChevronDownMedium"></use>
+    </svg>
+  </button>
+
+  <div dropdown-base-content class="spectrum-Popover spectrum-Popover--bottom adobe-fonts-select-menu__popover">
+    <div class="spectrum-Menu adobe-fonts-select-menu__menu-items" role="listbox">
+      <button dropdown-base-item
+              class="spectrum-Menu-item add-outline-light-background remove-border"
+              ng-if="spectrumDropdown.prioritizedItem"
+              role="option"
+              value="spectrumDropdown.prioritizedItem.value">
+        <span class="spectrum-Menu-itemLabel">
+          {{ spectrumDropdown.prioritizedItem.label }}
+        </span>
+      </button>
+      <div ng-if="spectrumDropdown.prioritizedItem" class="spectrum-Menu-divider" role="separator"></div>
+      <button dropdown-base-item
+              class="spectrum-Menu-item add-outline-light-background remove-border"
+              ng-repeat="item in spectrumDropdown.menuItems()"
+              role="option"
+              value="item.value">
+        <span class="spectrum-Menu-itemLabel">
+          {{ item.label }}
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+</script>
+
+        <script id="/neue/release_flag_bit_indices" type="text/ng-data">
+          {"Typekit_ccx_templates_first":19}
+        </script>
+
+        <div class="adobe-fonts__svg-sprites">
+  <svg xmlns="http://www.w3.org/2000/svg"><symbol id="spectrum-css-icon-AlertMedium" viewBox="0 0 18 18"><path d="M8.564 1.289L.2 16.256A.5.5 0 0 0 .636 17h16.728a.5.5 0 0 0 .5-.5.494.494 0 0 0-.064-.244L9.436 1.289a.5.5 0 0 0-.872 0zM10 14.75a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25v-1.5a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25zm0-3a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25v-6a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25z"></path></symbol><symbol id="spectrum-css-icon-CheckmarkMedium" viewBox="0 0 12 12"><path d="M4.5 10a1.023 1.023 0 0 1-.8-.384l-2.488-3a1 1 0 0 1 1.577-1.233L4.5 7.376l4.712-5.991a1 1 0 1 1 1.576 1.23l-5.511 7A.977.977 0 0 1 4.5 10z"></path></symbol><symbol id="spectrum-css-icon-CheckmarkSmall" viewBox="0 0 10 10"><path d="M3.788 9A1 1 0 0 1 3 8.615l-2.288-3a1 1 0 1 1 1.576-1.23l1.5 1.991 3.924-4.991a1 1 0 1 1 1.576 1.23l-4.712 6A1 1 0 0 1 3.788 9z"></path></symbol><symbol id="spectrum-css-icon-ChevronDownMedium" viewBox="0 0 10 6"><path d="M9.99 1.01A1 1 0 0 0 8.283.3L5 3.586 1.717.3A1 1 0 1 0 .3 1.717L4.293 5.7a1 1 0 0 0 1.414 0L9.7 1.717a1 1 0 0 0 .29-.707z"></path></symbol><symbol id="spectrum-css-icon-ChevronLeftMedium" viewBox="0 0 6 10"><path d="M5.7 8.283L2.414 5 5.7 1.717A1 1 0 1 0 4.283.3L.3 4.293a1 1 0 0 0 0 1.414L4.283 9.7A1 1 0 1 0 5.7 8.283z"></path></symbol><symbol id="spectrum-css-icon-ChevronRightMedium" viewBox="0 0 6 10"><path d="M5.99 5a1 1 0 0 0-.29-.707L1.717.3A1 1 0 1 0 .3 1.717L3.586 5 .3 8.283A1 1 0 1 0 1.717 9.7L5.7 5.707A1 1 0 0 0 5.99 5z"></path></symbol><symbol id="spectrum-css-icon-ChevronRightSmall" viewBox="0 0 6 8"><path d="M5.5 4a.749.749 0 0 0-.22-.531C4.7 2.863 3.242 1.5 2.041.23A.75.75 0 1 0 .98 1.291L3.689 4 .98 6.709A.75.75 0 1 0 2.041 7.77L5.28 4.531A.749.749 0 0 0 5.5 4z"></path></symbol><symbol id="spectrum-css-icon-CrossMedium" viewBox="0 0 8 8"><path d="M7.77 6.709L5.061 4 7.77 1.291A.75.75 0 1 0 6.709.23L4 2.939 1.291.23A.75.75 0 1 0 .23 1.291L2.939 4 .23 6.709A.75.75 0 1 0 1.291 7.77L4 5.061 6.709 7.77A.75.75 0 1 0 7.77 6.709z"></path></symbol><symbol id="spectrum-css-icon-CrossSmall" viewBox="0 0 8 8"><path d="M7.317 6.433L4.884 4l2.433-2.433a.625.625 0 0 0-.884-.884L4 3.116 1.567.683a.625.625 0 0 0-.884.884L3.116 4 .683 6.433a.625.625 0 0 0 .884.884L4 4.884l2.433 2.433a.625.625 0 0 0 .884-.884z"></path></symbol><symbol id="spectrum-css-icon-DashSmall" viewBox="0 0 10 10"><path d="M8 4H2a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2z"></path></symbol><symbol id="spectrum-css-icon-Magnifier" viewBox="0 0 16 16"><path d="M15.77 14.709l-4.534-4.534a6.013 6.013 0 1 0-1.061 1.061l4.534 4.534a.75.75 0 1 0 1.061-1.061zM6.5 11A4.5 4.5 0 1 1 11 6.5 4.505 4.505 0 0 1 6.5 11z"></path></symbol><symbol id="spectrum-icon-18-Alert" viewBox="0 0 36 36"><path d="M17.127 2.579L.4 32.512A1 1 0 0 0 1.272 34h33.456a1 1 0 0 0 .873-1.488L18.873 2.579a1 1 0 0 0-1.746 0zM20 29.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5zm0-6a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5z"></path></symbol><symbol id="spectrum-icon-18-Browse" viewBox="0 0 36 36"><path d="M35.087 20.17S29.206 7.832 28.442 5.813c-.729-1.926-1.669-3.729-3.729-3.729-2.31 0-3.511 1.674-3.729 3.729-.063.59-.2 2.474-.361 4.23h-5.249c-.2-2.131-.349-4.134-.358-4.23-.181-2.093-1.016-3.73-3.729-3.73-2.06 0-2.91 1.84-3.729 3.729C6.9 7.322.764 20.447.764 20.447h.014a8.2 8.2 0 1 0 15.73 3.263c0-.252-.015-1.466-.038-1.712h3.058c-.022.246-.038 1.461-.038 1.712a8.2 8.2 0 1 0 15.6-3.542zM8.3 29.082a5.37 5.37 0 1 1 5.37-5.37 5.37 5.37 0 0 1-5.37 5.37zm19.392 0a5.37 5.37 0 1 1 5.37-5.37 5.37 5.37 0 0 1-5.362 5.37z"></path></symbol><symbol id="spectrum-icon-18-Camera" viewBox="0 0 36 36"><circle cx="18" cy="18" r="6"></circle><path d="M33 8h-6.05L23.6 4.326A1 1 0 0 0 22.859 4h-9.718a1 1 0 0 0-.739.326L9.05 8H3a1 1 0 0 0-1 1v20a1 1 0 0 0 1 1h30a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1zM18 26.2a8.2 8.2 0 1 1 8.2-8.2 8.2 8.2 0 0 1-8.2 8.2z"></path></symbol><symbol id="spectrum-icon-18-Checkmark" viewBox="0 0 36 36"><path d="M31.312 7.725l-1.455-1.133a1 1 0 0 0-1.4.175L14.822 24.283l-6.647-6.612a1 1 0 0 0-1.414 0L5.436 19a1 1 0 0 0 0 1.415l8.926 8.9a1 1 0 0 0 1.5-.093L31.487 9.128a1 1 0 0 0-.175-1.403z"></path></symbol><symbol id="spectrum-icon-18-CloseCircle" viewBox="0 0 36 36"><path d="M27.314 6.686a16 16 0 1 0 0 22.627 16 16 0 0 0 0-22.627zm-2.687 18.527l-1.414 1.414a1.2 1.2 0 0 1-1.7 0L16 21.111l-5.516 5.516a1.2 1.2 0 0 1-1.7 0l-1.409-1.415a1.2 1.2 0 0 1 0-1.7L12.889 18l-5.514-5.516a1.2 1.2 0 0 1 0-1.7l1.414-1.411a1.2 1.2 0 0 1 1.7 0L16 14.888l5.516-5.515a1.2 1.2 0 0 1 1.7 0l1.414 1.414a1.2 1.2 0 0 1 0 1.7L19.112 18l5.516 5.516a1.2 1.2 0 0 1 0 1.7z"></path></symbol><symbol id="spectrum-icon-18-Code" viewBox="0 0 36 36"><path d="M35.493 19.061l-7.859 7.984a1.46 1.46 0 0 1-2.088 0l-.208-.211a1.522 1.522 0 0 1 0-2.121L31.943 18l-6.605-6.712a1.522 1.522 0 0 1 0-2.121l.208-.211a1.46 1.46 0 0 1 2.088 0l7.859 7.984a1.517 1.517 0 0 1 0 2.121zM.507 16.939l7.86-7.984a1.46 1.46 0 0 1 2.088 0l.208.211a1.522 1.522 0 0 1 0 2.121L4.057 18l6.605 6.712a1.522 1.522 0 0 1 0 2.121l-.208.211a1.46 1.46 0 0 1-2.088 0L.507 19.061a1.517 1.517 0 0 1 0-2.122zM16.3 29.519c-.034.135-.1.169-.236.169h-2.8c-.169 0-.2-.067-.169-.2l6.639-24.7c.034-.135.067-.135.2-.135h2.831c.135 0 .169.034.135.169z"></path></symbol><symbol id="spectrum-icon-18-Copy" viewBox="0 0 36 36"><path d="M32 22h2v2h-2zm0-4h2v2h-2zm0-4h2v2h-2zm0-4h2v2h-2zm0-4h2v2h-2zm0-4h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2z"></path><path d="M10 12H3a1 1 0 0 0-1 1v20a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1v-7H10z"></path></symbol><symbol id="spectrum-icon-18-Delete" viewBox="0 0 36 36"><path d="M31.5 4H24V2a2 2 0 0 0-2-2H12a2 2 0 0 0-2 2v2H2.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h2l2.413 25.1a1 1 0 0 0 1 .9h18.179a1 1 0 0 0 1-.9L29.5 8h2a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM12 2h10v2H12zm-.458 26.944l-1 .06a.5.5 0 0 1-.529-.469L8.87 11.49a.5.5 0 0 1 .469-.529l1-.06a.5.5 0 0 1 .529.469l1.145 17.045a.5.5 0 0 1-.471.529zM18 28.48a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V11.4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5zm5.985.056a.5.5 0 0 1-.529.469l-1-.06a.5.5 0 0 1-.469-.529l1.147-17.046a.5.5 0 0 1 .529-.469l1 .06a.5.5 0 0 1 .469.529z"></path></symbol><symbol id="spectrum-icon-18-Info" viewBox="0 0 36 36"><path d="M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2zm-.3 4.3a2.718 2.718 0 0 1 2.864 2.824 2.665 2.665 0 0 1-2.864 2.863 2.706 2.706 0 0 1-2.864-2.864A2.717 2.717 0 0 1 17.7 6.3zM22 27a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h1v-6h-1a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v9h1a1 1 0 0 1 1 1z"></path></symbol><symbol id="spectrum-icon-24-ClassicGridView" viewBox="0 0 48 48"><rect height="18" rx="2" ry="2" width="18" x="4" y="4"></rect><rect height="18" rx="2" ry="2" width="18" x="26" y="4"></rect><rect height="18" rx="2" ry="2" width="18" x="4" y="26"></rect><rect height="18" rx="2" ry="2" width="18" x="26" y="26"></rect></symbol><symbol id="spectrum-icon-24-Code" viewBox="0 0 48 48"><path d="M47.323 25.414L36.845 36.059a1.947 1.947 0 0 1-2.784 0l-.278-.282a2.029 2.029 0 0 1 0-2.828L42.59 24l-8.807-8.949a2.029 2.029 0 0 1 0-2.828l.278-.282a1.947 1.947 0 0 1 2.784 0l10.478 10.644a2.023 2.023 0 0 1 0 2.829zM.677 22.585L11.155 11.94a1.947 1.947 0 0 1 2.784 0l.278.282a2.029 2.029 0 0 1 0 2.828L5.41 24l8.807 8.949a2.029 2.029 0 0 1 0 2.828l-.278.282a1.947 1.947 0 0 1-2.784 0L.677 25.414a2.023 2.023 0 0 1 0-2.829zM21.73 39.359c-.045.18-.135.225-.315.225h-3.73c-.225 0-.27-.09-.225-.27l8.854-32.939c.045-.18.09-.18.27-.18h3.775c.18 0 .225.045.18.225z"></path></symbol><symbol id="spectrum-icon-24-GlobeOutline" viewBox="0 0 48 48"><path d="M24 3.05A21.137 21.137 0 0 0 3.05 24 21.137 21.137 0 0 0 24 44.95 21.137 21.137 0 0 0 44.95 24 21.137 21.137 0 0 0 24 3.05zm16.9 24.567a17.092 17.092 0 0 1-.819 2.639c-.081.2-.137.418-.225.617a17.273 17.273 0 0 1-1.5 2.771c-.042.063-.1.116-.14.178a17.356 17.356 0 0 1-1.892 2.294c-.114.118-.246.219-.363.334a17.346 17.346 0 0 1-2.272 1.875l-.032.021a17.2 17.2 0 0 1-9.21 2.9c6.08-4.582 5.337-7.269 8.783-11.1 1.153-1.537-3.458-1.921-7.3-3.458-4.994-2.305-3.073 1.537-6.915-2.689-2.305-2.689-3.073-6.531 3.842-3.458.768.768 1.153-2.689 2.689-4.61.768-.768.768-1.537 1.153-2.689a2.528 2.528 0 0 0-4.994.384c0 .768-2.689-4.61-.768-4.61a13.646 13.646 0 0 1-3.842-.768c.36-.185.737-.329 1.11-.482A17.052 17.052 0 0 1 23.8 6.717c.067 0 .132-.008.2-.006.384-.384-2.305 2.689-1.537 2.689s5.379 1.153 4.995 1.537c1.319-2.308-.477-3.759-2.469-4.126a17.1 17.1 0 0 1 7.668 2.305c.418.255.864.459 1.258.753.147.1.27.233.413.34a15.818 15.818 0 0 1 2.35 2.264c-.768.384-.768 1.537-.384 2.305.765.765.773.766 2.288.008.245.386.442.8.656 1.209-.23.09-.32.32-.639.32a6.171 6.171 0 0 0-1.921 4.226c0 6.147 1.537 3.842 3.458 4.61a1.4 1.4 0 0 0 1 .369 17.585 17.585 0 0 1-.179 1.78c-.023.106-.038.213-.057.317zM17.78 40.089A18.6 18.6 0 0 1 6.711 24a17.154 17.154 0 0 1 .273-2.825c.061-.361.111-.724.194-1.078a17.026 17.026 0 0 1 .656-2.147c.183-.486.391-.962.616-1.429.159-.331.34-.647.519-.966a17.421 17.421 0 0 1 1.38-2.1c.233-.3.471-.6.723-.884.325-.371.651-.742 1.009-1.086a17.318 17.318 0 0 1 1.545-1.285c.359 3.435-2.685 5.358-1.537 9.186 1.537 4.994 3.458 2.689 5.763 6.147 2.665 3.807 6.819 10.251 4.652 15.6a17.193 17.193 0 0 1-4.724-1.044z"></path></symbol><symbol id="spectrum-icon-24-InfoOutline" viewBox="0 0 48 48"><path d="M24 7.9A16.1 16.1 0 1 1 7.9 24 16.118 16.118 0 0 1 24 7.9zm0-3.8A19.9 19.9 0 1 0 43.9 24 19.9 19.9 0 0 0 24 4.1z"></path><path d="M21.56 14.747a2.24 2.24 0 0 1 4.48 0 2.084 2.084 0 0 1-2.24 2.24 2.116 2.116 0 0 1-2.24-2.24zM27.5 32H26V21a1 1 0 0 0-1-1h-4.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H22v10h-1.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"></path></symbol><symbol id="spectrum-icon-24-ShowMenu" viewBox="0 0 48 48"><rect class="fill-2" height="6" rx="1" ry="1" width="32" x="8" y="20"></rect><rect class="fill-2" height="6" rx="1" ry="1" width="32" x="8" y="8"></rect><rect class="fill-2" height="6" rx="1" ry="1" width="32" x="8" y="32"></rect></symbol><symbol id="spectrum-icon-24-ViewList" viewBox="0 0 48 48"><rect height="10" rx="2" ry="2" width="10" x="4" y="6"></rect><rect height="10" rx="2" ry="2" width="10" x="4" y="20"></rect><rect height="10" rx="2" ry="2" width="10" x="4" y="34"></rect><rect height="6" rx="1" ry="1" width="24" x="18" y="8"></rect><rect height="6" rx="1" ry="1" width="24" x="18" y="22"></rect><rect height="6" rx="1" ry="1" width="24" x="18" y="36"></rect></symbol></svg>
+
+</div>
+
+
+        <div id="feedback-button-wrapper">
+          <af-feedback-button class="af-focus-trappable"></af-feedback-button>
+        </div>
+
+        
+      </af-new-relic-link-click-tracking>
+    </sp-theme>
+  </body>
+</html>

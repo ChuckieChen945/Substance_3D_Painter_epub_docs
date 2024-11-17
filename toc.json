@@ -1,0 +1,2241 @@
+{
+    "books": [
+        {
+            "ttl": "Getting Started",
+            "id": "",
+            "ln": "",
+            "children": [
+                {
+                    "ttl": "Getting Started overview",
+                    "id": "/substance-3d-painter/getting-started.html",
+                    "ln": "/substance-3d-painter/getting-started.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Activation and licenses",
+                    "id": "/substance-3d-painter/getting-started/activation-and-licenses.html",
+                    "ln": "/substance-3d-painter/getting-started/activation-and-licenses.html",
+                    "children": []
+                },
+                {
+                    "ttl": "System requirements",
+                    "id": "/substance-3d-painter/getting-started/system-requirements.html",
+                    "ln": "/substance-3d-painter/getting-started/system-requirements.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Project creation",
+                    "id": "/substance-3d-painter/getting-started/project-creation.html",
+                    "ln": "/substance-3d-painter/getting-started/project-creation.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Export",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Export overview",
+                            "id": "/substance-3d-painter/getting-started/export.html",
+                            "ln": "/substance-3d-painter/getting-started/export.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Export window",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Export window overview",
+                                    "id": "/substance-3d-painter/getting-started/export/export-window.html",
+                                    "ln": "/substance-3d-painter/getting-started/export/export-window.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Export settings",
+                                    "id": "/substance-3d-painter/getting-started/export/export-window/export-settings.html",
+                                    "ln": "/substance-3d-painter/getting-started/export/export-window/export-settings.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Output templates",
+                                    "id": "/substance-3d-painter/getting-started/export/export-window/output-templates.html",
+                                    "ln": "/substance-3d-painter/getting-started/export/export-window/output-templates.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "List of exports",
+                                    "id": "/substance-3d-painter/getting-started/export/export-window/list-of-exports.html",
+                                    "ln": "/substance-3d-painter/getting-started/export/export-window/list-of-exports.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Export presets",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Export presets overview",
+                                    "id": "/substance-3d-painter/getting-started/export/export-presets.html",
+                                    "ln": "/substance-3d-painter/getting-started/export/export-presets.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Predefined presets",
+                                    "id": "",
+                                    "ln": "",
+                                    "children": [
+                                        {
+                                            "ttl": "Predefined Presets",
+                                            "id": "/substance-3d-painter/getting-started/export/export-presets/predefined-presets.html",
+                                            "ln": "/substance-3d-painter/getting-started/export/export-presets/predefined-presets.html",
+                                            "children": []
+                                        },
+                                        {
+                                            "ttl": "USD PBR Metal Roughness Preset",
+                                            "id": "/substance-3d-painter/getting-started/export/export-presets/predefined-presets/usd-pbr-metal-roughness-preset.html",
+                                            "ln": "/substance-3d-painter/getting-started/export/export-presets/predefined-presets/usd-pbr-metal-roughness-preset.html",
+                                            "children": []
+                                        },
+                                        {
+                                            "ttl": "Default Presets",
+                                            "id": "/substance-3d-painter/getting-started/export/export-presets/default-presets.html",
+                                            "ln": "/substance-3d-painter/getting-started/export/export-presets/default-presets.html",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ttl": "Creating export presets",
+                                    "id": "/substance-3d-painter/getting-started/export/creating-export-presets.html",
+                                    "ln": "/substance-3d-painter/getting-started/export/creating-export-presets.html",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Glossary",
+                    "id": "/substance-3d-painter/getting-started/glossary.html",
+                    "ln": "/substance-3d-painter/getting-started/glossary.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Performance",
+                    "id": "/substance-3d-painter/getting-started/performance.html",
+                    "ln": "/substance-3d-painter/getting-started/performance.html",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "ttl": "Interface",
+            "id": "",
+            "ln": "",
+            "children": [
+                {
+                    "ttl": "Assets",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Assets overview",
+                            "id": "/substance-3d-painter/interface/assets.html",
+                            "ln": "/substance-3d-painter/interface/assets.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Navigation",
+                            "id": "/substance-3d-painter/interface/assets/navigation.html",
+                            "ln": "/substance-3d-painter/interface/assets/navigation.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Customizing the layout",
+                            "id": "/substance-3d-painter/interface/assets/customizing-the-layout.html",
+                            "ln": "/substance-3d-painter/interface/assets/customizing-the-layout.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Filter by path",
+                            "id": "/substance-3d-painter/interface/assets/filter-by-path.html",
+                            "ln": "/substance-3d-painter/interface/assets/filter-by-path.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Saved searches",
+                            "id": "/substance-3d-painter/interface/assets/saved-searches.html",
+                            "ln": "/substance-3d-painter/interface/assets/saved-searches.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Advanced search queries",
+                            "id": "/substance-3d-painter/interface/assets/advanced-search-queries.html",
+                            "ln": "/substance-3d-painter/interface/assets/advanced-search-queries.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Adding a new library",
+                            "id": "/substance-3d-painter/interface/assets/adding-a-new-library.html",
+                            "ln": "/substance-3d-painter/interface/assets/adding-a-new-library.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Sub-library tab",
+                            "id": "/substance-3d-painter/interface/assets/sub-library-tab.html",
+                            "ln": "/substance-3d-painter/interface/assets/sub-library-tab.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Substance 3D Assets",
+                    "id": "/substance-3d-painter/interface/substance-3d-assets.html",
+                    "ln": "/substance-3d-painter/interface/substance-3d-assets.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Color picker",
+                    "id": "/substance-3d-painter/interface/color-picker.html",
+                    "ln": "/substance-3d-painter/interface/color-picker.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Display settings",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Display settings overview",
+                            "id": "/substance-3d-painter/interface/display-settings.html",
+                            "ln": "/substance-3d-painter/interface/display-settings.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Environment settings",
+                            "id": "/substance-3d-painter/interface/display-settings/environment-settings.html",
+                            "ln": "/substance-3d-painter/interface/display-settings/environment-settings.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Camera settings",
+                            "id": "/substance-3d-painter/interface/display-settings/camera-settings.html",
+                            "ln": "/substance-3d-painter/interface/display-settings/camera-settings.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Viewport settings",
+                            "id": "/substance-3d-painter/interface/display-settings/viewport-settings.html",
+                            "ln": "/substance-3d-painter/interface/display-settings/viewport-settings.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "History",
+                    "id": "/substance-3d-painter/interface/history.html",
+                    "ln": "/substance-3d-painter/interface/history.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Layer stack",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Layer stack overview",
+                            "id": "/substance-3d-painter/interface/layer-stack.html",
+                            "ln": "/substance-3d-painter/interface/layer-stack.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Creating layers",
+                            "id": "/substance-3d-painter/interface/layer-stack/creating-layers.html",
+                            "ln": "/substance-3d-painter/interface/layer-stack/creating-layers.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Managing layers",
+                            "id": "/substance-3d-painter/interface/layer-stack/managing-layers.html",
+                            "ln": "/substance-3d-painter/interface/layer-stack/managing-layers.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Masking and effects",
+                            "id": "/substance-3d-painter/interface/layer-stack/masking-and-effects.html",
+                            "ln": "/substance-3d-painter/interface/layer-stack/masking-and-effects.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Blending modes",
+                            "id": "/substance-3d-painter/interface/layer-stack/blending-modes.html",
+                            "ln": "/substance-3d-painter/interface/layer-stack/blending-modes.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Layer instancing",
+                            "id": "/substance-3d-painter/interface/layer-stack/layer-instancing.html",
+                            "ln": "/substance-3d-painter/interface/layer-stack/layer-instancing.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Geometry mask",
+                            "id": "/substance-3d-painter/interface/layer-stack/geometry-mask.html",
+                            "ln": "/substance-3d-painter/interface/layer-stack/geometry-mask.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Main menu",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Main menu overview",
+                            "id": "/substance-3d-painter/interface/main-menu.html",
+                            "ln": "/substance-3d-painter/interface/main-menu.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "File menu",
+                            "id": "/substance-3d-painter/interface/main-menu/file-menu.html",
+                            "ln": "/substance-3d-painter/interface/main-menu/file-menu.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Edit menu",
+                            "id": "/substance-3d-painter/interface/main-menu/edit-menu.html",
+                            "ln": "/substance-3d-painter/interface/main-menu/edit-menu.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Mode menu",
+                            "id": "/substance-3d-painter/interface/main-menu/mode-menu.html",
+                            "ln": "/substance-3d-painter/interface/main-menu/mode-menu.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Window menu",
+                            "id": "/substance-3d-painter/interface/main-menu/window-menu.html",
+                            "ln": "/substance-3d-painter/interface/main-menu/window-menu.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Viewport menu",
+                            "id": "/substance-3d-painter/interface/main-menu/viewport-menu.html",
+                            "ln": "/substance-3d-painter/interface/main-menu/viewport-menu.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Plugins menu",
+                            "id": "/substance-3d-painter/interface/main-menu/plugins-menu.html",
+                            "ln": "/substance-3d-painter/interface/main-menu/plugins-menu.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Help menu",
+                            "id": "/substance-3d-painter/interface/main-menu/help-menu.html",
+                            "ln": "/substance-3d-painter/interface/main-menu/help-menu.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Project configuration",
+                    "id": "/substance-3d-painter/interface/project-configuration.html",
+                    "ln": "/substance-3d-painter/interface/project-configuration.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Properties",
+                    "id": "/substance-3d-painter/interface/properties.html",
+                    "ln": "/substance-3d-painter/interface/properties.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Settings",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Settings overview",
+                            "id": "/substance-3d-painter/interface/settings.html",
+                            "ln": "/substance-3d-painter/interface/settings.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "General preferences",
+                            "id": "/substance-3d-painter/interface/settings/general-preferences.html",
+                            "ln": "/substance-3d-painter/interface/settings/general-preferences.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Shortcuts",
+                            "id": "/substance-3d-painter/interface/settings/shortcuts.html",
+                            "ln": "/substance-3d-painter/interface/settings/shortcuts.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Libraries configuration",
+                            "id": "/substance-3d-painter/interface/settings/libraries-configuration.html",
+                            "ln": "/substance-3d-painter/interface/settings/libraries-configuration.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Shader settings",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Shader settings overview",
+                            "id": "/substance-3d-painter/interface/shader-settings.html",
+                            "ln": "/substance-3d-painter/interface/shader-settings.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Updating a shader",
+                            "id": "/substance-3d-painter/interface/shader-settings/updating-a-shader.html",
+                            "ln": "/substance-3d-painter/interface/shader-settings/updating-a-shader.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Texture Set",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Texture Set overview",
+                            "id": "/substance-3d-painter/interface/texture-set.html",
+                            "ln": "/substance-3d-painter/interface/texture-set.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Texture Set list",
+                            "id": "/substance-3d-painter/interface/texture-set/texture-set-list.html",
+                            "ln": "/substance-3d-painter/interface/texture-set/texture-set-list.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Texture Set settings",
+                            "id": "/substance-3d-painter/interface/texture-set/texture-set-settings.html",
+                            "ln": "/substance-3d-painter/interface/texture-set/texture-set-settings.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Texture Set reassignment",
+                            "id": "/substance-3d-painter/interface/texture-set/texture-set-reassignment.html",
+                            "ln": "/substance-3d-painter/interface/texture-set/texture-set-reassignment.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Toolbars",
+                    "id": "/substance-3d-painter/interface/toolbars.html",
+                    "ln": "/substance-3d-painter/interface/toolbars.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Viewport",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Viewport overview",
+                            "id": "/substance-3d-painter/interface/viewport.html",
+                            "ln": "/substance-3d-painter/interface/viewport.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "2D view",
+                            "id": "/substance-3d-painter/interface/viewport/2d-view.html",
+                            "ln": "/substance-3d-painter/interface/viewport/2d-view.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "3D view",
+                            "id": "/substance-3d-painter/interface/viewport/3d-view.html",
+                            "ln": "/substance-3d-painter/interface/viewport/3d-view.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Camera management",
+                            "id": "/substance-3d-painter/interface/viewport/camera-management.html",
+                            "ln": "/substance-3d-painter/interface/viewport/camera-management.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Miscellaneous",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Sliders",
+                            "id": "/substance-3d-painter/interface/miscellaneous/sliders.html",
+                            "ln": "/substance-3d-painter/interface/miscellaneous/sliders.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Log",
+                            "id": "/substance-3d-painter/interface/miscellaneous/log.html",
+                            "ln": "/substance-3d-painter/interface/miscellaneous/log.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Update checker",
+                            "id": "/substance-3d-painter/interface/miscellaneous/update-checker.html",
+                            "ln": "/substance-3d-painter/interface/miscellaneous/update-checker.html",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ttl": "Painting",
+            "id": "",
+            "ln": "",
+            "children": [
+                {
+                    "ttl": "Painting overview",
+                    "id": "/substance-3d-painter/painting.html",
+                    "ln": "/substance-3d-painter/painting.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Tool list",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Paint brush",
+                            "id": "/substance-3d-painter/painting/tool-list/paint-brush.html",
+                            "ln": "/substance-3d-painter/painting/tool-list/paint-brush.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Eraser",
+                            "id": "/substance-3d-painter/painting/tool-list/eraser.html",
+                            "ln": "/substance-3d-painter/painting/tool-list/eraser.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Projection",
+                            "id": "/substance-3d-painter/painting/tool-list/projection.html",
+                            "ln": "/substance-3d-painter/painting/tool-list/projection.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Polygon fill",
+                            "id": "/substance-3d-painter/painting/tool-list/polygon-fill.html",
+                            "ln": "/substance-3d-painter/painting/tool-list/polygon-fill.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Smudge tool",
+                            "id": "/substance-3d-painter/painting/tool-list/smudge-tool.html",
+                            "ln": "/substance-3d-painter/painting/tool-list/smudge-tool.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Clone Tool",
+                            "id": "/substance-3d-painter/painting/tool-list/clone-tool.html",
+                            "ln": "/substance-3d-painter/painting/tool-list/clone-tool.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Quick mask",
+                            "id": "/substance-3d-painter/painting/tool-list/quick-mask.html",
+                            "ln": "/substance-3d-painter/painting/tool-list/quick-mask.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Path tool",
+                            "id": "/substance-3d-painter/painting/tool-list/path.html",
+                            "ln": "/substance-3d-painter/painting/tool-list/path.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Straight line",
+                    "id": "/substance-3d-painter/painting/straight-line.html",
+                    "ln": "/substance-3d-painter/painting/straight-line.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Lazy mouse",
+                    "id": "/substance-3d-painter/painting/lazy-mouse.html",
+                    "ln": "/substance-3d-painter/painting/lazy-mouse.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Symmetry",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Symmetry overview",
+                            "id": "/substance-3d-painter/painting/symmetry.html",
+                            "ln": "/substance-3d-painter/painting/symmetry.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Mirror Symmetry",
+                            "id": "/substance-3d-painter/painting/symmetry/mirror-symmetry.html",
+                            "ln": "/substance-3d-painter/painting/symmetry/mirror-symmetry.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Fill projections",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Fill projections overview",
+                            "id": "/substance-3d-painter/painting/fill-projections.html",
+                            "ln": "/substance-3d-painter/painting/fill-projections.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Fill (match per UV Tile)",
+                            "id": "/substance-3d-painter/painting/fill-projections/fill-match-per-uv-tile.html",
+                            "ln": "/substance-3d-painter/painting/fill-projections/fill-match-per-uv-tile.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "UV projection",
+                            "id": "/substance-3d-painter/painting/fill-projections/uv-projection.html",
+                            "ln": "/substance-3d-painter/painting/fill-projections/uv-projection.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Tri-planar projection",
+                            "id": "/substance-3d-painter/painting/fill-projections/tri-planar-projection.html",
+                            "ln": "/substance-3d-painter/painting/fill-projections/tri-planar-projection.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Planar projection",
+                            "id": "/substance-3d-painter/painting/fill-projections/planar-projection.html",
+                            "ln": "/substance-3d-painter/painting/fill-projections/planar-projection.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Spherical projection",
+                            "id": "/substance-3d-painter/painting/fill-projections/spherical-projection.html",
+                            "ln": "/substance-3d-painter/painting/fill-projections/spherical-projection.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Cylindrical projection",
+                            "id": "/substance-3d-painter/painting/fill-projections/cylindrical-projection.html",
+                            "ln": "/substance-3d-painter/painting/fill-projections/cylindrical-projection.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Warp projection",
+                            "id": "/substance-3d-painter/painting/fill-projections/warp-projection.html",
+                            "ln": "/substance-3d-painter/painting/fill-projections/warp-projection.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Presets",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Presets overview",
+                            "id": "/substance-3d-painter/painting/presets.html",
+                            "ln": "/substance-3d-painter/painting/presets.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Creating and saving presets",
+                            "id": "/substance-3d-painter/painting/presets/creating-and-saving-presets.html",
+                            "ln": "/substance-3d-painter/painting/presets/creating-and-saving-presets.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Creating particles presets",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Creating particles overview",
+                                    "id": "/substance-3d-painter/painting/presets/creating-particles-presets.html",
+                                    "ln": "/substance-3d-painter/painting/presets/creating-particles-presets.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Installing the particle editor",
+                                    "id": "/substance-3d-painter/painting/presets/creating-particles-presets/installing-the-particle-editor.html",
+                                    "ln": "/substance-3d-painter/painting/presets/creating-particles-presets/installing-the-particle-editor.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Overview of the particle editor",
+                                    "id": "/substance-3d-painter/painting/presets/creating-particles-presets/overview-of-the-particle-editor.html",
+                                    "ln": "/substance-3d-painter/painting/presets/creating-particles-presets/overview-of-the-particle-editor.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Creating a new particle script",
+                                    "id": "/substance-3d-painter/painting/presets/creating-particles-presets/creating-a-new-particle-script.html",
+                                    "ln": "/substance-3d-painter/painting/presets/creating-particles-presets/creating-a-new-particle-script.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Photoshop brush presets (ABR)",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Photoshop brush presets overview",
+                                    "id": "/substance-3d-painter/painting/presets/photoshop-brush-presets-abr.html",
+                                    "ln": "/substance-3d-painter/painting/presets/photoshop-brush-presets-abr.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Exporting Brush Presets from Photoshop",
+                                    "id": "/substance-3d-painter/painting/presets/photoshop-brush-presets-abr/exporting-brush-presets-from-photoshop.html",
+                                    "ln": "/substance-3d-painter/painting/presets/photoshop-brush-presets-abr/exporting-brush-presets-from-photoshop.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Importing Photoshop Brush Presets",
+                                    "id": "/substance-3d-painter/painting/presets/photoshop-brush-presets-abr/importing-photoshop-brush-presets.html",
+                                    "ln": "/substance-3d-painter/painting/presets/photoshop-brush-presets-abr/importing-photoshop-brush-presets.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Photoshop Brush Parameters Compatibility",
+                                    "id": "/substance-3d-painter/painting/presets/photoshop-brush-presets-abr/photoshop-brush-parameters-compatibility.html",
+                                    "ln": "/substance-3d-painter/painting/presets/photoshop-brush-presets-abr/photoshop-brush-parameters-compatibility.html",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Dynamic strokes",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Dynamic strokes overview",
+                            "id": "/substance-3d-painter/painting/dynamic-strokes.html",
+                            "ln": "/substance-3d-painter/painting/dynamic-strokes.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Enabling Dynamic Stroke feature",
+                            "id": "/substance-3d-painter/painting/dynamic-strokes/enabling-dynamic-stroke-feature.html",
+                            "ln": "/substance-3d-painter/painting/dynamic-strokes/enabling-dynamic-stroke-feature.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Dynamic Stroke Performances",
+                            "id": "/substance-3d-painter/painting/dynamic-strokes/dynamic-stroke-performances.html",
+                            "ln": "/substance-3d-painter/painting/dynamic-strokes/dynamic-stroke-performances.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Creating custom Dynamic Strokes",
+                            "id": "/substance-3d-painter/painting/dynamic-strokes/creating-custom-dynamic-strokes.html",
+                            "ln": "/substance-3d-painter/painting/dynamic-strokes/creating-custom-dynamic-strokes.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Advanced channel painting",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Channel painting overview",
+                            "id": "/substance-3d-painter/painting/advanced-channel-painting.html",
+                            "ln": "/substance-3d-painter/painting/advanced-channel-painting.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Ambient Occlusion",
+                            "id": "/substance-3d-painter/painting/advanced-channel-painting/ambient-occlusion-painting.html",
+                            "ln": "/substance-3d-painter/painting/advanced-channel-painting/ambient-occlusion-painting.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Flow Map",
+                            "id": "/substance-3d-painter/painting/advanced-channel-painting/flow-map-painting.html",
+                            "ln": "/substance-3d-painter/painting/advanced-channel-painting/flow-map-painting.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Height Map",
+                            "id": "/substance-3d-painter/painting/advanced-channel-painting/height-map-painting.html",
+                            "ln": "/substance-3d-painter/painting/advanced-channel-painting/height-map-painting.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Normal Map",
+                            "id": "/substance-3d-painter/painting/advanced-channel-painting/normal-map-painting.html",
+                            "ln": "/substance-3d-painter/painting/advanced-channel-painting/normal-map-painting.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Vector graphic (.svg & .ai)",
+                    "id": "/substance-3d-painter/painting/vector-graphic-svg.html",
+                    "ln": "/substance-3d-painter/painting/vector-graphic-svg.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Text resource",
+                    "id": "/substance-3d-painter/painting/text-resource.html",
+                    "ln": "/substance-3d-painter/painting/text-resource.html",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "ttl": "Effects",
+            "id": "",
+            "ln": "",
+            "children": [
+                {
+                    "ttl": "Effects overview",
+                    "id": "/substance-3d-painter/features/effects.html",
+                    "ln": "/substance-3d-painter/features/effects.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Generator",
+                    "id": "/substance-3d-painter/features/effects/generator.html",
+                    "ln": "/substance-3d-painter/features/effects/generator.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Paint",
+                    "id": "/substance-3d-painter/features/effects/paint.html",
+                    "ln": "/substance-3d-painter/features/effects/paint.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Fill",
+                    "id": "/substance-3d-painter/features/effects/fill.html",
+                    "ln": "/substance-3d-painter/features/effects/fill.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Levels",
+                    "id": "/substance-3d-painter/features/effects/levels.html",
+                    "ln": "/substance-3d-painter/features/effects/levels.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Compare Mask",
+                    "id": "/substance-3d-painter/features/effects/compare-mask.html",
+                    "ln": "/substance-3d-painter/features/effects/compare-mask.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Filter",
+                    "id": "/substance-3d-painter/features/effects/filter.html",
+                    "ln": "/substance-3d-painter/features/effects/filter.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Anchor Point",
+                    "id": "/substance-3d-painter/features/effects/anchor-point.html",
+                    "ln": "/substance-3d-painter/features/effects/anchor-point.html",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "ttl": "Baking",
+            "id": "",
+            "ln": "",
+            "children": [
+                {
+                    "ttl": "Baking overview",
+                    "id": "/substance-3d-painter/baking.html",
+                    "ln": "/substance-3d-painter/baking.html",
+                    "children": []
+                },
+                {
+                    "ttl": "How to bake mesh maps",
+                    "id": "/substance-3d-painter/baking/how-to-bake-mesh-maps.html",
+                    "ln": "/substance-3d-painter/baking/how-to-bake-mesh-maps.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Baking visualization settings",
+                    "id": "/substance-3d-painter/baking/baking-visualization-settings.html",
+                    "ln": "/substance-3d-painter/baking/baking-visualization-settings.html",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "ttl": "Content",
+            "id": "",
+            "ln": "",
+            "children": [
+                {
+                    "ttl": "Creating custom effects",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Creating custom effects overview",
+                            "id": "/substance-3d-painter/content/creating-custom-effects.html",
+                            "ln": "/substance-3d-painter/content/creating-custom-effects.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Generic filter",
+                            "id": "/substance-3d-painter/content/creating-custom-effects/generic-filter.html",
+                            "ln": "/substance-3d-painter/content/creating-custom-effects/generic-filter.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Channel specific filter",
+                            "id": "/substance-3d-painter/content/creating-custom-effects/channel-specific-filter.html",
+                            "ln": "/substance-3d-painter/content/creating-custom-effects/channel-specific-filter.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Generators",
+                            "id": "/substance-3d-painter/content/creating-custom-effects/generators.html",
+                            "ln": "/substance-3d-painter/content/creating-custom-effects/generators.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Mesh map",
+                            "id": "/substance-3d-painter/content/creating-custom-effects/mesh-map.html",
+                            "ln": "/substance-3d-painter/content/creating-custom-effects/mesh-map.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Mesh based input",
+                            "id": "/substance-3d-painter/content/creating-custom-effects/mesh-based-input.html",
+                            "ln": "/substance-3d-painter/content/creating-custom-effects/mesh-based-input.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "User data",
+                            "id": "/substance-3d-painter/content/creating-custom-effects/user-data.html",
+                            "ln": "/substance-3d-painter/content/creating-custom-effects/user-data.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Importing assets",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Adding resources via drag and drop",
+                            "id": "/substance-3d-painter/content/importing-assets/import-drag-and-drop.html",
+                            "ln": "/substance-3d-painter/content/importing-assets/import-drag-and-drop.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Adding resources via the import window",
+                            "id": "/substance-3d-painter/content/importing-assets/adding-resources-via-the-import-window.html",
+                            "ln": "/substance-3d-painter/content/importing-assets/adding-resources-via-the-import-window.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Adding content on the hard drive",
+                            "id": "/substance-3d-painter/content/importing-assets/adding-content-on-the-hard-drive.html",
+                            "ln": "/substance-3d-painter/content/importing-assets/adding-content-on-the-hard-drive.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Receiving assets from other Substance 3D applications",
+                            "id": "/substance-3d-painter/content/importing-assets/receiving-assets-from-other-substance-3d-applications.html",
+                            "ln": "/substance-3d-painter/content/importing-assets/receiving-assets-from-other-substance-3d-applications.html",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ttl": "Features",
+            "id": "",
+            "ln": "",
+            "children": [
+                {
+                    "ttl": "Automatic UV Unwrapping",
+                    "id": "/substance-3d-painter/features/automatic-uv-unwrapping.html",
+                    "ln": "/substance-3d-painter/features/automatic-uv-unwrapping.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Physical size",
+                    "id": "/substance-3d-painter/features/physical-size.html",
+                    "ln": "/substance-3d-painter/features/physical-size.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Smart Materials and Masks",
+                    "id": "/substance-3d-painter/features/smart-materials-and-masks.html",
+                    "ln": "/substance-3d-painter/features/smart-materials-and-masks.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Subsurface Scattering",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Subsurface Scattering overview",
+                            "id": "/substance-3d-painter/features/subsurface-scattering.html",
+                            "ln": "/substance-3d-painter/features/subsurface-scattering.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Enabling Subsurface in a Project",
+                            "id": "/substance-3d-painter/features/subsurface-scattering/enabling-subsurface-in-a-project.html",
+                            "ln": "/substance-3d-painter/features/subsurface-scattering/enabling-subsurface-in-a-project.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Subsurface Parameters",
+                            "id": "/substance-3d-painter/features/subsurface-scattering/subsurface-parameters.html",
+                            "ln": "/substance-3d-painter/features/subsurface-scattering/subsurface-parameters.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Subsurface Material Type",
+                            "id": "/substance-3d-painter/features/subsurface-scattering/subsurface-material-type.html",
+                            "ln": "/substance-3d-painter/features/subsurface-scattering/subsurface-material-type.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Dynamic Material Layering",
+                    "id": "/substance-3d-painter/features/dynamic-material-layering.html",
+                    "ln": "/substance-3d-painter/features/dynamic-material-layering.html",
+                    "children": []
+                },
+                {
+                    "ttl": "UV Reprojection",
+                    "id": "/substance-3d-painter/features/uv-reprojection.html",
+                    "ln": "/substance-3d-painter/features/uv-reprojection.html",
+                    "children": []
+                },
+                {
+                    "ttl": "UV Tiles",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "UV Tiles overview",
+                            "id": "/substance-3d-painter/features/uv-tiles.html",
+                            "ln": "/substance-3d-painter/features/uv-tiles.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Image Sequence",
+                            "id": "/substance-3d-painter/features/uv-tiles/image-sequence.html",
+                            "ln": "/substance-3d-painter/features/uv-tiles/image-sequence.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Color Management",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Color management overview",
+                            "id": "/substance-3d-painter/features/color-management.html",
+                            "ln": "/substance-3d-painter/features/color-management.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Color management with Adobe ACE - ICC",
+                            "id": "/substance-3d-painter/features/color-management/color-management-with-adobe-ace-icc.html",
+                            "ln": "/substance-3d-painter/features/color-management/color-management-with-adobe-ace-icc.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Color management with OpenColorIO",
+                            "id": "/substance-3d-painter/features/color-management/color-management-with-opencolorio.html",
+                            "ln": "/substance-3d-painter/features/color-management/color-management-with-opencolorio.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Post Processing",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Post Processing overview",
+                            "id": "/substance-3d-painter/features/post-processing.html",
+                            "ln": "/substance-3d-painter/features/post-processing.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Color correction",
+                            "id": "/substance-3d-painter/features/post-processing/color-correction.html",
+                            "ln": "/substance-3d-painter/features/post-processing/color-correction.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Depth of Field",
+                            "id": "/substance-3d-painter/features/post-processing/depth-of-field.html",
+                            "ln": "/substance-3d-painter/features/post-processing/depth-of-field.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Glare",
+                            "id": "/substance-3d-painter/features/post-processing/glare.html",
+                            "ln": "/substance-3d-painter/features/post-processing/glare.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Lens Distortion",
+                            "id": "/substance-3d-painter/features/post-processing/lens-distortion.html",
+                            "ln": "/substance-3d-painter/features/post-processing/lens-distortion.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Tone Mapping",
+                            "id": "/substance-3d-painter/features/post-processing/tone-mapping.html",
+                            "ln": "/substance-3d-painter/features/post-processing/tone-mapping.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Vignette",
+                            "id": "/substance-3d-painter/features/post-processing/vignette.html",
+                            "ln": "/substance-3d-painter/features/post-processing/vignette.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Color Profile",
+                            "id": "/substance-3d-painter/features/post-processing/color-profile.html",
+                            "ln": "/substance-3d-painter/features/post-processing/color-profile.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Iray Renderer",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Iray Renderer overview",
+                            "id": "/substance-3d-painter/features/iray-renderer.html",
+                            "ln": "/substance-3d-painter/features/iray-renderer.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Iray Settings",
+                            "id": "/substance-3d-painter/features/iray-renderer/iray-settings.html",
+                            "ln": "/substance-3d-painter/features/iray-renderer/iray-settings.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Viewer and MDL Settings",
+                            "id": "/substance-3d-painter/features/iray-renderer/viewer-and-mdl-settings.html",
+                            "ln": "/substance-3d-painter/features/iray-renderer/viewer-and-mdl-settings.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Plugins",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Plugins overview",
+                            "id": "/substance-3d-painter/features/plugins.html",
+                            "ln": "/substance-3d-painter/features/plugins.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Autosave",
+                            "id": "/substance-3d-painter/features/plugins/autosave.html",
+                            "ln": "/substance-3d-painter/features/plugins/autosave.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Resources Updater",
+                            "id": "/substance-3d-painter/features/plugins/resources-updater.html",
+                            "ln": "/substance-3d-painter/features/plugins/resources-updater.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Sparse Virtual Textures",
+                    "id": "/substance-3d-painter/features/sparse-virtual-textures.html",
+                    "ln": "/substance-3d-painter/features/sparse-virtual-textures.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Custom Shaders",
+                    "id": "/substance-3d-painter/features/custom-shaders.html",
+                    "ln": "/substance-3d-painter/features/custom-shaders.html",
+                    "children": []
+                },
+                {
+                    "ttl": "SpaceMouse® by 3Dconnexion",
+                    "id": "/substance-3d-painter/features/spacemouse-by-3dconnexion.html",
+                    "ln": "/substance-3d-painter/features/spacemouse-by-3dconnexion.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Universal Scene Description (USD)",
+                    "id": "/substance-3d-painter/features/universal-scene-description-usd.html",
+                    "ln": "/substance-3d-painter/features/universal-scene-description-usd.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Send to",
+                    "id": "/substance-3d-painter/features/send-to.html",
+                    "ln": "/substance-3d-painter/features/send-to.html",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "ttl": "Technical Support",
+            "id": "",
+            "ln": "",
+            "children": [
+                {
+                    "ttl": "Performance Guidelines",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Performances guidelines overview",
+                            "id": "/substance-3d-painter/technical-support/performances-guidelines.html",
+                            "ln": "/substance-3d-painter/technical-support/performances-guidelines.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Conflicts and background applications",
+                            "id": "/substance-3d-painter/technical-support/performances-guidelines/conflicts-and-background-applications.html",
+                            "ln": "/substance-3d-painter/technical-support/performances-guidelines/conflicts-and-background-applications.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Mesh and UV setup",
+                            "id": "/substance-3d-painter/technical-support/performances-guidelines/mesh-and-uv-setup.html",
+                            "ln": "/substance-3d-painter/technical-support/performances-guidelines/mesh-and-uv-setup.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "GPU Drivers",
+                            "id": "/substance-3d-painter/technical-support/performances-guidelines/gpu-drivers.html",
+                            "ln": "/substance-3d-painter/technical-support/performances-guidelines/gpu-drivers.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "NVIDIA Drivers Settings",
+                            "id": "/substance-3d-painter/technical-support/performances-guidelines/nvidia-drivers-settings.html",
+                            "ln": "/substance-3d-painter/technical-support/performances-guidelines/nvidia-drivers-settings.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "GPU VRAM amount and bandwidth",
+                            "id": "/substance-3d-painter/technical-support/performances-guidelines/gpu-vram-amount-and-bandwidth.html",
+                            "ln": "/substance-3d-painter/technical-support/performances-guidelines/gpu-vram-amount-and-bandwidth.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "GPU VRAM and other applications",
+                            "id": "/substance-3d-painter/technical-support/performances-guidelines/gpu-vram-and-other-applications.html",
+                            "ln": "/substance-3d-painter/technical-support/performances-guidelines/gpu-vram-and-other-applications.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Texture Sets amount",
+                            "id": "/substance-3d-painter/technical-support/performances-guidelines/texture-sets-amount.html",
+                            "ln": "/substance-3d-painter/technical-support/performances-guidelines/texture-sets-amount.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Layer management",
+                            "id": "/substance-3d-painter/technical-support/performances-guidelines/layer-management.html",
+                            "ln": "/substance-3d-painter/technical-support/performances-guidelines/layer-management.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Channels management",
+                            "id": "/substance-3d-painter/technical-support/performances-guidelines/channels-management.html",
+                            "ln": "/substance-3d-painter/technical-support/performances-guidelines/channels-management.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Substance filters and materials",
+                            "id": "/substance-3d-painter/technical-support/performances-guidelines/substance-filters-and-materials.html",
+                            "ln": "/substance-3d-painter/technical-support/performances-guidelines/substance-filters-and-materials.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Viewport display",
+                            "id": "/substance-3d-painter/technical-support/performances-guidelines/viewport-display.html",
+                            "ln": "/substance-3d-painter/technical-support/performances-guidelines/viewport-display.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Configuring Pens and Tablets",
+                    "id": "/substance-3d-painter/technical-support/configuring-pens-and-tablets.html",
+                    "ln": "/substance-3d-painter/technical-support/configuring-pens-and-tablets.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Exporting the log file",
+                    "id": "/substance-3d-painter/technical-support/exporting-the-log-file.html",
+                    "ln": "/substance-3d-painter/technical-support/exporting-the-log-file.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Exporting a DXDiag",
+                    "id": "/substance-3d-painter/technical-support/exporting-a-dxdiag.html",
+                    "ln": "/substance-3d-painter/technical-support/exporting-a-dxdiag.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Technical issues",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "GPU Issues",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Crash when working with overclocked GPU",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/crash-when-working-with-overclocked-gpu.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/crash-when-working-with-overclocked-gpu.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Forcing the external GPU on Mac OS",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/forcing-the-external-gpu-on-mac-os.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/forcing-the-external-gpu-on-mac-os.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "GPU drivers compatibility",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/gpu-drivers-compatibility.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/gpu-drivers-compatibility.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "GPU drivers crash with long computations (TDR crash)",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/gpu-drivers-crash-with-long-computations-tdr-crash.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/gpu-drivers-crash-with-long-computations-tdr-crash.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "GPU has outdated drivers",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/gpu-has-outdated-drivers.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/gpu-has-outdated-drivers.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "GPU is not recognized",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/gpu-is-not-recognized.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/gpu-is-not-recognized.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "GPU is not recognized and is mentionned as GDI Generic",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/gpu-is-not-recognized-and-is-mentionned-as-gdi-generic.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/gpu-is-not-recognized-and-is-mentionned-as-gdi-generic.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Issues with Nvidia GPUs on recent Mac OS versions",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/issues-with-nvidia-gpus-on-recent-mac-os-versions.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/issues-with-nvidia-gpus-on-recent-mac-os-versions.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Multi/Bi-GPU",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/multi-bi-gpu.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/multi-bi-gpu.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Running on integrated GPU",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/running-on-integrated-gpu.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/running-on-integrated-gpu.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Painter doesn't start on the right GPU",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/painter-doesn-t-start-on-the-right-gpu.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/gpu-issues/painter-doesn-t-start-on-the-right-gpu.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Startup Issues",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Application failed to start because of Qt",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/startup-issues/application-failed-to-start-because-of-qt.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/startup-issues/application-failed-to-start-because-of-qt.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Crash or freeze during startup",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/startup-issues/crash-or-freeze-during-startup.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/startup-issues/crash-or-freeze-during-startup.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Software conflicts",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/startup-issues/software-conflicts.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/startup-issues/software-conflicts.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Rendering Issues",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Artifacts and glitches on Mac OS with Custom GPUs",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/rendering-issues/artifacts-and-glitches-on-mac-os-with-custom-gpus.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/rendering-issues/artifacts-and-glitches-on-mac-os-with-custom-gpus.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Blocky artifacts appear on textures in the viewport",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/rendering-issues/blocky-artifacts-appear-on-textures-in-the-viewport.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/rendering-issues/blocky-artifacts-appear-on-textures-in-the-viewport.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Mesh appears pink in the viewport",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/rendering-issues/mesh-appears-pink-in-the-viewport.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/rendering-issues/mesh-appears-pink-in-the-viewport.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Mesh flash to white when moving camera",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/rendering-issues/mesh-flash-to-white-when-moving-camera.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/rendering-issues/mesh-flash-to-white-when-moving-camera.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Some HDPI scaling values are not working",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/rendering-issues/some-hdpi-scaling-values-are-not-working.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/rendering-issues/some-hdpi-scaling-values-are-not-working.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Stability Issues",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Crash during export",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/stability-issues/crash-during-export.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/stability-issues/crash-during-export.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Crash when opening or saving a file",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/stability-issues/crash-when-opening-or-saving-a-file.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/stability-issues/crash-when-opening-or-saving-a-file.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Crash while baking",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/stability-issues/crash-while-baking.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/stability-issues/crash-while-baking.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Crash with low virtual memory",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/stability-issues/crash-with-low-virtual-memory.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/stability-issues/crash-with-low-virtual-memory.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Windows Blue Screens",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/stability-issues/windows-blue-screens.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/stability-issues/windows-blue-screens.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Miscellaneous Issues",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Corrupted texture error message",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/corrupted-texture-error-message.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/corrupted-texture-error-message.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Shelf resources are gone after 7.2 update",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/shelf-resources-are-gone-after-7-2-update.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/shelf-resources-are-gone-after-7-2-update.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Error there is no disk in the drive",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/error-there-is-no-disk-in-the-drive.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/error-there-is-no-disk-in-the-drive.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Error with missing api-ms-crt dll",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/error-with-missing-api-ms-crt-dll.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/error-with-missing-api-ms-crt-dll.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Impossible to drag and drop files into the shelf",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/impossible-to-drag-and-drop-files-into-the-shelf.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/impossible-to-drag-and-drop-files-into-the-shelf.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Impossible to use the ALT keyboard shortcut on Linux",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/impossible-to-use-the-alt-keyboard-shortcut-on-linux.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/impossible-to-use-the-alt-keyboard-shortcut-on-linux.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Assets (or shelf) previews are empty",
+                                    "id": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/assets-or-shelf-previews-are-empty.html",
+                                    "ln": "/substance-3d-painter/technical-support/technical-issues/miscellaneous-issues/assets-or-shelf-previews-are-empty.html",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Workflow Issues",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Export Issues",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "My exported opacity map is totally black",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/export-issues/my-exported-opacity-map-is-totally-black.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/export-issues/my-exported-opacity-map-is-totally-black.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Texture dilation or Padding",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/export-issues/texture-dilation-or-padding.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/export-issues/texture-dilation-or-padding.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Tools Issues",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Normal map looks incorrect when loaded in layer or tool properties",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/tools-issues/normal-map-looks-incorrect-when-loaded-in-layer-or-tool-properties.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/tools-issues/normal-map-looks-incorrect-when-loaded-in-layer-or-tool-properties.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Paint Tool bleeds on other UV islands",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/tools-issues/paint-tool-bleeds-on-other-uv-islands.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/tools-issues/paint-tool-bleeds-on-other-uv-islands.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Project Issues",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "A project has been processed as a text file and is now corrupted",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/project-issues/a-project-has-been-processed-as-a-text-file-and-is-now-corrupted.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/project-issues/a-project-has-been-processed-as-a-text-file-and-is-now-corrupted.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Loading files from a network",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/project-issues/loading-files-from-a-network.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/project-issues/loading-files-from-a-network.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Preserve brush strokes setting stays disabled",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/project-issues/preserve-brush-strokes-setting-stays-disabled.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/project-issues/preserve-brush-strokes-setting-stays-disabled.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Projects are really big",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/project-issues/projects-are-really-big.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/project-issues/projects-are-really-big.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Library Issues",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Thumbnails in the shelf look incorrect",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/shelf-issues/thumbnails-in-the-shelf-look-incorrect.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/shelf-issues/thumbnails-in-the-shelf-look-incorrect.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Error when importing a Font",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/shelf-issues/font-import.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/shelf-issues/font-import.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Viewport Issues",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Mesh faces disappear when looking at them from behind",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/viewport-issues/mesh-faces-disappear-when-looking-at-them-from-behind.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/viewport-issues/mesh-faces-disappear-when-looking-at-them-from-behind.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Viewports and textures are blurry or lack sharpness",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/viewport-issues/viewports-and-textures-are-blurry-or-lack-sharpness.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/viewport-issues/viewports-and-textures-are-blurry-or-lack-sharpness.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Plugins Issues",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Substance Source plugin doesn't load",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/plugins-issues/substance-source-plugin-doesn-t-load.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/plugins-issues/substance-source-plugin-doesn-t-load.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "License Issues",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Maintenance is expired dialog on startup",
+                                    "id": "/substance-3d-painter/technical-support/workflow-issues/license-issues/maintenance-is-expired-dialog-on-startup.html",
+                                    "ln": "/substance-3d-painter/technical-support/workflow-issues/license-issues/maintenance-is-expired-dialog-on-startup.html",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ttl": "Pipeline and integration",
+            "id": "",
+            "ln": "",
+            "children": [
+                {
+                    "ttl": "Installation and preferences",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Preferences and application data location",
+                            "id": "/substance-3d-painter/pipeline-and-integration/installation-and-preferences/preferences-and-application-data-location.html",
+                            "ln": "/substance-3d-painter/pipeline-and-integration/installation-and-preferences/preferences-and-application-data-location.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Automated installation",
+                            "id": "/substance-3d-painter/pipeline-and-integration/installation-and-preferences/automated-installation.html",
+                            "ln": "/substance-3d-painter/pipeline-and-integration/installation-and-preferences/automated-installation.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Retrieving the installation path",
+                            "id": "/substance-3d-painter/pipeline-and-integration/installation-and-preferences/retrieving-the-installation-path.html",
+                            "ln": "/substance-3d-painter/pipeline-and-integration/installation-and-preferences/retrieving-the-installation-path.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Configuration",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Command lines",
+                            "id": "/substance-3d-painter/pipeline-and-integration/configuration/command-lines.html",
+                            "ln": "/substance-3d-painter/pipeline-and-integration/configuration/command-lines.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Environment variables",
+                            "id": "/substance-3d-painter/pipeline-and-integration/configuration/environment-variables.html",
+                            "ln": "/substance-3d-painter/pipeline-and-integration/configuration/environment-variables.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Firewall Configuration",
+                            "id": "/substance-3d-painter/pipeline-and-integration/configuration/firewall-configuration.html",
+                            "ln": "/substance-3d-painter/pipeline-and-integration/configuration/firewall-configuration.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Querying Current Software Version",
+                            "id": "/substance-3d-painter/pipeline-and-integration/configuration/querying-current-software-version.html",
+                            "ln": "/substance-3d-painter/pipeline-and-integration/configuration/querying-current-software-version.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Remote Desktop",
+                            "id": "/substance-3d-painter/pipeline-and-integration/configuration/remote-desktop.html",
+                            "ln": "/substance-3d-painter/pipeline-and-integration/configuration/remote-desktop.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Resource management",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Shelf and Assets location",
+                            "id": "/substance-3d-painter/pipeline-and-integration/resource-management/shelf-and-assets-location.html",
+                            "ln": "/substance-3d-painter/pipeline-and-integration/resource-management/shelf-and-assets-location.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Resource paths",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Adding resource paths by editing preferences manually",
+                                    "id": "/substance-3d-painter/pipeline-and-integration/resource-management/adding-resource-paths-by-editing-preferences-manually.html",
+                                    "ln": "/substance-3d-painter/pipeline-and-integration/resource-management/adding-resource-paths-by-editing-preferences-manually.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Editing resource paths manually",
+                                    "id": "/substance-3d-painter/pipeline-and-integration/resource-management/adding-resource-paths-by-editing-preferences-manually/editing-resource-paths-manually.html",
+                                    "ln": "/substance-3d-painter/pipeline-and-integration/resource-management/adding-resource-paths-by-editing-preferences-manually/editing-resource-paths-manually.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Editing the Shelf Preferences with Python",
+                                    "id": "/substance-3d-painter/pipeline-and-integration/resource-management/adding-resource-paths-by-editing-preferences-manually/editing-the-shelf-preferences-with-python.html",
+                                    "ln": "/substance-3d-painter/pipeline-and-integration/resource-management/adding-resource-paths-by-editing-preferences-manually/editing-the-shelf-preferences-with-python.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Adding saved searches manually",
+                            "id": "/substance-3d-painter/pipeline-and-integration/resource-management/adding-saved-searches-manually.html",
+                            "ln": "/substance-3d-painter/pipeline-and-integration/resource-management/adding-saved-searches-manually.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Preferences and content migration",
+                            "id": "/substance-3d-painter/pipeline-and-integration/resource-management/preferences-and-content-migration.html",
+                            "ln": "/substance-3d-painter/pipeline-and-integration/resource-management/preferences-and-content-migration.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Excluding resources in a resource path",
+                            "id": "/substance-3d-painter/pipeline-and-integration/resource-management/excluding-resources-in-a-resource-path.html",
+                            "ln": "/substance-3d-painter/pipeline-and-integration/resource-management/excluding-resources-in-a-resource-path.html",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ttl": "Scripting and development",
+            "id": "",
+            "ln": "",
+            "children": [
+                {
+                    "ttl": "Scripts and plugins",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Creating a Javascript plugin",
+                            "id": "/substance-3d-painter/scripting-and-development/scripts-and-plugins/creating-a-javascript-plugin.html",
+                            "ln": "/substance-3d-painter/scripting-and-development/scripts-and-plugins/creating-a-javascript-plugin.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Remote control with scripting",
+                            "id": "/substance-3d-painter/scripting-and-development/scripts-and-plugins/remote-control-with-scripting.html",
+                            "ln": "/substance-3d-painter/scripting-and-development/scripts-and-plugins/remote-control-with-scripting.html",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "ttl": "Shader API Reference",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Shader API overview",
+                            "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api.html",
+                            "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Changelog - Shader API",
+                            "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/changelog-shader-api.html",
+                            "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/changelog-shader-api.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Libraries - Shader API",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "Lib Alpha - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-alpha-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-alpha-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib Bayer - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-bayer-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-bayer-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib Defines - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-defines-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-defines-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib Emissive - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-emissive-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-emissive-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib Env - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-env-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-env-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib Normal - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-normal-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-normal-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib PBR - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-pbr-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-pbr-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib PBR Aniso - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-pbr-aniso-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-pbr-aniso-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib Pom - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-pom-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-pom-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib Random - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-random-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-random-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib Sampler - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-sampler-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-sampler-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib Sparse - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-sparse-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-sparse-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib SSS - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-sss-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-sss-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib Utils - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-utils-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-utils-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Lib Vectors - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-vectors-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-vectors-shader-api.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Parameters - Shader API",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "All Custom Params - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/parameters-shader-api/all-custom-params-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/parameters-shader-api/all-custom-params-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "All Engine Params - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/parameters-shader-api/all-engine-params-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/parameters-shader-api/all-engine-params-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "All Rendering States Params - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/parameters-shader-api/all-rendering-states-params-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/parameters-shader-api/all-rendering-states-params-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Layering Bind Materials - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/parameters-shader-api/layering-bind-materials-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/parameters-shader-api/layering-bind-materials-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Layering Declare Stacks - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/parameters-shader-api/layering-declare-stacks-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/parameters-shader-api/layering-declare-stacks-shader-api.html",
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "ttl": "Shaders - Shader API",
+                            "id": "",
+                            "ln": "",
+                            "children": [
+                                {
+                                    "ttl": "PBR Material Layering - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/shaders-shader-api/pbr-material-layering-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/shaders-shader-api/pbr-material-layering-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "PBR Metal Rough - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/shaders-shader-api/pbr-metal-rough-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/shaders-shader-api/pbr-metal-rough-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Pixelated - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/shaders-shader-api/pixelated-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/shaders-shader-api/pixelated-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Surface Shader - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/shaders-shader-api/surface-shader-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/shaders-shader-api/surface-shader-shader-api.html",
+                                    "children": []
+                                },
+                                {
+                                    "ttl": "Toon - Shader API",
+                                    "id": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/shaders-shader-api/toon-shader-api.html",
+                                    "ln": "/substance-3d-painter/scripting-and-development/api-reference/shader-api/shaders-shader-api/toon-shader-api.html",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ttl": "Release notes",
+            "id": "",
+            "ln": "",
+            "children": [
+                {
+                    "ttl": "Release notes overview",
+                    "id": "/substance-3d-painter/release-notes.html",
+                    "ln": "/substance-3d-painter/release-notes.html",
+                    "children": []
+                },
+                {
+                    "ttl": "All Changes",
+                    "id": "/substance-3d-painter/release-notes/all-changes.html",
+                    "ln": "/substance-3d-painter/release-notes/all-changes.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Version 10.1",
+                    "id": "/substance-3d-painter/release-notes/version-10-1.html",
+                    "ln": "/substance-3d-painter/release-notes/version-10-1.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Version 10.0",
+                    "id": "/substance-3d-painter/release-notes/version-10-0.html",
+                    "ln": "/substance-3d-painter/release-notes/version-10-0.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Version 9.1",
+                    "id": "/substance-3d-painter/release-notes/version-9-1.html",
+                    "ln": "/substance-3d-painter/release-notes/version-9-1.html",
+                    "children": []
+                },
+                {
+                    "ttl": "Old versions",
+                    "id": "",
+                    "ln": "",
+                    "children": [
+                        {
+                            "ttl": "Version 9.0",
+                            "id": "/substance-3d-painter/release-notes/version-9-0.html",
+                            "ln": "/substance-3d-painter/release-notes/version-9-0.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 8.3",
+                            "id": "/substance-3d-painter/release-notes/version-8-3.html",
+                            "ln": "/substance-3d-painter/release-notes/version-8-3.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 8.2",
+                            "id": "/substance-3d-painter/release-notes/version-8-2.html",
+                            "ln": "/substance-3d-painter/release-notes/version-8-2.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 8.1",
+                            "id": "/substance-3d-painter/release-notes/version-8-1.html",
+                            "ln": "/substance-3d-painter/release-notes/version-8-1.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 7.4",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-7-4.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-7-4.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 7.3",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-7-3.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-7-3.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 7.2",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-7-2.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-7-2.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2021.1 (7.1.0)",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2021-1-7-1-0.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2021-1-7-1-0.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2020.2 (6.2.0)",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2020-2-6-2-0.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2020-2-6-2-0.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2020.1 (6.1.0)",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2020-1-6-1-0.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2020-1-6-1-0.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2019.3",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2019-3.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2019-3.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2019.2",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2019-2.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2019-2.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2019.1",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2019-1.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2019-1.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2018.3",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2018-3.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2018-3.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2018.2",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2018-2.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2018-2.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2018.1",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2018-1.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2018-1.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2017.4",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2017-4.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2017-4.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2017.3",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2017-3.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2017-3.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2017.2",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2017-2.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2017-2.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2017.1",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2017-1.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2017-1.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2.6",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2-6.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2-6.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2.5",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2-5.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2-5.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2.4",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2-4.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2-4.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2.3",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2-3.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2-3.html",
+                            "children": []
+                        },
+                        {
+                            "ttl": "Version 2.2",
+                            "id": "/substance-3d-painter/release-notes/old-versions/version-2-2.html",
+                            "ln": "/substance-3d-painter/release-notes/old-versions/version-2-2.html",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
