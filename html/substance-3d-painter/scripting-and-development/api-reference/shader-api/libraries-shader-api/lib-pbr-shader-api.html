@@ -914,7 +914,8 @@
 	
 	
 		
-			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">//: param auto environment_max_lod 
+			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">//: param auto environment_max_lod 
+
 uniform float maxLod;</pre>
 		
 	
@@ -962,20 +963,34 @@ uniform float maxLod;</pre>
 	
 	
 		
-			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">//: param custom { 
-//:   "default": 16, 
-//:   "label": "Quality", 
-//:   "widget": "combobox", 
-//:   "values": { 
-//:     "Very low (4 spp)": 4, 
-//:     "Low (16 spp)": 16, 
-//:     "Medium (32 spp)": 32, 
-//:     "High (64 spp)": 64, 
-//:     "Very high (128 spp)": 128, 
-//:     "Ultra (256 spp)": 256 
-//:   }, 
-//:   "group": "Common Parameters" 
-//: } 
+			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">//: param custom { 
+
+//:   "default": 16, 
+
+//:   "label": "Quality", 
+
+//:   "widget": "combobox", 
+
+//:   "values": { 
+
+//:     "Very low (4 spp)": 4, 
+
+//:     "Low (16 spp)": 16, 
+
+//:     "Medium (32 spp)": 32, 
+
+//:     "High (64 spp)": 64, 
+
+//:     "Very high (128 spp)": 128, 
+
+//:     "Ultra (256 spp)": 256 
+
+//:   }, 
+
+//:   "group": "Common Parameters" 
+
+//: } 
+
 uniform int nbSamples;</pre>
 		
 	
@@ -1023,13 +1038,20 @@ uniform int nbSamples;</pre>
 	
 	
 		
-			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">//: param custom { 
-//:   "default": 1.3, 
-//:   "label": "Horizon Fading", 
-//:   "min": 0.0, 
-//:   "max": 2.0, 
-//:   "group": "Common Parameters" 
-//: } 
+			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">//: param custom { 
+
+//:   "default": 1.3, 
+
+//:   "label": "Horizon Fading", 
+
+//:   "min": 0.0, 
+
+//:   "max": 2.0, 
+
+//:   "group": "Common Parameters" 
+
+//: } 
+
 uniform float horizonFade;</pre>
 		
 	
@@ -1077,9 +1099,12 @@ uniform float horizonFade;</pre>
 	
 	
 		
-			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">import lib-env.glsl 
-import lib-emissive.glsl 
-import lib-random.glsl 
+			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">import lib-env.glsl 
+
+import lib-emissive.glsl 
+
+import lib-random.glsl 
+
 import lib-vectors.glsl</pre>
 		
 	
@@ -1127,91 +1152,176 @@ import lib-vectors.glsl</pre>
 	
 	
 		
-			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">const float EPSILON_COEF = 1e-4; 
- 
-float normal_distrib( 
-  float ndh, 
-  float Roughness) 
-{ 
-  // use GGX / Trowbridge-Reitz, same as Disney and Unreal 4 
-  // cf http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf p3 
-  float alpha = Roughness * Roughness; 
-  float tmp = alpha / max(1e-8,(ndh*ndh*(alpha*alpha-1.0)+1.0)); 
-  return tmp * tmp * M_INV_PI; 
-} 
- 
-vec3 fresnel( 
-  float vdh, 
-  vec3 F0) 
-{ 
-  // Schlick with Spherical Gaussian approximation 
-  // cf http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf p3 
-  float sphg = exp2((-5.55473*vdh - 6.98316) * vdh); 
-  return F0 + (vec3(1.0) - F0) * sphg; 
-} 
- 
-float G1( 
-  float ndw, // w is either Ln or Vn 
-  float k) 
-{ 
-  // One generic factor of the geometry function divided by ndw 
-  // NB : We should have k &gt; 0 
-  return 1.0 / ( ndw*(1.0-k) +  k ); 
-} 
- 
-float visibility( 
-  float ndl, 
-  float ndv, 
-  float Roughness) 
-{ 
-  // Schlick with Smith-like choice of k 
-  // cf http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf p3 
-  // visibility is a Cook-Torrance geometry function divided by (n.l)*(n.v) 
-  float k = max(Roughness * Roughness * 0.5, 1e-5); 
-  return G1(ndl,k)*G1(ndv,k); 
-} 
- 
-vec3 cook_torrance_contrib( 
-  float vdh, 
-  float ndh, 
-  float ndl, 
-  float ndv, 
-  vec3 Ks, 
-  float Roughness) 
-{ 
-  // This is the contribution when using importance sampling with the GGX based 
-  // sample distribution. This means ct_contrib = ct_brdf / ggx_probability 
-  return fresnel(vdh,Ks) * (visibility(ndl,ndv,Roughness) * vdh * ndl / ndh ); 
-} 
- 
-vec3 importanceSampleGGX(vec2 Xi, vec3 T, vec3 B, vec3 N, float roughness) 
-{ 
-  float a = roughness*roughness; 
-  float cosT = sqrt((1.0-Xi.y)/(1.0+(a*a-1.0)*Xi.y)); 
-  float sinT = sqrt(1.0-cosT*cosT); 
-  float phi = 2.0*M_PI*Xi.x; 
-  return 
-    T * (sinT*cos(phi)) + 
-    B * (sinT*sin(phi)) + 
-    N *  cosT; 
-} 
- 
-float probabilityGGX(float ndh, float vdh, float Roughness) 
-{ 
-  return normal_distrib(ndh, Roughness) * ndh / (4.0*vdh); 
-} 
- 
-float distortion(vec3 Wn) 
-{ 
-  // Computes the inverse of the solid angle of the (differential) pixel in 
-  // the cube map pointed at by Wn 
-  float sinT = sqrt(1.0-Wn.y*Wn.y); 
-  return sinT; 
-} 
- 
-float computeLOD(vec3 Ln, float p) 
-{ 
-  return max(0.0, (maxLod-1.5) - 0.5 * log2(float(nbSamples) * p * distortion(Ln))); 
+			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">const float EPSILON_COEF = 1e-4; 
+
+ 
+
+float normal_distrib( 
+
+  float ndh, 
+
+  float Roughness) 
+
+{ 
+
+  // use GGX / Trowbridge-Reitz, same as Disney and Unreal 4 
+
+  // cf http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf p3 
+
+  float alpha = Roughness * Roughness; 
+
+  float tmp = alpha / max(1e-8,(ndh*ndh*(alpha*alpha-1.0)+1.0)); 
+
+  return tmp * tmp * M_INV_PI; 
+
+} 
+
+ 
+
+vec3 fresnel( 
+
+  float vdh, 
+
+  vec3 F0) 
+
+{ 
+
+  // Schlick with Spherical Gaussian approximation 
+
+  // cf http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf p3 
+
+  float sphg = exp2((-5.55473*vdh - 6.98316) * vdh); 
+
+  return F0 + (vec3(1.0) - F0) * sphg; 
+
+} 
+
+ 
+
+float G1( 
+
+  float ndw, // w is either Ln or Vn 
+
+  float k) 
+
+{ 
+
+  // One generic factor of the geometry function divided by ndw 
+
+  // NB : We should have k &gt; 0 
+
+  return 1.0 / ( ndw*(1.0-k) +  k ); 
+
+} 
+
+ 
+
+float visibility( 
+
+  float ndl, 
+
+  float ndv, 
+
+  float Roughness) 
+
+{ 
+
+  // Schlick with Smith-like choice of k 
+
+  // cf http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf p3 
+
+  // visibility is a Cook-Torrance geometry function divided by (n.l)*(n.v) 
+
+  float k = max(Roughness * Roughness * 0.5, 1e-5); 
+
+  return G1(ndl,k)*G1(ndv,k); 
+
+} 
+
+ 
+
+vec3 cook_torrance_contrib( 
+
+  float vdh, 
+
+  float ndh, 
+
+  float ndl, 
+
+  float ndv, 
+
+  vec3 Ks, 
+
+  float Roughness) 
+
+{ 
+
+  // This is the contribution when using importance sampling with the GGX based 
+
+  // sample distribution. This means ct_contrib = ct_brdf / ggx_probability 
+
+  return fresnel(vdh,Ks) * (visibility(ndl,ndv,Roughness) * vdh * ndl / ndh ); 
+
+} 
+
+ 
+
+vec3 importanceSampleGGX(vec2 Xi, vec3 T, vec3 B, vec3 N, float roughness) 
+
+{ 
+
+  float a = roughness*roughness; 
+
+  float cosT = sqrt((1.0-Xi.y)/(1.0+(a*a-1.0)*Xi.y)); 
+
+  float sinT = sqrt(1.0-cosT*cosT); 
+
+  float phi = 2.0*M_PI*Xi.x; 
+
+  return 
+
+    T * (sinT*cos(phi)) + 
+
+    B * (sinT*sin(phi)) + 
+
+    N *  cosT; 
+
+} 
+
+ 
+
+float probabilityGGX(float ndh, float vdh, float Roughness) 
+
+{ 
+
+  return normal_distrib(ndh, Roughness) * ndh / (4.0*vdh); 
+
+} 
+
+ 
+
+float distortion(vec3 Wn) 
+
+{ 
+
+  // Computes the inverse of the solid angle of the (differential) pixel in 
+
+  // the cube map pointed at by Wn 
+
+  float sinT = sqrt(1.0-Wn.y*Wn.y); 
+
+  return sinT; 
+
+} 
+
+ 
+
+float computeLOD(vec3 Ln, float p) 
+
+{ 
+
+  return max(0.0, (maxLod-1.5) - 0.5 * log2(float(nbSamples) * p * distortion(Ln))); 
+
 }</pre>
 		
 	
@@ -1259,10 +1369,14 @@ float computeLOD(vec3 Ln, float p)
 	
 	
 		
-			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">float horizonFading(float ndl, float horizonFade) 
-{ 
-  float horiz = clamp(1.0 + horizonFade * ndl, 0.0, 1.0); 
-  return horiz * horiz; 
+			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">float horizonFading(float ndl, float horizonFade) 
+
+{ 
+
+  float horiz = clamp(1.0 + horizonFade * ndl, 0.0, 1.0); 
+
+  return horiz * horiz; 
+
 }</pre>
 		
 	
@@ -1310,9 +1424,12 @@ float computeLOD(vec3 Ln, float p)
 	
 	
 		
-			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">vec3 pbrComputeDiffuse(vec3 normal, vec3 diffColor) 
-{ 
-  return envIrradiance(normal) * diffColor; 
+			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">vec3 pbrComputeDiffuse(vec3 normal, vec3 diffColor) 
+
+{ 
+
+  return envIrradiance(normal) * diffColor; 
+
 }</pre>
 		
 	
@@ -1360,34 +1477,62 @@ float computeLOD(vec3 Ln, float p)
 	
 	
 		
-			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">vec3 pbrComputeSpecular(LocalVectors vectors, vec3 specColor, float roughness) 
-{ 
-  vec3 radiance = vec3(0.0); 
-  float ndv = dot(vectors.eye, vectors.normal); 
- 
-  for(int i=0; i&lt;nbSamples; ++i) 
-  { 
-    vec2 Xi = fibonacci2D(i, nbSamples); 
-    vec3 Hn = importanceSampleGGX( 
-      Xi, vectors.tangent, vectors.bitangent, vectors.normal, roughness); 
-    vec3 Ln = -reflect(vectors.eye,Hn); 
- 
-    float fade = horizonFading(dot(vectors.vertexNormal, Ln), horizonFade); 
- 
-    float ndl = dot(vectors.normal, Ln); 
-    ndl = max( 1e-8, ndl ); 
-    float vdh = max(1e-8, dot(vectors.eye, Hn)); 
-    float ndh = max(1e-8, dot(vectors.normal, Hn)); 
-    float lodS = roughness &lt; 0.01 ? 0.0 : computeLOD(Ln, probabilityGGX(ndh, vdh, roughness)); 
-    radiance += fade * envSampleLOD(Ln, lodS) * 
-      cook_torrance_contrib(vdh, ndh, ndl, ndv, specColor, roughness); 
-  } 
-  // Remove occlusions on shiny reflections 
-  radiance /= float(nbSamples); 
- 
-  return radiance; 
-} 
- 
+			<pre data-enlighter-language="glsl" data-line-wrap="true" data-gutter="true">vec3 pbrComputeSpecular(LocalVectors vectors, vec3 specColor, float roughness) 
+
+{ 
+
+  vec3 radiance = vec3(0.0); 
+
+  float ndv = dot(vectors.eye, vectors.normal); 
+
+ 
+
+  for(int i=0; i&lt;nbSamples; ++i) 
+
+  { 
+
+    vec2 Xi = fibonacci2D(i, nbSamples); 
+
+    vec3 Hn = importanceSampleGGX( 
+
+      Xi, vectors.tangent, vectors.bitangent, vectors.normal, roughness); 
+
+    vec3 Ln = -reflect(vectors.eye,Hn); 
+
+ 
+
+    float fade = horizonFading(dot(vectors.vertexNormal, Ln), horizonFade); 
+
+ 
+
+    float ndl = dot(vectors.normal, Ln); 
+
+    ndl = max( 1e-8, ndl ); 
+
+    float vdh = max(1e-8, dot(vectors.eye, Hn)); 
+
+    float ndh = max(1e-8, dot(vectors.normal, Hn)); 
+
+    float lodS = roughness &lt; 0.01 ? 0.0 : computeLOD(Ln, probabilityGGX(ndh, vdh, roughness)); 
+
+    radiance += fade * envSampleLOD(Ln, lodS) * 
+
+      cook_torrance_contrib(vdh, ndh, ndl, ndv, specColor, roughness); 
+
+  } 
+
+  // Remove occlusions on shiny reflections 
+
+  radiance /= float(nbSamples); 
+
+ 
+
+  return radiance; 
+
+} 
+
+ 
+
 </pre>
 		
 	
@@ -1452,16 +1597,7 @@ float computeLOD(vec3 Ln, float p)
         
     
         
-        <div class="modalContainer parsys">
-
-
-
-
-
-    
-    
-
-</div>
+        
 
     
 
@@ -1469,508 +1605,7 @@ float computeLOD(vec3 Ln, float p)
     
 
     
-    <div class="modalContainer static">
-        
-            
-            
-    <div class="modal dexter-Author-Hide">
-        <div class="dexter-Modal_overlay mobile-place-center mobile-place-middle" data-conf-display="onHashChange" aria-modal="true" aria-labelledby="language-Navigation_heading" role="dialog">
-            <div class="dexter-Modal mobile-width-100 mobile-height-100 tablet-width-640 tablet-height-auto desktop-width-1024" id="languageNavigation">
-                <p id="languageNavigation-modalTitle" class="hide-all">Language Navigation</p>
-                <p id="languageNavigation-modalDescription" class="hide-all">Language Navigation</p>
-                <a href="https://helpx.adobe.com/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-pbr-shader-api.html" class="dexter-CloseButton" aria-label="Close Region Selection" role="button"><i class="dexter-CloseButton_icon spectrum-close-circle-dark"></i></a>
-                
-    <nav class="language-Navigation">
-        <p id="language-Navigation_heading" class="language-Navigation_heading" role="heading" aria-level="2">Choose a region</p>
-        <p class="language-Navigation_subheading">Selecting a region changes the language and/or content on Adobe.com.</p>
-        <ul class="language-Navigation_region-List">
-            <li><p role="heading" aria-level="3">Americas</p></li>
-            
-                <li>
-                    <a lang="pt-BR" data-href="https://helpx.adobe.com/br/support.html" data-international-cookie="br">
-                        Brasil
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-CA" data-href="https://helpx.adobe.com/ca/support.html" data-international-cookie="ca">
-                        Canada - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="fr-CA" data-href="https://helpx.adobe.com/ca_fr/support.html" data-international-cookie="ca_fr">
-                        Canada - Français
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="es-LA" data-href="https://helpx.adobe.com/la/support.html" data-international-cookie="la">
-                        Latinoamérica
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="es-MX" data-href="https://helpx.adobe.com/mx/support.html" data-international-cookie="mx">
-                        México
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="es-AR" data-href="https://helpx.adobe.com/ar/support.html" data-international-cookie="ar">
-                        Argentina
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="es-CO" data-href="https://helpx.adobe.com/co/support.html" data-international-cookie="co">
-                        Colombia
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="es-PE" data-href="https://helpx.adobe.com/pe/support.html" data-international-cookie="pe">
-                        Perú
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="es-CL" data-href="https://helpx.adobe.com/cl/support.html" data-international-cookie="cl">
-                        Chile
-                    </a>
-                </li>
-            
-                <li>
-                    <a data-href="https://helpx.adobe.com/content/help/en/substance-3d-painter/scripting-and-development/api-reference/shader-api/libraries-shader-api/lib-pbr-shader-api.html" data-international-cookie="us">
-                        United States
-                    </a>
-                </li>
-            
-        
-            <li><p role="heading" aria-level="3">Asia Pacific</p></li>
-            
-                <li>
-                    <a lang="en-AU" data-href="https://helpx.adobe.com/au/support.html" data-international-cookie="au">
-                        Australia
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-HK" data-href="https://helpx.adobe.com/hk_en/support.html" data-international-cookie="hk_en">
-                        Hong Kong S.A.R. of China
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-IN" data-href="https://helpx.adobe.com/in/support.html" data-international-cookie="in">
-                        India - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-ID" data-href="https://helpx.adobe.com/id_en/support.html" data-international-cookie="id_en">
-                        Indonesia - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-MY" data-href="https://helpx.adobe.com/my_en/support.html" data-international-cookie="my_en">
-                        Malaysia - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-NZ" data-href="https://helpx.adobe.com/nz/support.html" data-international-cookie="nz">
-                        New Zealand
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-PH" data-href="https://helpx.adobe.com/ph_en/support.html" data-international-cookie="ph_en">
-                        Philippines - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-VN" data-href="https://helpx.adobe.com/vn_en/support.html" data-international-cookie="vn_en">
-                        Vietnam - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="zh-hans-CN" data-href="https://helpx.adobe.com/cn/support.html" data-international-cookie="cn">
-                        中国
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="zh-hant-HK" data-href="https://helpx.adobe.com/hk_zh/support.html" data-international-cookie="hk_zh">
-                        中國香港特別行政區
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="zh-hant-TW" data-href="https://helpx.adobe.com/tw/support.html" data-international-cookie="tw">
-                        台灣地區
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="ja-JP" data-href="https://helpx.adobe.com/jp/support.html" data-international-cookie="jp">
-                        日本
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="in-ID" data-href="https://helpx.adobe.com/id_id/support.html" data-international-cookie="id_id">
-                        Indonesia
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="ms-MY" data-href="https://helpx.adobe.com/my_ms/support.html" data-international-cookie="my_ms">
-                        Malaysia
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="fil-PH" data-href="https://helpx.adobe.com/ph_fil/support.html" data-international-cookie="ph_fil">
-                        Pilipinas
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="vi-VN" data-href="https://helpx.adobe.com/vn_vi/support.html" data-international-cookie="vn_vi">
-                        Việt Nam
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="hi-IN" data-href="https://helpx.adobe.com/in_hi/support.html" data-international-cookie="in_hi">
-                        भारत
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="ko-KR" data-href="https://helpx.adobe.com/kr/support.html" data-international-cookie="kr">
-                        한국
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-SG" data-href="https://helpx.adobe.com/sg/support.html" data-international-cookie="sg">
-                        Singapore
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-TH" data-href="https://helpx.adobe.com/th_en/support.html" data-international-cookie="th_en">
-                        Thailand - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="th-TH" data-href="https://helpx.adobe.com/th_th/support.html" data-international-cookie="th_th">
-                        ประเทศไทย
-                    </a>
-                </li>
-            
-        
-            <li><p role="heading" aria-level="3">Europe, Middle East and Africa</p></li>
-            
-                <li>
-                    <a lang="en-AFRICA" data-href="https://helpx.adobe.com/africa/support.html" data-international-cookie="africa">
-                        Africa - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="nl-BE" data-href="https://helpx.adobe.com/be_nl/support.html" data-international-cookie="be_nl">
-                        België - Nederlands
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="fr-BE" data-href="https://helpx.adobe.com/be_fr/support.html" data-international-cookie="be_fr">
-                        Belgique - Français
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-BE" data-href="https://helpx.adobe.com/be_en/support.html" data-international-cookie="be_en">
-                        Belgium - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="cs-CZ" data-href="https://helpx.adobe.com/cz/support.html" data-international-cookie="cz">
-                        Česká republika
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="da-DK" data-href="https://helpx.adobe.com/dk/support.html" data-international-cookie="dk">
-                        Danmark
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="de-DE" data-href="https://helpx.adobe.com/de/support.html" data-international-cookie="de">
-                        Deutschland
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="et-EE" data-href="https://helpx.adobe.com/ee/support.html" data-international-cookie="ee">
-                        Eesti
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="es-ES" data-href="https://helpx.adobe.com/es/support.html" data-international-cookie="es">
-                        España
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="fr-FR" data-href="https://helpx.adobe.com/fr/support.html" data-international-cookie="fr">
-                        France
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-GR" data-href="https://helpx.adobe.com/gr_en/support.html" data-international-cookie="gr_en">
-                        Greece - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-IE" data-href="https://helpx.adobe.com/ie/support.html" data-international-cookie="ie">
-                        Ireland
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-IL" data-href="https://helpx.adobe.com/il_en/support.html" data-international-cookie="il_en">
-                        Israel - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="it-IT" data-href="https://helpx.adobe.com/it/support.html" data-international-cookie="it">
-                        Italia
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="lv-LV" data-href="https://helpx.adobe.com/lv/support.html" data-international-cookie="lv">
-                        Latvija
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="lt-LT" data-href="https://helpx.adobe.com/lt/support.html" data-international-cookie="lt">
-                        Lietuva
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="de-LU" data-href="https://helpx.adobe.com/lu_de/support.html" data-international-cookie="lu_de">
-                        Luxembourg - Deutsch
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-LU" data-href="https://helpx.adobe.com/lu_en/support.html" data-international-cookie="lu_en">
-                        Luxembourg - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="fr-LU" data-href="https://helpx.adobe.com/lu_fr/support.html" data-international-cookie="lu_fr">
-                        Luxembourg - Français
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="hu-HU" data-href="https://helpx.adobe.com/hu/support.html" data-international-cookie="hu">
-                        Magyarország
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-MENA" data-href="https://helpx.adobe.com/mena_en/support.html" data-international-cookie="mena_en">
-                        Middle East and North Africa - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="nl-NL" data-href="https://helpx.adobe.com/nl/support.html" data-international-cookie="nl">
-                        Nederland
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="no-NO" data-href="https://helpx.adobe.com/no/support.html" data-international-cookie="no">
-                        Norge
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="de-AT" data-href="https://helpx.adobe.com/at/support.html" data-international-cookie="at">
-                        Österreich
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="pl-PL" data-href="https://helpx.adobe.com/pl/support.html" data-international-cookie="pl">
-                        Polska
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="pt-PT" data-href="https://helpx.adobe.com/pt/support.html" data-international-cookie="pt">
-                        Portugal
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="ro-RO" data-href="https://helpx.adobe.com/ro/support.html" data-international-cookie="ro">
-                        România
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="de-CH" data-href="https://helpx.adobe.com/ch_de/support.html" data-international-cookie="ch_de">
-                        Schweiz
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="sl-SI" data-href="https://helpx.adobe.com/si/support.html" data-international-cookie="si">
-                        Slovenija
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="sk-SK" data-href="https://helpx.adobe.com/sk/support.html" data-international-cookie="sk">
-                        Slovensko
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="fr-CH" data-href="https://helpx.adobe.com/ch_fr/support.html" data-international-cookie="ch_fr">
-                        Suisse
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="fi-FI" data-href="https://helpx.adobe.com/fi/support.html" data-international-cookie="fi">
-                        Suomi
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="it-CH" data-href="https://helpx.adobe.com/ch_it/support.html" data-international-cookie="ch_it">
-                        Svizzera
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="tr-TR" data-href="https://helpx.adobe.com/tr/support.html" data-international-cookie="tr">
-                        Türkiye
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-UK" data-href="https://helpx.adobe.com/uk/support.html" data-international-cookie="uk">
-                        United Kingdom
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="bg-BG" data-href="https://helpx.adobe.com/bg/support.html" data-international-cookie="bg">
-                        България
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="ru-RU" data-href="https://helpx.adobe.com/ru/support.html" data-international-cookie="ru">
-                        Россия
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="uk-UA" data-href="https://helpx.adobe.com/ua/support.html" data-international-cookie="ua">
-                        Україна
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="ar-MENA" data-href="https://helpx.adobe.com/mena_ar/support.html" data-international-cookie="mena_ar">
-                        الشرق الأوسط وشمال أفريقيا - اللغة العربية
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="iw-IL" data-href="https://helpx.adobe.com/il_he/support.html" data-international-cookie="il_he">
-                        ישראל - עברית
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="sv-SE" data-href="https://helpx.adobe.com/se/support.html" data-international-cookie="se">
-                        Sverige
-                    </a>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <a lang="en-SA" data-href="https://helpx.adobe.com/sa_en/support.html" data-international-cookie="sa_en">
-                        Saudi Arabia - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="en-AE" data-href="https://helpx.adobe.com/ae_en/support.html" data-international-cookie="ae_en">
-                        United Arab Emirates - English
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="ar-AE" data-href="https://helpx.adobe.com/ae_ar/support.html" data-international-cookie="ae_ar">
-                        الإمارات العربية المتحدة
-                    </a>
-                </li>
-            
-                <li>
-                    <a lang="ar-SA" data-href="https://helpx.adobe.com/sa_ar/support.html" data-international-cookie="sa_ar">
-                        المملكة العربية السعودية
-                    </a>
-                </li>
-            
-        </ul>
-    </nav>
-
-            </div>
-        </div>
-    </div>
-
-            
-            
-        <locale-modal data-current-modal-version="v2" data-current-locale-text="Are you visiting adobe.com from outside your region?
-            Visit your regional site for more relevant pricing, promotions and events." data-current-locale-button-text="Continue to United States" data-current-locale-heading-message="This Adobe site doesn't match your location" data-current-locale-country="United States">
-        </locale-modal>
-
-
-        
-        
-        
-            
-        
-    </div>
+    
 
     
     

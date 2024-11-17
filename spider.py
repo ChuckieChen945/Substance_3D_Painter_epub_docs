@@ -220,6 +220,8 @@ user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         pq_html('.modalContainer.parsys').eq(1).remove()
         pq_html('.modalContainer.static').eq(1).remove()
         pq_html('.toc').remove()
+        pq_html('.modalContainer').remove()
+        pq_html('.dexter-Author-Hide').remove()
         html = self.correct_urls(pq_html, link,file_name.count('/'))
 
         print('图片等下载完成')
